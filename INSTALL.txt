@@ -1,6 +1,6 @@
 # USE
 vagrant plugin install vagrant-parallels
-wget https://raw.githubusercontent.com/magehost/vagrant/master/Vagrantfile
+wget https://github.com/magehost/vagrant/raw/master/Vagrantfile
 vagrant up
 
 # PACKAGE

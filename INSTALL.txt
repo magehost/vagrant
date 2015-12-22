@@ -1,6 +1,6 @@
 # USE
-vagrant init parallels/ubuntu-14.04
 vagrant plugin install vagrant-parallels
+wget https://raw.githubusercontent.com/magehost/vagrant/master/Vagrantfile
 vagrant up
 
 # PACKAGE

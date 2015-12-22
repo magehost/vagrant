@@ -1,0 +1,9 @@
+# USE
+vagrant init parallels/ubuntu-14.04
+vagrant plugin install vagrant-parallels
+vagrant up
+
+# PACKAGE
+tar -cvzf trusty-apache-php5.box ./box.pvm ./Vagrantfile ./metadata.json
+shasum trusty-apache-php5.box
+joe metadata.json

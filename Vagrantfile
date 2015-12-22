@@ -6,7 +6,7 @@ Vagrant.configure(2) do |config|
   config.vm.box_url = "http://magentohosting.pro/vagrant/catalog.json"
 
   config.vm.provider "parallels" do |prl|
-    prl.name = "magehostdev"
+    # prl.name = "magehostdev"
     prl.update_guest_tools = true
   end
 end

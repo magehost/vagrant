@@ -1,11 +1,16 @@
 ### USE
 
 * First [Install Vagrant](http://www.vagrantup.com/download)
-* Execute:
+#### Install from our web server:
 ```
 vagrant plugin install vagrant-parallels
 wget https://magentohosting.pro/vagrant/Vagrantfile
 vagrant up
+```
+#### Install from Atlas
+```
+vagrant init magehost/trusty-apache-php5; 
+vagrant up --provider parallels
 ```
 
 
@@ -16,7 +21,7 @@ vagrant up
 open box.pvm
 ssh -i vagrant-insecure.key vagrant@[IP]
 ```
-
+#### Clean up & Package
 ```
 VERSION=1
 rm -rf ./box.pvm/*.log ./box.pvm/*~ ./box.pvm/*.backup ./box.pvm/*.app

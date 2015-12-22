@@ -2,10 +2,10 @@
   "name": "magehost/trusty-apache-php5",
   "description": "MageHost.pro configured Ubuntu 14.04 LTS 64-bit with Apache 2.4 and PHP-FPM 5.5.",
   "versions": [{
-    "version": "0.1.0",
+    "version": "1",
     "providers": [{
       "name": "parallels",
-      "url": "file:///Users/jeroen/vagrant/magehostvm/trusty-apache-php5.box"
+      "url": "file:///Users/jeroen/vagrant/magehostvm/trusty-apache-php5_v1.box"
     }]
   }]
 }

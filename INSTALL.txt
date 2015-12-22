@@ -4,13 +4,13 @@
 
 vagrant plugin install vagrant-parallels
 wget https://magentohosting.pro/vagrant/Vagrantfile
-vagrant up
+vagrant up --provider parallels
 
 
 ### PACKAGE
 
 tar -cvzf trusty-apache-php5.box ./box.pvm ./Vagrantfile ./metadata.json
-shasum trusty-apache-php5.box
+shasum -a256 trusty-apache-php5.box
 joe metadata.json
 
 scp -P2222 trusty-apache-php5.box maghopro@sun:httpdocs/vagrant/

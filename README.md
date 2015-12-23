@@ -12,6 +12,7 @@ vagrant up
 
 #### Install from Atlas
 ```
+vagrant plugin install vagrant-parallels
 vagrant init magehost/trusty-apache-php5
 vagrant box update
 vagrant up

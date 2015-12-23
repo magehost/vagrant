@@ -1,6 +1,6 @@
 ### USE
 
-* First [Install Vagrant](http://www.vagrantup.com/download)
+* First you need to [Install Vagrant](http://www.vagrantup.com/download)
 
 #### Install from our web server:
 ```
@@ -26,7 +26,7 @@ ssh -i vagrant-insecure.key vagrant@[IP]
 
 #### Clean up & Package
 ```
-VERSION=1
+VERSION=5
 rm -rf ./box.pvm/*.log ./box.pvm/*~ ./box.pvm/*.backup ./box.pvm/harddisk1.hdd/*.backup ./box.pvm/*.app
 prl_disk_tool compact --hdd ./box.pvm/harddisk1.hdd
 tar -cvzf trusty-apache-php5_v${VERSION}.box ./box.pvm ./Vagrantfile ./metadata.json

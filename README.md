@@ -6,12 +6,14 @@
 ```
 vagrant plugin install vagrant-parallels
 wget https://magentohosting.pro/vagrant/Vagrantfile
+vagrant box update
 vagrant up
 ```
 
 #### Install from Atlas
 ```
 vagrant init magehost/trusty-apache-php5
+vagrant box update
 vagrant up
 ```
 

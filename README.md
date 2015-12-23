@@ -4,14 +4,14 @@
 
 #### Install from our web server:
 ```
-vagrant plugin install vagrant-parallels
+vagrant plugin install vagrant-parallels vagrant-hostmanager
 wget https://magentohosting.pro/vagrant/Vagrantfile
 vagrant up
 ```
 
 #### Install from Atlas
 ```
-vagrant plugin install vagrant-parallels
+vagrant plugin install vagrant-parallels vagrant-hostmanager
 vagrant init magehost/trusty-apache-php5
 vagrant login
 vagrant up

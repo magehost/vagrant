@@ -12,7 +12,7 @@ vagrant up
 #### Install from Atlas
 ```
 vagrant init magehost/trusty-apache-php5
-vagrant up --provider parallels
+vagrant up
 ```
 
 

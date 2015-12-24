@@ -18,12 +18,16 @@ wget https://magentohosting.pro/vagrant/Vagrantfile
 vagrant up
 ```
 
-### Install from local test - destructive
+### Destruct previous test
 ```
-vagrant plugin install vagrant-parallels vagrant-hostmanager
 vagrant destroy -f
 rm -rf ~/.vagrant.d/boxes/magehost-VAGRANTSLASH-trusty-apache-php5
-rm -rf .bundle .vagrant httpdocs
+rm -rf .bundle .vagrant httpdocs Vagrantfile
+```
+
+### Install from local test
+```
+vagrant plugin install vagrant-parallels vagrant-hostmanager
 cp ../magehostdev/Vagrantfile.local Vagrantfile
 vagrant up
 ```
@@ -38,7 +42,7 @@ ssh -i vagrant-insecure.key vagrant@[IP]
 
 #### Clean up & Package
 ```
-VERSION=7
+VERSION=8
 rm -rf ./box.pvm/*.log ./box.pvm/*~ ./box.pvm/*.backup ./box.pvm/harddisk1.hdd/*.Backup ./box.pvm/*.app
 prl_disk_tool compact --hdd ./box.pvm/harddisk1.hdd
 tar -cvzf trusty-apache-php5_v${VERSION}.box  box.pvm Vagrantfile metadata.json

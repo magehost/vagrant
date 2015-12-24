@@ -4,15 +4,17 @@
 
 #### Install from our web server:
 ```
-vagrant plugin install vagrant-parallels
+vagrant plugin install vagrant-parallels vagrant-hostmanager
 wget https://magentohosting.pro/vagrant/Vagrantfile
 vagrant up
 ```
 
 #### Install from Atlas
 ```
+vagrant plugin install vagrant-parallels vagrant-hostmanager
 vagrant init magehost/trusty-apache-php5
-vagrant up --provider parallels
+vagrant login
+vagrant up
 ```
 
 
@@ -26,16 +28,16 @@ ssh -i vagrant-insecure.key vagrant@[IP]
 
 #### Clean up & Package
 ```
-VERSION=5
+VERSION=6
 rm -rf ./box.pvm/*.log ./box.pvm/*~ ./box.pvm/*.backup ./box.pvm/harddisk1.hdd/*.backup ./box.pvm/*.app
 prl_disk_tool compact --hdd ./box.pvm/harddisk1.hdd
 tar -cvzf trusty-apache-php5_v${VERSION}.box ./box.pvm ./Vagrantfile ./metadata.json
 ```
 
 #### Increase version + set checksum
-In eache JSON file you need to update the version and the filename.
+In each JSON file you need to update the version and the filename. In `catalog.json` also update the md5 sum.
 ```
-shasum -a256 trusty-apache-php5_v${VERSION}.box
+md5 trusty-apache-php5_v${VERSION}.box
 joe catalog.json catalog_local.json
 ```
 

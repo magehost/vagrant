@@ -17,12 +17,12 @@ wget https://magentohosting.pro/vagrant/Vagrantfile
 vagrant up
 ```
 
-### Install from local test
+### Install from local test (destructive)
 ```
 vagrant plugin install vagrant-parallels vagrant-hostmanager
-vagrant destroy
+vagrant destroy -f
 rm -rf ~/.vagrant.d/boxes/magehost-VAGRANTSLASH-trusty-apache-php5
-rm -rf .bundle .vagrant
+rm -rf .bundle .vagrant httpdocs
 cp ../magehostdev/Vagrantfile.local Vagrantfile
 vagrant up
 ```

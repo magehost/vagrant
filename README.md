@@ -21,6 +21,7 @@ vagrant up
 ### Destruct previous test
 ```
 vagrant destroy -f
+
 rm -rf ~/.vagrant.d/boxes/magehost-VAGRANTSLASH-trusty-apache-php5
 rm -rf .bundle .vagrant httpdocs Vagrantfile
 ```

@@ -2,13 +2,6 @@
 
 * First you need to [Install Vagrant](http://www.vagrantup.com/download)
 
-#### Install from our web server:
-```
-vagrant plugin install vagrant-parallels vagrant-hostmanager
-wget https://magentohosting.pro/vagrant/Vagrantfile
-vagrant up
-```
-
 #### Install from Atlas
 ```
 vagrant plugin install vagrant-parallels vagrant-hostmanager
@@ -17,6 +10,20 @@ vagrant login
 vagrant up
 ```
 
+#### Install from our web server:
+```
+vagrant plugin install vagrant-parallels vagrant-hostmanager
+wget https://magentohosting.pro/vagrant/Vagrantfile
+vagrant up
+```
+
+### Install from local test
+```
+vagrant plugin install vagrant-parallels vagrant-hostmanager
+rm -rf ~/.vagrant.d/boxes
+cp ../magehostdev/Vagrantfile.local Vagrantfile
+vagrant up
+```
 
 ### PACKAGE
 

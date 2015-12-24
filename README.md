@@ -20,7 +20,8 @@ vagrant up
 ### Install from local test
 ```
 vagrant plugin install vagrant-parallels vagrant-hostmanager
-rm -rf ~/.vagrant.d/boxes
+rm -rf ~/.vagrant.d/boxes/magehost-VAGRANTSLASH-trusty-apache-php5
+rm -rf .bundle .vagrant
 cp ../magehostdev/Vagrantfile.local Vagrantfile
 vagrant up
 ```
@@ -35,7 +36,7 @@ ssh -i vagrant-insecure.key vagrant@[IP]
 
 #### Clean up & Package
 ```
-VERSION=6
+VERSION=7
 rm -rf ./box.pvm/*.log ./box.pvm/*~ ./box.pvm/*.backup ./box.pvm/harddisk1.hdd/*.backup ./box.pvm/*.app
 prl_disk_tool compact --hdd ./box.pvm/harddisk1.hdd
 tar -cvzf trusty-apache-php5_v${VERSION}.box  box.pvm Vagrantfile metadata.json

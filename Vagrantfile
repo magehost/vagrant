@@ -12,5 +12,6 @@ Vagrant.configure(2) do |config|
   config.vm.provider "parallels" do |prl|
     # prl.name = "magehostdev"
     prl.update_guest_tools = true
+    prl.use_linked_clone = true
   end
 end

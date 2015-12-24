@@ -7,6 +7,7 @@
 vagrant plugin install vagrant-parallels vagrant-hostmanager
 vagrant init magehost/trusty-apache-php5
 vagrant login
+
 vagrant up
 ```
 

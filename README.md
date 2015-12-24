@@ -17,7 +17,7 @@ wget https://magentohosting.pro/vagrant/Vagrantfile
 vagrant up
 ```
 
-### Install from local test (destructive)
+### Install from local test - destructive
 ```
 vagrant plugin install vagrant-parallels vagrant-hostmanager
 vagrant destroy -f

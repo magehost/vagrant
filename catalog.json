@@ -13,7 +13,7 @@
       "name": "virtualbox",
       "url": "https://magentohosting.pro/vagrant/trusty-apache-php5_vb_v9.box",
       "checksum_type": "md5",
-      "checksum": "5712936b536faac00524b2e0405e0e3b"
+      "checksum": "75384d3d15123b4fb1e2e4d1233f5b66"
     }]
   }]
 }

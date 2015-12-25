@@ -43,16 +43,17 @@ ssh -i vagrant-insecure.key vagrant@[IP]
 
 #### Clean up & Package - Parallels
 ```
-VERSION=8
+VERSION=9
 rm -rf ./box.pvm/*.log ./box.pvm/*~ ./box.pvm/*.backup ./box.pvm/harddisk1.hdd/*.Backup ./box.pvm/*.app
 prl_disk_tool compact --hdd ./box.pvm/harddisk1.hdd
-tar -cvzf trusty-apache-php5_v${VERSION}.box  box.pvm Vagrantfile metadata.json
+tar -cvzf trusty-apache-php5_prl_v${VERSION}.box  box.pvm Vagrantfile metadata.json
 ```
 
 #### Clean up & Package - VirtualBox
 ```
-VERSION=8
-tar -cvzf trusty-apache-php5_v${VERSION}.box -C package  box.ovf box-disk1.vmdk Vagrantfile metadata.json
+VERSION=9
+vagrant package --base magehostdev.pro --output trusty-apache-php5_vb_v${VERSION}.box
+#tar -cvzf trusty-apache-php5_v${VERSION}.box -C package  box.ovf box-disk1.vmdk Vagrantfile metadata.json
 ```
 
 #### Increase version + set checksum

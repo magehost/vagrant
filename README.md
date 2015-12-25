@@ -67,5 +67,5 @@ joe catalog.json catalog_local.json
 
 #### Upload
 ```
-scp -P2222 trusty-apache-php5_v${VERSION}.box catalog.json Vagrantfile maghopro@sun:httpdocs/vagrant/
+scp -P2222 trusty-apache-php5_*_v${VERSION}.box catalog.json Vagrantfile maghopro@sun:httpdocs/vagrant/
 ```

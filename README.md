@@ -29,7 +29,7 @@ rm -rf .bundle .vagrant httpdocs Vagrantfile
 ```
 vagrant plugin install vagrant-parallels vagrant-hostmanager
 cp ../magehostdev/Vagrantfile Vagrantfile
-sed -i 's/http:\/\/magentohosting\.pro\/vagrant\/catalog\.json/file:\/\/\/Users\/jeroen\/vagrant\/magehostdev\/catalog_local\.json/g' Vagrantfile
+gsed -i 's/http:\/\/magentohosting\.pro\/vagrant\/catalog\.json/file:\/\/\/Users\/jeroen\/vagrant\/magehostdev\/catalog_local\.json/g' Vagrantfile
 vagrant up --provider virtualbox
 vagrant up --provider parallels
 ```

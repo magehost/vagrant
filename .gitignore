@@ -1,18 +1,17 @@
 # OS-specific
 .DS_Store
 
-# Editor swapfiles
+# Backup & Swapfiles
 .*.sw?
 *~
+*.20??????
 
 # Vagrant stuff
 acceptance_config.yml
-boxes/*
-*.box
-*.pvm
+/boxes/*
+/*.box
+/parallels/*.pvm
 /.vagrant
-/website/docs/.vagrant
-/website/www/.vagrant
 /vagrant-spec.config.rb
 
 # Bundler/Rubygems
@@ -46,13 +45,6 @@ doc/
 .ruby-version
 .rvmrc
 
-# Website: docs
-website/docs/.sass-cache
-website/docs/build
-website/docs/Rakefile
+# Web root
+/httpdocs
 
-# Website: www
-website/www/.sass-cache
-website/www/build
-website/www/Rakefile
-exec/

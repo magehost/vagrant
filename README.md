@@ -21,7 +21,6 @@ vagrant up
 ### Destruct previous test
 ```
 vagrant destroy -f
-
 rm -rf ~/.vagrant.d/boxes/magehost-VAGRANTSLASH-trusty-apache-php5
 rm -rf .bundle .vagrant httpdocs Vagrantfile
 ```
@@ -29,8 +28,10 @@ rm -rf .bundle .vagrant httpdocs Vagrantfile
 ### Install from local test
 ```
 vagrant plugin install vagrant-parallels vagrant-hostmanager
-cp ../magehostdev/Vagrantfile.local Vagrantfile
-vagrant up
+cp ../magehostdev/Vagrantfile Vagrantfile
+sed -i 's/http:\/\/magentohosting\.pro\/vagrant\/catalog\.json/file:\/\/\/Users\/jeroen\/vagrant\/magehostdev\/catalog_local\.json/g' Vagrantfile
+vagrant up --provider virtualbox
+vagrant up --provider parallels
 ```
 
 ### PACKAGE
@@ -52,8 +53,8 @@ tar -cvzf trusty-apache-php5_prl_v${VERSION}.box  box.pvm Vagrantfile metadata.j
 #### Clean up & Package - VirtualBox
 ```
 VERSION=9
+rm -f trusty-apache-php5_vb_v${VERSION}.box
 vagrant package --base magehostdev.pro --output trusty-apache-php5_vb_v${VERSION}.box
-#tar -cvzf trusty-apache-php5_v${VERSION}.box -C package  box.ovf box-disk1.vmdk Vagrantfile metadata.json
 ```
 
 #### Increase version + set checksum

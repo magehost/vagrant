@@ -4,10 +4,10 @@ Vagrant.configure(2) do |config|
     config.vm.define "magehost_web" do |node|
     end
     config.push.define "ftp" do |push|
-       push.secure = true
-       push.host = "sun.magehost.pro:2222"
-       push.username = "maghopro"
-       push.destination = "/data/vhosts/magentohosting.pro/httpdocs/vagrant"
-#       push.password = ""
+        push.secure = true
+        push.host = "sun.magehost.pro:2222"
+        push.username = "maghopro"
+#        push.destination = "/data/vhosts/magentohosting.pro/httpdocs/vagrant"
+        push.destination = "httpdocs/vagrant"
     end
 end

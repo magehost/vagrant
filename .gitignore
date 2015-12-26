@@ -9,7 +9,7 @@
 # Vagrant stuff
 acceptance_config.yml
 /boxes/*
-/*.box
+*.box
 /parallels/*.pvm
 /.vagrant
 /vagrant-spec.config.rb

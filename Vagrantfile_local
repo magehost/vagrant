@@ -1,0 +1,6 @@
+Vagrant.configure(2) do |config|
+    config.vm.box              = "magehost/trusty-apache-php5"
+    config.vm.box_url          = "file:///Users/jeroen/vagrant/magehostdev/catalog_local.json"
+    config.vm.define "magehost_web" do |node|
+    end
+end

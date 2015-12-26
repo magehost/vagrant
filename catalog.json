@@ -7,13 +7,13 @@
       "name": "parallels",
       "url": "https://magentohosting.pro/vagrant/trusty-apache-php5_prl_v9.box",
       "checksum_type": "md5",
-      "checksum": "47fa6b2401cc58637c0180686dc4d16a"
+      "checksum": "9c2556e2bdb82c6138e477688071b2b7"
     },
     {
       "name": "virtualbox",
       "url": "https://magentohosting.pro/vagrant/trusty-apache-php5_vb_v9.box",
       "checksum_type": "md5",
-      "checksum": "75384d3d15123b4fb1e2e4d1233f5b66"
+      "checksum": "321c1aee78a2a6f8e8e316fae2c5618f"
     }]
   }]
 }

@@ -54,7 +54,7 @@ tar -cvzf trusty-apache-php5_prl_v${VERSION}.box -C parallels box.pvm Vagrantfil
 ```
 VERSION=9
 rm -f trusty-apache-php5_vb_v${VERSION}.box
-vagrant package --base magehostdev.pro --output trusty-apache-php5_vb_v${VERSION}.box
+vagrant package --base magehostdev.pro --output trusty-apache-php5_vb_v${VERSION}.box --vagrantfile parallels/
 ```
 
 #### Increase version + set checksum
@@ -67,5 +67,5 @@ joe catalog.json catalog_local.json
 
 #### Upload
 ```
-scp -P2222 trusty-apache-php5_*_v${VERSION}.box catalog.json Vagrantfile maghopro@sun:httpdocs/vagrant/
+scp -P2222 trusty-apache-php5_*_v${VERSION}.box catalog.json Vagrantfile maghopro@sun:httpdocs/vagrant/Vagrantfile
 ```

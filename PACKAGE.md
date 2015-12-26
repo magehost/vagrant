@@ -9,7 +9,6 @@ rm -rf ~/.vagrant.d/boxes/magehost-VAGRANTSLASH-trusty-apache-php5 Vagrantfile h
 cp ../magehostdev/Vagrantfile .
 gsed -i 's/http:\/\/magentohosting\.pro\/vagrant\/catalog\.json/file:\/\/\/Users\/jeroen\/vagrant\/magehostdev\/catalog_local\.json/g' Vagrantfile
 vagrant up --provider virtualbox
-vagrant up --provider parallels
 ```
 
 ### PACKAGE
@@ -23,25 +22,25 @@ ssh -i vagrant-insecure.key vagrant@[IP]
 #### Package
 ```
 VERSION=10
-mv push/*.box push/old/
+mv *.box old/
 ####  Parallels
 rm -rf parallels/box.pvm/*.log parallels/box.pvm/*~ parallels/box.pvm/*.backup parallels/box.pvm/harddisk1.hdd/*.Backup parallels/box.pvm/*.app
 prl_disk_tool compact --hdd parallels/box.pvm/harddisk1.hdd
-tar -cvzf push/trusty-apache-php5_prl_v${VERSION}.box -C parallels box.pvm Vagrantfile metadata.json
+tar -cvzf trusty-apache-php5_prl_v${VERSION}.box -C parallels box.pvm Vagrantfile metadata.json
 ####  VirtualBox
 rm -f trusty-apache-php5_vb_v${VERSION}.box
-vagrant package --base magehostdev.pro --output push/trusty-apache-php5_vb_v${VERSION}.box
+vagrant package --base magehostdev.pro --output trusty-apache-php5_vb_v${VERSION}.box
 ```
 
 #### Increase version + set checksum
 In each JSON file you need to update the version and the filename. In `catalog.json` also update the md5 sum.
 ```
-md5 push/trusty-apache-php5_prl_v${VERSION}.box
-md5 push/trusty-apache-php5_vb_v${VERSION}.box
-joe push/catalog.json catalog_local.json
+md5 trusty-apache-php5_prl_v${VERSION}.box
+md5 trusty-apache-php5_vb_v${VERSION}.box
+joe catalog.json catalog_local.json
 ```
 
 #### Upload
 ```
-cd push; vagrant push ftp; cd ..
+vagrant push ftp
 ```

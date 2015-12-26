@@ -5,11 +5,11 @@
     "version": "9",
     "providers": [{
       "name": "virtualbox",
-      "url": "file:///Users/jeroen/vagrant/magehostdev/trusty-apache-php5_vb_v9.box"
+      "url": "file:///Users/jeroen/vagrant/magehostdev/push/trusty-apache-php5_vb_v9.box"
     },
     {
       "name": "parallels",
-      "url": "file:///Users/jeroen/vagrant/magehostdev/trusty-apache-php5_prl_v9.box"
+      "url": "file:///Users/jeroen/vagrant/magehostdev/push/trusty-apache-php5_prl_v9.box"
     }]
   }]
 }

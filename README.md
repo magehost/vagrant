@@ -25,13 +25,18 @@ rm -rf ~/.vagrant.d/boxes/magehost-VAGRANTSLASH-trusty-apache-php5
 rm -rf .bundle .vagrant httpdocs Vagrantfile
 ```
 
-### Install from local test
+### Install from local test - Parallels
 ```
 vagrant plugin install vagrant-parallels vagrant-hostmanager
-cp ../magehostdev/Vagrantfile Vagrantfile
-gsed -i 's/http:\/\/magentohosting\.pro\/vagrant\/catalog\.json/file:\/\/\/Users\/jeroen\/vagrant\/magehostdev\/catalog_local\.json/g' Vagrantfile
-vagrant up --provider virtualbox
+cp ../magehostdev/Vagrantfile_local Vagrantfile
 vagrant up --provider parallels
+```
+
+### Install from local test - VirtualBox
+```
+vagrant plugin install vagrant-hostmanager
+cp ../magehostdev/Vagrantfile_local Vagrantfile
+vagrant up --provider virtualbox
 ```
 
 ### PACKAGE

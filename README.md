@@ -7,17 +7,9 @@
 vagrant plugin install vagrant-parallels vagrant-hostmanager
 ```
 
-#### Install from Atlas
-```
-vagrant init magehost/trusty-apache-php5
-vagrant login
-
-vagrant up
-```
-
 #### Install from our web server:
 ```
-wget https://magentohosting.pro/vagrant/Vagrantfile
+wget http://vagrant.magehost.pro/Vagrantfile
 vagrant up
 ```
 

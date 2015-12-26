@@ -67,5 +67,5 @@ joe push/catalog.json catalog_local.json
 
 #### Upload
 ```
-cd push; vagrant push; cd ..
+cd push; vagrant push ftp; cd ..
 ```

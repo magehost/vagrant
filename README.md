@@ -21,18 +21,20 @@ wget https://magentohosting.pro/vagrant/Vagrantfile
 vagrant up
 ```
 
-### Install from local - Parallels
+### Destruct previous test
 ```
 vagrant destroy -f
-rm -rf ~/.vagrant.d/boxes/magehost-VAGRANTSLASH-trusty-apache-php5
+rm -rf ~/.vagrant.d/boxes/magehost-VAGRANTSLASH-trusty-apache-php5 Vagrantfile httpdocs .bundle .vagrant
+```
+
+### Install from local - Parallels
+```
 cp ../magehostdev/Vagrantfile_local Vagrantfile
 vagrant up --provider parallels
 ```
 
 ### Install from local - VirtualBox
 ```
-vagrant destroy -f
-rm -rf ~/.vagrant.d/boxes/magehost-VAGRANTSLASH-trusty-apache-php5
 cp ../magehostdev/Vagrantfile_local Vagrantfile
 vagrant up --provider virtualbox
 ```

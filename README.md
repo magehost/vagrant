@@ -2,9 +2,13 @@
 
 * First you need to [Install Vagrant](http://www.vagrantup.com/download)
 
-#### Install from Atlas
+#### Install Vagrant plugins
 ```
 vagrant plugin install vagrant-parallels vagrant-hostmanager
+```
+
+#### Install from Atlas
+```
 vagrant init magehost/trusty-apache-php5
 vagrant login
 
@@ -13,28 +17,27 @@ vagrant up
 
 #### Install from our web server:
 ```
-vagrant plugin install vagrant-parallels vagrant-hostmanager
 wget https://magentohosting.pro/vagrant/Vagrantfile
 vagrant up
 ```
 
 ### Destruct previous test
 ```
-vagrant destroy -f
-rm -rf ~/.vagrant.d/boxes/magehost-VAGRANTSLASH-trusty-apache-php5
 rm -rf .bundle .vagrant httpdocs Vagrantfile
 ```
 
-### Install from local test - Parallels
+### Install from local - Parallels
 ```
-vagrant plugin install vagrant-parallels vagrant-hostmanager
+vagrant destroy -f
+rm -rf ~/.vagrant.d/boxes/magehost-VAGRANTSLASH-trusty-apache-php5
 cp ../magehostdev/Vagrantfile_local Vagrantfile
 vagrant up --provider parallels
 ```
 
-### Install from local test - VirtualBox
+### Install from local - VirtualBox
 ```
-vagrant plugin install vagrant-hostmanager
+vagrant destroy -f
+rm -rf ~/.vagrant.d/boxes/magehost-VAGRANTSLASH-trusty-apache-php5
 cp ../magehostdev/Vagrantfile_local Vagrantfile
 vagrant up --provider virtualbox
 ```

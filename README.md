@@ -2,7 +2,7 @@
 
 * You need to [Install Vagrant](http://www.vagrantup.com/download)
 * Create a working directory and `cd` into it
-* Install Vagrant plugins: `vagrant plugin install vagrant-parallels vagrant-hostmanager`
+* Install Vagrant plugins: `vagrant plugin install vagrant-hostmanager vagrant-parallels`
 
 #### Install from our web server:
 ```

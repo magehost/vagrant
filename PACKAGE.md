@@ -24,7 +24,7 @@ ssh -i vagrant-insecure.key vagrant@[IP]
 VERSION=10
 mv *.box old/
 ####  Parallels
-rm -rf parallels/box.pvm/*.log parallels/box.pvm/*~ parallels/box.pvm/*.backup parallels/box.pvm/harddisk1.hdd/*.Backup parallels/box.pvm/*.app
+rm -rf parallels/box.pvm/*.{app,backup,log} parallels/box.pvm/*~ parallels/box.pvm/harddisk1.hdd/*.Backup
 prl_disk_tool compact --hdd parallels/box.pvm/harddisk1.hdd
 tar -cvzf trusty-apache-php5_prl_v${VERSION}.box -C parallels box.pvm Vagrantfile metadata.json
 ####  VirtualBox

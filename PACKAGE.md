@@ -4,16 +4,12 @@ vagrant destroy -f
 rm -rf ~/.vagrant.d/boxes/magehost-VAGRANTSLASH-trusty-apache-php5 Vagrantfile httpdocs .bundle .vagrant
 ```
 
-### Install from local - Parallels
+### Install from local
 ```
-cp ../magehostdev/Vagrantfile_local Vagrantfile
-vagrant up --provider parallels
-```
-
-### Install from local - VirtualBox
-```
-cp ../magehostdev/Vagrantfile_local Vagrantfile
+cp ../magehostdev/Vagrantfile .
+gsed -i 's/http:\/\/magentohosting\.pro\/vagrant\/catalog\.json/file:\/\/\/Users\/jeroen\/vagrant\/magehostdev\/catalog_local\.json/g' Vagrantfile
 vagrant up --provider virtualbox
+vagrant up --provider parallels
 ```
 
 ### PACKAGE
@@ -34,7 +30,7 @@ prl_disk_tool compact --hdd parallels/box.pvm/harddisk1.hdd
 tar -cvzf push/trusty-apache-php5_prl_v${VERSION}.box -C parallels box.pvm Vagrantfile metadata.json
 ####  VirtualBox
 rm -f trusty-apache-php5_vb_v${VERSION}.box
-vagrant package --base magehostdev.pro --output push/trusty-apache-php5_vb_v${VERSION}.box --vagrantfile parallels/Vagrantfile
+vagrant package --base magehostdev.pro --output push/trusty-apache-php5_vb_v${VERSION}.box
 ```
 
 #### Increase version + set checksum

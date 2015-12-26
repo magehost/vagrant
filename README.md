@@ -54,7 +54,7 @@ tar -cvzf trusty-apache-php5_prl_v${VERSION}.box -C parallels box.pvm Vagrantfil
 ```
 VERSION=9
 rm -f trusty-apache-php5_vb_v${VERSION}.box
-vagrant package --base magehostdev.pro --output trusty-apache-php5_vb_v${VERSION}.box --vagrantfile parallels/
+vagrant package --base magehostdev.pro --output trusty-apache-php5_vb_v${VERSION}.box --vagrantfile parallels/Vagrantfile
 ```
 
 #### Increase version + set checksum

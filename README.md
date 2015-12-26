@@ -47,7 +47,7 @@ open box.pvm
 ssh -i vagrant-insecure.key vagrant@[IP]
 ```
 
-#### Package - Parallels
+#### Package
 ```
 VERSION=9
 #

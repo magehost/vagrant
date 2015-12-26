@@ -9,7 +9,7 @@ vagrant plugin install vagrant-parallels vagrant-hostmanager
 
 #### Install from our web server:
 ```
-wget http://vagrant.magehost.pro/Vagrantfile
+wget http://vagrant.magehost.pro/Vagrantfile -O Vagrantfile
 vagrant up
 ```
 

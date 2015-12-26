@@ -26,7 +26,7 @@ ssh -i vagrant-insecure.key vagrant@[IP]
 
 #### Package
 ```
-VERSION=9
+VERSION=10
 mv push/*.box push/old/
 ####  Parallels
 rm -rf parallels/box.pvm/*.log parallels/box.pvm/*~ parallels/box.pvm/*.backup parallels/box.pvm/harddisk1.hdd/*.Backup parallels/box.pvm/*.app

@@ -59,7 +59,7 @@ prl_disk_tool compact --hdd parallels/box.pvm/harddisk1.hdd
 tar -cvzf trusty-apache-php5_prl_v${VERSION}.box -C parallels box.pvm Vagrantfile metadata.json
 ####  VirtualBox
 rm -f trusty-apache-php5_vb_v${VERSION}.box
-vagrant package --base magehostdev.pro --output trusty-apache-php5_vb_v${VERSION}.box --vagrantfile virtualbox/Vagrantfile
+vagrant package --base magehostdev.pro --output trusty-apache-php5_vb_v${VERSION}.box --vagrantfile parallels/Vagrantfile
 ```
 
 #### Increase version + set checksum

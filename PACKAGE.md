@@ -1,13 +1,15 @@
 ### Destruct previous test
 ```
 vagrant destroy -f
-rm -rf ~/.vagrant.d/boxes/magehost-VAGRANTSLASH-trusty-apache-php5 Vagrantfile httpdocs .bundle .vagrant
+rm -rf ~/.vagrant.d/boxes/magehost-VAGRANTSLASH-trusty-apache-php5 Vagrantfile catalog_local.json httpdocs .bundle .vagrant
 ```
 
 ### Install from local
 ```
+cp ../magehostdev/catalog.json catalog_local.json
+gsed -i 's/http:\/\/.*\/\(.*\)\.box/file:\/\/\/Users\/jeroen\/vagrant\/magehostdev\/\1.box/g' catalog_local.json
 cp ../magehostdev/Vagrantfile .
-gsed -i 's/http:\/\/magentohosting\.pro\/vagrant\/catalog\.json/file:\/\/\/Users\/jeroen\/vagrant\/magehostdev\/catalog_local\.json/g' Vagrantfile
+gsed -i 's/http:\/\/.*\/catalog\.json/file:\/\/catalog_local.json/g' Vagrantfile
 vagrant up --provider virtualbox
 ```
 

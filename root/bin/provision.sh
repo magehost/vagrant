@@ -8,7 +8,8 @@ home="/data/vhosts/magehostdev.pro"
 if [ -f $home/.my.cnf ]; then
     pass=$( cat $home/.my.cnf | grep '^password=' | cut -d'=' -f2 )
 else
-    pass=$( /usr/bin/makepasswd --chars=15 )
+    # workaround to make sure we have both numbers and letters
+    pass="$( /usr/bin/makepasswd --minchars=2 --maxchars=9 )A1$( /usr/bin/makepasswd --minchars=2 --maxchars=9 )"
     touch $home/.my.cnf
     chmod 600 $home/.my.cnf
     chown $user: $home/.my.cnf

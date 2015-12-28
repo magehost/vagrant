@@ -1,13 +1,15 @@
 ### Destruct previous test
 ```
 vagrant destroy -f
-rm -rf ~/.vagrant.d/boxes/magehost-VAGRANTSLASH-trusty-apache-php5 Vagrantfile httpdocs .bundle .vagrant
+rm -rf ~/.vagrant.d/boxes/magehost-VAGRANTSLASH-trusty-apache-php5 Vagrantfile catalog_local.json httpdocs .bundle .vagrant
 ```
 
 ### Install from local
 ```
+cp ../magehostdev/catalog.json catalog_local.json
+gsed -i 's/http:\/\/.*\/\(.*\)\.box/file:\/\/\/Users\/jeroen\/vagrant\/magehostdev\/\1.box/g' catalog_local.json
 cp ../magehostdev/Vagrantfile .
-gsed -i 's/http:\/\/magentohosting\.pro\/vagrant\/catalog\.json/file:\/\/\/Users\/jeroen\/vagrant\/magehostdev\/catalog_local\.json/g' Vagrantfile
+gsed -i 's/http:\/\/.*\/catalog\.json/file:\/\/catalog_local.json/g' Vagrantfile
 vagrant up --provider virtualbox
 ```
 
@@ -21,10 +23,10 @@ ssh -i vagrant-insecure.key vagrant@[IP]
 
 #### Package
 ```
-VERSION=10
+VERSION=11
 mv *.box old/
 ####  Parallels
-rm -rf parallels/box.pvm/*.log parallels/box.pvm/*~ parallels/box.pvm/*.backup parallels/box.pvm/harddisk1.hdd/*.Backup parallels/box.pvm/*.app
+rm -rf parallels/box.pvm/*.{app,backup,log} parallels/box.pvm/*~ parallels/box.pvm/harddisk1.hdd/*.Backup
 prl_disk_tool compact --hdd parallels/box.pvm/harddisk1.hdd
 tar -cvzf trusty-apache-php5_prl_v${VERSION}.box -C parallels box.pvm Vagrantfile metadata.json
 ####  VirtualBox

@@ -1,0 +1,51 @@
+<html>
+<head>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+</head>
+<body>
+<nav class="navbar navbar-default">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="https://magentohosting.pro/" target="_blank">MagentoHosting.pro Development Vagrant Box</a>
+    </div>
+  </div>
+</nav>
+<div class="container">
+  <div>&nbsp;</div>
+  <div class="panel panel-default">
+    <div class="panel-heading">
+      <h3 class="panel-title">Usage</h3>
+    </div>
+    <div class="panel-body">
+      <ul>
+        <li><a href="http://www.vagrantup.com/downloads.html" target="_blank">Install Vagrant</a></li>
+        <li>Install a provider
+          <ul>
+            <li><a href="http://www.parallels.com/eu/products/desktop/" target="_blank">Parallels Desktop Pro Edition</a>
+              <ul>
+                <li>Faster then VirtualBox</li>
+                <li>About $100 per year</li>
+                <li>Only for Mac</li>
+                <li>Install Vagrant plugin: <br /><code>vagrant plugin install vagrant-parallels</code></li>
+              </ul>
+            </li>
+            <li><a href="https://www.virtualbox.org/wiki/Downloads" target="_blank">VirtualBox</a>
+              <ul>
+                <li>Free</li>
+                <li>For Mac, Linux, Windows</li>                
+              </ul>
+            </li>
+          </ul>
+        </li>
+        <li>Create a working directory and <code>cd</code> into it</li>
+        <li>Install Vagrant hostmanager plugin: <br /><code>vagrant plugin install vagrant-hostmanager</code></li>
+        <li>Get Vagrantfile: <br /><code>curl -O http://vagrant.magehost.pro/Vagrantfile</code></li>
+        <li>Start VM: <br /><code>vagrant up</code></li>
+        <li>Connect via SSH: <br /><code>vagrant ssh</code></li>
+      </ul>
+    </div>
+  </div>
+</div>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+</body>
+</html>

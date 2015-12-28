@@ -31,6 +31,7 @@ Vagrant.configure(2) do |config|
         push.destination                 = "httpdocs"
         push.exclude                     = "old"
         push.exclude                     = "parallels"
+        push.exclude                     = "provisioning"
         push.exclude                     = "*~"
         push.exclude                     = ".*"
     end

@@ -23,26 +23,18 @@ ssh -i vagrant-insecure.key vagrant@[IP]
 
 #### Package
 ```
-VERSION=11
-mv *.box old/
+VERSION=12
+mv pub/*.box old/
 ####  Parallels
 rm -rf parallels/box.pvm/*.{app,backup,log} parallels/box.pvm/*~ parallels/box.pvm/harddisk1.hdd/*.Backup
 prl_disk_tool compact --hdd parallels/box.pvm/harddisk1.hdd
-tar -cvzf trusty-apache-php5_prl_v${VERSION}.box -C parallels box.pvm Vagrantfile metadata.json
+tar -cvzf pub/trusty-apache-php5_prl_v${VERSION}.box -C parallels box.pvm Vagrantfile metadata.json
 ####  VirtualBox
 rm -f trusty-apache-php5_vb_v${VERSION}.box
-vagrant package --base magehostdev.pro --output trusty-apache-php5_vb_v${VERSION}.box
-```
-
+vagrant package --base magehostdev.pro --output pub/trusty-apache-php5_vb_v${VERSION}.box
 #### Increase version + set checksum
-In each JSON file you need to update the version and the filename. In `catalog.json` also update the md5 sum.
-```
-md5 trusty-apache-php5_prl_v${VERSION}.box
-md5 trusty-apache-php5_vb_v${VERSION}.box
-joe catalog.json catalog_local.json
-```
-
-#### Upload
-```
-vagrant push ftp
+md5 pub/trusty-apache-php5_prl_v${VERSION}.box
+md5 pub/trusty-apache-php5_vb_v${VERSION}.box
+# In catalog.json you need to create a new version block with 3x updated version number and 2x md5 sum.
+joe pub/catalog.json && vagrant push ftp
 ```

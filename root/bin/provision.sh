@@ -32,6 +32,7 @@ EOF
     chmod 644 $webroot/index.php
 fi
 
+/bin/echo "vagrant:$pass" | /usr/sbin/chpasswd
 /usr/bin/mysql -u root -e "GRANT ALL ON *.* TO '$user'@'%' IDENTIFIED BY '$pass' WITH GRANT OPTION; FLUSH PRIVILEGES;"
 
 /usr/local/bin/n98-magerun.phar selfupdate -q
@@ -41,11 +42,16 @@ chown vagrant: $home/.n98-magerun.yaml
 sed -i "s/___PWD___/$pass/g" $home/.n98-magerun.yaml
 
 cat <<EOF
-MySQL User:       $user
-MySQL Password:   $pass    <== Save in a secure place.
-MySQL Database:   $user
+SSH + MySQL User:       $user
+SSH + MySQL Password:   $pass    <== Save in a secure place.
+      MySQL Database:   $user
+
+SSH Server:       $ip  port  22
+Web Server:       http://$ip/
 PhpMyAdmin:       http://$ip/mh_phpmyadmin/
 Tools installed:  git subversion n98-magerun modman vim joe nano dos2unix
+
+The 'httpdocs' dir on your workstation is mounted as webroot inside the Vagrant box.
 
 Example Magento install, execute on your local workstation:
   vagrant ssh -c  "n98-magerun.phar install --installationFolder=./httpdocs --dbHost=$ip --dbUser=vagrant --dbPass=$pass --dbName=vagrant --baseUrl=http://$ip/ --useDefaultConfigParams=yes"

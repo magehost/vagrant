@@ -1,7 +1,23 @@
 {
   "name": "magehost/trusty-apache-php5",
   "description": "MagentoHosting.pro configured Ubuntu 14.04 LTS 64-bit with Apache 2.4 and PHP-FPM 5.5.",
-  "versions": [{
+  "versions": [
+  {
+    "version": "12",
+    "providers": [{
+      "name": "parallels",
+      "url": "http://vagrant.magehost.pro/trusty-apache-php5_prl_v12.box",
+      "checksum_type": "md5",
+      "checksum": "55decd7799f029765dd4f81ee0f6d274"
+    },
+    {
+      "name": "virtualbox",
+      "url": "http://vagrant.magehost.pro/trusty-apache-php5_vb_v12.box",
+      "checksum_type": "md5",
+      "checksum": "635af617326cca223c5c3db51d21406d"
+    }]
+  },
+  {
     "version": "11",
     "providers": [{
       "name": "parallels",
@@ -30,5 +46,6 @@
       "checksum_type": "md5",
       "checksum": "d234646c50fa72f98e9049b844e37f39"
     }]
-  }]
+  }
+  ]
 }

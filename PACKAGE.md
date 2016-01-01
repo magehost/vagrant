@@ -6,7 +6,7 @@ rm -rf ~/.vagrant.d/boxes/magehost-VAGRANTSLASH-trusty-apache-php5 Vagrantfile c
 
 ### Install from local
 ```
-cp ../catalog.json catalog_local.json
+cp ../pub/catalog.json catalog_local.json
 gsed -i 's/http:\/\/.*\/\(.*\)\.box/file:\/\/\/Users\/jeroen\/vagrant\/magehostdev\/\1.box/g' catalog_local.json
 cp ../magehostdev/Vagrantfile .
 gsed -i 's/http:\/\/.*\/catalog\.json/file:\/\/catalog_local.json/g' Vagrantfile
@@ -36,4 +36,9 @@ md5 pub/trusty-apache-php5_prl_v${VERSION}.box
 md5 pub/trusty-apache-php5_vb_v${VERSION}.box
 # In catalog.json you need to create a new version block with 3x updated version number and 2x md5 sum.
 joe pub/catalog.json && vagrant push ftp
+```
+
+#### Prepare Mac
+```
+brew install coreutils gnu-sed mysql
 ```

@@ -8,7 +8,7 @@ rm -rf ~/.vagrant.d/boxes/magehost-VAGRANTSLASH-trusty-apache-php5 Vagrantfile c
 ```
 cp ../../pub/catalog.json catalog_local.json
 gsed -i 's/http:\/\/.*\/\(.*\)\.box/file:\/\/\/Users\/jeroen\/vagrant\/magehostdev\/\1.box/g' catalog_local.json
-cp ../../magehostdev/Vagrantfile .
+cp ../../pub/Vagrantfile .
 gsed -i 's/http:\/\/.*\/catalog\.json/file:\/\/catalog_local.json/g' Vagrantfile
 vagrant up --provider virtualbox
 ```

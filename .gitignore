@@ -1,55 +1,19 @@
-# OS-specific
-.DS_Store
-
-# Backup & Swapfiles
-.*.sw?
-*~
 *.20??????
-
-# Vagrant stuff
-acceptance_config.yml
-/boxes/*
 *.box
+*.iml
+*~
+.*.sw?
+.DS_Store
+.idea/*
+.project
+/.vagrant
+/boxes/*
+/httpdocs
+/parallels/box.pvm/*.app
 /parallels/box.pvm/*.hdd
 /parallels/box.pvm/*.log
-/parallels/box.pvm/*.app
-/virtualbox/*.vmdk
-/virtualbox/*-prev
-/virtualbox/Logs
-/.vagrant
+/tmp
 /vagrant-spec.config.rb
-
-# Bundler/Rubygems
-*.gem
-.bundle
-pkg/*
-tags
-/Gemfile.lock
-test/tmp/
-vendor/
-
-# Documentation
-_site/*
-.yardoc/
-doc/
-
-# Python
-*.pyc
-
-# Rubinius
-*.rbc
-
-# IDE junk
-.idea/*
-*.iml
-.project
-
-# Ruby Managers
-.rbenv
-.ruby-gemset
-.ruby-version
-.rvmrc
-
-# Web root
-/httpdocs
-
+/virtualbox/*-prev
+/virtualbox/*.vmdk
+/virtualbox/Logs

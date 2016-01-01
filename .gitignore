@@ -10,7 +10,12 @@
 acceptance_config.yml
 /boxes/*
 *.box
-/parallels/*.pvm
+/parallels/box.pvm/*.hdd
+/parallels/box.pvm/*.log
+/parallels/box.pvm/*.app
+/virtualbox/*.vmdk
+/virtualbox/*-prev
+/virtualbox/Logs
 /.vagrant
 /vagrant-spec.config.rb
 

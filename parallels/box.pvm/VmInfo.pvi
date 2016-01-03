@@ -13,7 +13,7 @@
             <ToolName>Tools Information Service host side</ToolName>
             <ToolVersion>11.1.2-32408</ToolVersion>
             <ToolInternalVersion>1.3</ToolInternalVersion>
-            <ToolDate>2016-01-01T16:47:35Z</ToolDate>
+            <ToolDate>2016-01-03T18:48:53Z</ToolDate>
             <ToolState>1</ToolState>
             <ToolData></ToolData>
             <ToolStringData>dummy</ToolStringData>
@@ -35,7 +35,7 @@
             <ToolName>Guest OS Information</ToolName>
             <ToolVersion>11.1.1-32312</ToolVersion>
             <ToolInternalVersion>1.0</ToolInternalVersion>
-            <ToolDate>2016-01-01T16:47:53Z</ToolDate>
+            <ToolDate>2016-01-03T18:49:11Z</ToolDate>
             <ToolState>1</ToolState>
             <ToolData>3c0100000900000040000000020000000010000000000000000000000000000000000000332e31392e302d32352d67656e657269630000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000</ToolData>
             <ToolStringData></ToolStringData>
@@ -46,7 +46,7 @@
             <ToolName>Tools Installation</ToolName>
             <ToolVersion>11.1.1-32312</ToolVersion>
             <ToolInternalVersion>1.0</ToolInternalVersion>
-            <ToolDate>2016-01-01T16:47:58Z</ToolDate>
+            <ToolDate>2016-01-03T18:59:07Z</ToolDate>
             <ToolState>2</ToolState>
             <ToolData>03000000</ToolData>
             <ToolStringData></ToolStringData>
@@ -57,7 +57,7 @@
             <ToolName>Desktop Utilities tool</ToolName>
             <ToolVersion>11.1.1-32312</ToolVersion>
             <ToolInternalVersion>1.0</ToolInternalVersion>
-            <ToolDate>2016-01-01T16:47:58Z</ToolDate>
+            <ToolDate>2016-01-03T18:59:07Z</ToolDate>
             <ToolState>2</ToolState>
             <ToolData>03000000</ToolData>
             <ToolStringData></ToolStringData>
@@ -68,7 +68,7 @@
             <ToolName>VmExec</ToolName>
             <ToolVersion>11.1.1-32312</ToolVersion>
             <ToolInternalVersion>1.0</ToolInternalVersion>
-            <ToolDate>2016-01-01T16:47:58Z</ToolDate>
+            <ToolDate>2016-01-03T18:59:07Z</ToolDate>
             <ToolState>2</ToolState>
             <ToolData></ToolData>
             <ToolStringData></ToolStringData>
@@ -90,7 +90,7 @@
             <ToolName>Graceful Shutdown tool</ToolName>
             <ToolVersion>11.1.1-32312</ToolVersion>
             <ToolInternalVersion>0.2</ToolInternalVersion>
-            <ToolDate>2016-01-01T16:47:58Z</ToolDate>
+            <ToolDate>2016-01-03T18:59:07Z</ToolDate>
             <ToolState>2</ToolState>
             <ToolData>0f000000</ToolData>
             <ToolStringData>stopped</ToolStringData>
@@ -101,7 +101,7 @@
             <ToolName>IP Changes monitor</ToolName>
             <ToolVersion>11.1.1-32312</ToolVersion>
             <ToolInternalVersion>1.0</ToolInternalVersion>
-            <ToolDate>2016-01-01T16:47:58Z</ToolDate>
+            <ToolDate>2016-01-03T18:59:07Z</ToolDate>
             <ToolState>2</ToolState>
             <ToolData></ToolData>
             <ToolStringData></ToolStringData>
@@ -112,7 +112,7 @@
             <ToolName>Parallels Tools Daemon</ToolName>
             <ToolVersion>11.1.1-32312</ToolVersion>
             <ToolInternalVersion>1.0</ToolInternalVersion>
-            <ToolDate>2016-01-01T16:47:58Z</ToolDate>
+            <ToolDate>2016-01-03T18:59:07Z</ToolDate>
             <ToolState>2</ToolState>
             <ToolData></ToolData>
             <ToolStringData>stopped</ToolStringData>
@@ -123,7 +123,7 @@
             <ToolName>Parallels Time Synchronization Tool</ToolName>
             <ToolVersion>11.1.1-32312</ToolVersion>
             <ToolInternalVersion>1.4</ToolInternalVersion>
-            <ToolDate>2016-01-01T16:47:58Z</ToolDate>
+            <ToolDate>2016-01-03T18:59:07Z</ToolDate>
             <ToolState>2</ToolState>
             <ToolData></ToolData>
             <ToolStringData>deinitialized</ToolStringData>
@@ -134,7 +134,7 @@
             <ToolName>Guest video device detection</ToolName>
             <ToolVersion>11.1.1-32312</ToolVersion>
             <ToolInternalVersion>1.0</ToolInternalVersion>
-            <ToolDate>2016-01-01T16:47:53Z</ToolDate>
+            <ToolDate>2016-01-03T18:49:11Z</ToolDate>
             <ToolState>1</ToolState>
             <ToolData>01000000000000000000000000000000</ToolData>
             <ToolStringData></ToolStringData>

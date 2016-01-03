@@ -3,18 +3,18 @@
    <AppVersion>11.1.2-32408</AppVersion>
    <ValidRc>0</ValidRc>
    <Identification dyn_lists="">
-      <VmUuid>{b9562e79-1fc4-4896-b41a-2c1057f19612}</VmUuid>
+      <VmUuid>{5796cb95-8730-45c8-b4f9-b03cace39d58}</VmUuid>
       <SourceVmUuid>{ae1d630c-9a8d-4ee6-98d7-fc534ef5f736}</SourceVmUuid>
       <LinkedVmUuid></LinkedVmUuid>
       <LinkedSnapshotUuid></LinkedSnapshotUuid>
       <VmName>magehostdev.pro</VmName>
-      <ServerUuid>{b3975781-8099-475f-96bf-da7a0fa588f7}</ServerUuid>
-      <LastServerUuid></LastServerUuid>
+      <ServerUuid></ServerUuid>
+      <LastServerUuid>{ade1ddae-1c19-440f-a9b0-e1796e998f8d}</LastServerUuid>
       <ServerHost></ServerHost>
       <VmFilesLocation>1</VmFilesLocation>
       <VmCreationDate>2015-12-22 20:20:07</VmCreationDate>
-      <VmUptimeStartDateTime>2016-01-01 16:47:32</VmUptimeStartDateTime>
-      <VmUptimeInSeconds>29</VmUptimeInSeconds>
+      <VmUptimeStartDateTime>2016-01-03 18:41:55</VmUptimeStartDateTime>
+      <VmUptimeInSeconds>1000</VmUptimeInSeconds>
       <EnvId>2033079993</EnvId>
    </Identification>
    <Security ParentalControlEnabled_patch="1" dyn_lists="">
@@ -524,9 +524,9 @@
          <Remote>0</Remote>
          <AdapterNumber>-1</AdapterNumber>
          <AdapterName>Default Adapter</AdapterName>
-         <MAC>001C42AE0D53</MAC>
+         <MAC>001C427F21D2</MAC>
          <TorbayUuid></TorbayUuid>
-         <HostMAC>001C425EDDCF</HostMAC>
+         <HostMAC>001C42F06FF3</HostMAC>
          <HostInterfaceName></HostInterfaceName>
          <Router>0</Router>
          <DHCPUseHostMac>2</DHCPUseHostMac>
@@ -580,9 +580,9 @@
          <Remote>0</Remote>
          <AdapterNumber>-1</AdapterNumber>
          <AdapterName>Host-Only Network</AdapterName>
-         <MAC>001C42E5BFF5</MAC>
+         <MAC>001C4287D922</MAC>
          <TorbayUuid></TorbayUuid>
-         <HostMAC>001C4249375D</HostMAC>
+         <HostMAC>001C421BF5F3</HostMAC>
          <HostInterfaceName></HostInterfaceName>
          <Router>0</Router>
          <DHCPUseHostMac>2</DHCPUseHostMac>

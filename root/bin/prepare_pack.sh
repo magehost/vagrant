@@ -11,6 +11,7 @@ rm -rf /root/.history /data/vhosts/magehostdev.pro/.history
 rm -rf /tmp/*
 rm -rf /data/vhosts/magehostdev.pro/tmp/*
 rm -rf /data/vhosts/magehostdev.pro/php-session/sess_*
+rm -f /data/mysql/*.err
 find / -name '*~' -delete
 find /var/log -type f -name '*.gz' -delete
 find /var/log -type f -exec truncate -s 0 {} \;

@@ -4,9 +4,9 @@ Vagrant.configure(2) do |config|
     config.vm.box_url                    = "http://vagrant.magehost.pro/catalog.json"
     config.vm.synced_folder              "httpdocs", "/data/vhosts/magehostdev.pro/httpdocs", create: true
     config.vm.provision                  "shell", inline: "/bin/bash /root/bin/provision.sh"
-    config.vm.hostname                   = 'magehostdev.pro'
+    config.vm.hostname                   = "magehostdev.pro"
     config.vm.network                    "private_network", type: "dhcp"
-    config.vm.define "magehost_app" do |node|
+    config.vm.define "dev" do |node|
     end
     if Vagrant.has_plugin?("vagrant-hostmanager")
         config.hostmanager.enabled           = true

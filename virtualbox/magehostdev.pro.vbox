@@ -6,10 +6,10 @@
 ** Use VBoxManage or the VirtualBox Manager GUI to make changes.
 -->
 <VirtualBox xmlns="http://www.innotek.de/VirtualBox-settings" version="1.15-macosx">
-  <Machine uuid="{85520f45-d43d-4d76-b26c-b608ea82ad45}" name="magehostdev.pro" OSType="Ubuntu_64" snapshotFolder="Snapshots" lastStateChange="2016-01-01T16:41:33Z">
+  <Machine uuid="{2173b87a-c489-4dd9-8366-ce1cae73122c}" name="magehostdev.pro" OSType="Ubuntu_64" snapshotFolder="Snapshots" lastStateChange="2016-01-03T19:13:15Z">
     <MediaRegistry>
       <HardDisks>
-        <HardDisk uuid="{ce569fce-d454-43ed-b477-27f69c1a9e5c}" location="box-disk.vmdk" format="VMDK" type="Normal"/>
+        <HardDisk uuid="{cb763fa7-8a16-426f-9e4f-c723a1fb5abb}" location="box-disk1.vmdk" format="VMDK" type="Normal"/>
       </HardDisks>
       <DVDImages/>
       <FloppyImages/>
@@ -60,7 +60,7 @@
         <DeviceFilters/>
       </USB>
       <Network>
-        <Adapter slot="0" enabled="true" MACAddress="080027DAEDE6" cable="true" speed="0" type="virtio">
+        <Adapter slot="0" enabled="true" MACAddress="080027F9D4AC" cable="true" speed="0" type="virtio">
           <DisabledModes>
             <BridgedInterface name="en0: Wi-Fi (AirPort)"/>
             <InternalNetwork name="intnet"/>
@@ -72,7 +72,7 @@
             <Alias logging="false" proxy-only="false" use-same-ports="false"/>
           </NAT>
         </Adapter>
-        <Adapter slot="1" enabled="true" MACAddress="080027199F69" cable="true" speed="0" type="virtio">
+        <Adapter slot="1" enabled="true" MACAddress="080027C71297" cable="true" speed="0" type="virtio">
           <DisabledModes>
             <NAT>
               <DNS pass-domain="true" use-proxy="false" use-host-resolver="false"/>
@@ -82,9 +82,9 @@
             <InternalNetwork name="intnet"/>
             <NATNetwork name="NatNetwork"/>
           </DisabledModes>
-          <HostOnlyInterface name="vboxnet1"/>
+          <HostOnlyInterface name="vboxnet0"/>
         </Adapter>
-        <Adapter slot="2" enabled="false" MACAddress="080027C36E0F" cable="true" speed="0" type="82540EM">
+        <Adapter slot="2" enabled="false" MACAddress="080027A31385" cable="true" speed="0" type="82540EM">
           <DisabledModes>
             <NAT>
               <DNS pass-domain="true" use-proxy="false" use-host-resolver="false"/>
@@ -92,7 +92,7 @@
             </NAT>
           </DisabledModes>
         </Adapter>
-        <Adapter slot="3" enabled="false" MACAddress="080027670300" cable="true" speed="0" type="82540EM">
+        <Adapter slot="3" enabled="false" MACAddress="0800275DB0AF" cable="true" speed="0" type="82540EM">
           <DisabledModes>
             <NAT>
               <DNS pass-domain="true" use-proxy="false" use-host-resolver="false"/>
@@ -100,7 +100,7 @@
             </NAT>
           </DisabledModes>
         </Adapter>
-        <Adapter slot="4" enabled="false" MACAddress="080027D97F18" cable="true" speed="0" type="82540EM">
+        <Adapter slot="4" enabled="false" MACAddress="080027F96A4A" cable="true" speed="0" type="82540EM">
           <DisabledModes>
             <NAT>
               <DNS pass-domain="true" use-proxy="false" use-host-resolver="false"/>
@@ -108,7 +108,7 @@
             </NAT>
           </DisabledModes>
         </Adapter>
-        <Adapter slot="5" enabled="false" MACAddress="0800272276A0" cable="true" speed="0" type="82540EM">
+        <Adapter slot="5" enabled="false" MACAddress="0800275448F3" cable="true" speed="0" type="82540EM">
           <DisabledModes>
             <NAT>
               <DNS pass-domain="true" use-proxy="false" use-host-resolver="false"/>
@@ -116,7 +116,7 @@
             </NAT>
           </DisabledModes>
         </Adapter>
-        <Adapter slot="6" enabled="false" MACAddress="080027A1558E" cable="true" speed="0" type="82540EM">
+        <Adapter slot="6" enabled="false" MACAddress="080027A20584" cable="true" speed="0" type="82540EM">
           <DisabledModes>
             <NAT>
               <DNS pass-domain="true" use-proxy="false" use-host-resolver="false"/>
@@ -124,7 +124,7 @@
             </NAT>
           </DisabledModes>
         </Adapter>
-        <Adapter slot="7" enabled="false" MACAddress="080027FB9E23" cable="true" speed="0" type="82540EM">
+        <Adapter slot="7" enabled="false" MACAddress="0800277BD6F9" cable="true" speed="0" type="82540EM">
           <DisabledModes>
             <NAT>
               <DNS pass-domain="true" use-proxy="false" use-host-resolver="false"/>
@@ -132,7 +132,7 @@
             </NAT>
           </DisabledModes>
         </Adapter>
-        <Adapter slot="8" enabled="false" MACAddress="080027356BDD" cable="true" speed="0" type="Am79C973">
+        <Adapter slot="8" enabled="false" MACAddress="080027EF98B5" cable="true" speed="0" type="Am79C973">
           <DisabledModes>
             <NAT>
               <DNS pass-domain="true" use-proxy="false" use-host-resolver="false"/>
@@ -140,7 +140,7 @@
             </NAT>
           </DisabledModes>
         </Adapter>
-        <Adapter slot="9" enabled="false" MACAddress="080027E9D1C5" cable="true" speed="0" type="Am79C973">
+        <Adapter slot="9" enabled="false" MACAddress="0800271A5FFA" cable="true" speed="0" type="Am79C973">
           <DisabledModes>
             <NAT>
               <DNS pass-domain="true" use-proxy="false" use-host-resolver="false"/>
@@ -148,7 +148,7 @@
             </NAT>
           </DisabledModes>
         </Adapter>
-        <Adapter slot="10" enabled="false" MACAddress="0800273E34E1" cable="true" speed="0" type="Am79C973">
+        <Adapter slot="10" enabled="false" MACAddress="0800271CF412" cable="true" speed="0" type="Am79C973">
           <DisabledModes>
             <NAT>
               <DNS pass-domain="true" use-proxy="false" use-host-resolver="false"/>
@@ -156,7 +156,7 @@
             </NAT>
           </DisabledModes>
         </Adapter>
-        <Adapter slot="11" enabled="false" MACAddress="0800276AAFDB" cable="true" speed="0" type="Am79C973">
+        <Adapter slot="11" enabled="false" MACAddress="0800276D138D" cable="true" speed="0" type="Am79C973">
           <DisabledModes>
             <NAT>
               <DNS pass-domain="true" use-proxy="false" use-host-resolver="false"/>
@@ -164,7 +164,7 @@
             </NAT>
           </DisabledModes>
         </Adapter>
-        <Adapter slot="12" enabled="false" MACAddress="0800275D4509" cable="true" speed="0" type="Am79C973">
+        <Adapter slot="12" enabled="false" MACAddress="080027ACFD99" cable="true" speed="0" type="Am79C973">
           <DisabledModes>
             <NAT>
               <DNS pass-domain="true" use-proxy="false" use-host-resolver="false"/>
@@ -172,7 +172,7 @@
             </NAT>
           </DisabledModes>
         </Adapter>
-        <Adapter slot="13" enabled="false" MACAddress="080027E3187E" cable="true" speed="0" type="Am79C973">
+        <Adapter slot="13" enabled="false" MACAddress="08002723716C" cable="true" speed="0" type="Am79C973">
           <DisabledModes>
             <NAT>
               <DNS pass-domain="true" use-proxy="false" use-host-resolver="false"/>
@@ -180,7 +180,7 @@
             </NAT>
           </DisabledModes>
         </Adapter>
-        <Adapter slot="14" enabled="false" MACAddress="08002795FB6C" cable="true" speed="0" type="Am79C973">
+        <Adapter slot="14" enabled="false" MACAddress="080027902D56" cable="true" speed="0" type="Am79C973">
           <DisabledModes>
             <NAT>
               <DNS pass-domain="true" use-proxy="false" use-host-resolver="false"/>
@@ -188,7 +188,7 @@
             </NAT>
           </DisabledModes>
         </Adapter>
-        <Adapter slot="15" enabled="false" MACAddress="0800275AA653" cable="true" speed="0" type="Am79C973">
+        <Adapter slot="15" enabled="false" MACAddress="080027A427C3" cable="true" speed="0" type="Am79C973">
           <DisabledModes>
             <NAT>
               <DNS pass-domain="true" use-proxy="false" use-host-resolver="false"/>
@@ -196,7 +196,7 @@
             </NAT>
           </DisabledModes>
         </Adapter>
-        <Adapter slot="16" enabled="false" MACAddress="08002731D70F" cable="true" speed="0" type="Am79C973">
+        <Adapter slot="16" enabled="false" MACAddress="0800274DBCAC" cable="true" speed="0" type="Am79C973">
           <DisabledModes>
             <NAT>
               <DNS pass-domain="true" use-proxy="false" use-host-resolver="false"/>
@@ -204,7 +204,7 @@
             </NAT>
           </DisabledModes>
         </Adapter>
-        <Adapter slot="17" enabled="false" MACAddress="080027968186" cable="true" speed="0" type="Am79C973">
+        <Adapter slot="17" enabled="false" MACAddress="080027D24AA4" cable="true" speed="0" type="Am79C973">
           <DisabledModes>
             <NAT>
               <DNS pass-domain="true" use-proxy="false" use-host-resolver="false"/>
@@ -212,7 +212,7 @@
             </NAT>
           </DisabledModes>
         </Adapter>
-        <Adapter slot="18" enabled="false" MACAddress="08002717AB49" cable="true" speed="0" type="Am79C973">
+        <Adapter slot="18" enabled="false" MACAddress="0800275D9AE9" cable="true" speed="0" type="Am79C973">
           <DisabledModes>
             <NAT>
               <DNS pass-domain="true" use-proxy="false" use-host-resolver="false"/>
@@ -220,7 +220,7 @@
             </NAT>
           </DisabledModes>
         </Adapter>
-        <Adapter slot="19" enabled="false" MACAddress="080027546BA3" cable="true" speed="0" type="Am79C973">
+        <Adapter slot="19" enabled="false" MACAddress="08002774011E" cable="true" speed="0" type="Am79C973">
           <DisabledModes>
             <NAT>
               <DNS pass-domain="true" use-proxy="false" use-host-resolver="false"/>
@@ -228,7 +228,7 @@
             </NAT>
           </DisabledModes>
         </Adapter>
-        <Adapter slot="20" enabled="false" MACAddress="08002701F422" cable="true" speed="0" type="Am79C973">
+        <Adapter slot="20" enabled="false" MACAddress="080027F6BF8E" cable="true" speed="0" type="Am79C973">
           <DisabledModes>
             <NAT>
               <DNS pass-domain="true" use-proxy="false" use-host-resolver="false"/>
@@ -236,7 +236,7 @@
             </NAT>
           </DisabledModes>
         </Adapter>
-        <Adapter slot="21" enabled="false" MACAddress="080027CDCA87" cable="true" speed="0" type="Am79C973">
+        <Adapter slot="21" enabled="false" MACAddress="080027303177" cable="true" speed="0" type="Am79C973">
           <DisabledModes>
             <NAT>
               <DNS pass-domain="true" use-proxy="false" use-host-resolver="false"/>
@@ -244,7 +244,7 @@
             </NAT>
           </DisabledModes>
         </Adapter>
-        <Adapter slot="22" enabled="false" MACAddress="08002782348F" cable="true" speed="0" type="Am79C973">
+        <Adapter slot="22" enabled="false" MACAddress="080027086474" cable="true" speed="0" type="Am79C973">
           <DisabledModes>
             <NAT>
               <DNS pass-domain="true" use-proxy="false" use-host-resolver="false"/>
@@ -252,7 +252,7 @@
             </NAT>
           </DisabledModes>
         </Adapter>
-        <Adapter slot="23" enabled="false" MACAddress="080027A28E82" cable="true" speed="0" type="Am79C973">
+        <Adapter slot="23" enabled="false" MACAddress="080027F11FFA" cable="true" speed="0" type="Am79C973">
           <DisabledModes>
             <NAT>
               <DNS pass-domain="true" use-proxy="false" use-host-resolver="false"/>
@@ -260,7 +260,7 @@
             </NAT>
           </DisabledModes>
         </Adapter>
-        <Adapter slot="24" enabled="false" MACAddress="0800273B2B37" cable="true" speed="0" type="Am79C973">
+        <Adapter slot="24" enabled="false" MACAddress="0800274E37F3" cable="true" speed="0" type="Am79C973">
           <DisabledModes>
             <NAT>
               <DNS pass-domain="true" use-proxy="false" use-host-resolver="false"/>
@@ -268,7 +268,7 @@
             </NAT>
           </DisabledModes>
         </Adapter>
-        <Adapter slot="25" enabled="false" MACAddress="0800275E5F11" cable="true" speed="0" type="Am79C973">
+        <Adapter slot="25" enabled="false" MACAddress="080027A2F446" cable="true" speed="0" type="Am79C973">
           <DisabledModes>
             <NAT>
               <DNS pass-domain="true" use-proxy="false" use-host-resolver="false"/>
@@ -276,7 +276,7 @@
             </NAT>
           </DisabledModes>
         </Adapter>
-        <Adapter slot="26" enabled="false" MACAddress="080027F5656F" cable="true" speed="0" type="Am79C973">
+        <Adapter slot="26" enabled="false" MACAddress="080027AFA7B0" cable="true" speed="0" type="Am79C973">
           <DisabledModes>
             <NAT>
               <DNS pass-domain="true" use-proxy="false" use-host-resolver="false"/>
@@ -284,7 +284,7 @@
             </NAT>
           </DisabledModes>
         </Adapter>
-        <Adapter slot="27" enabled="false" MACAddress="0800272B9B29" cable="true" speed="0" type="Am79C973">
+        <Adapter slot="27" enabled="false" MACAddress="080027016E10" cable="true" speed="0" type="Am79C973">
           <DisabledModes>
             <NAT>
               <DNS pass-domain="true" use-proxy="false" use-host-resolver="false"/>
@@ -292,7 +292,7 @@
             </NAT>
           </DisabledModes>
         </Adapter>
-        <Adapter slot="28" enabled="false" MACAddress="080027243747" cable="true" speed="0" type="Am79C973">
+        <Adapter slot="28" enabled="false" MACAddress="0800273DBE77" cable="true" speed="0" type="Am79C973">
           <DisabledModes>
             <NAT>
               <DNS pass-domain="true" use-proxy="false" use-host-resolver="false"/>
@@ -300,7 +300,7 @@
             </NAT>
           </DisabledModes>
         </Adapter>
-        <Adapter slot="29" enabled="false" MACAddress="0800279DE6FA" cable="true" speed="0" type="Am79C973">
+        <Adapter slot="29" enabled="false" MACAddress="0800278A78E4" cable="true" speed="0" type="Am79C973">
           <DisabledModes>
             <NAT>
               <DNS pass-domain="true" use-proxy="false" use-host-resolver="false"/>
@@ -308,7 +308,7 @@
             </NAT>
           </DisabledModes>
         </Adapter>
-        <Adapter slot="30" enabled="false" MACAddress="0800276CF0D0" cable="true" speed="0" type="Am79C973">
+        <Adapter slot="30" enabled="false" MACAddress="0800272FE951" cable="true" speed="0" type="Am79C973">
           <DisabledModes>
             <NAT>
               <DNS pass-domain="true" use-proxy="false" use-host-resolver="false"/>
@@ -316,7 +316,7 @@
             </NAT>
           </DisabledModes>
         </Adapter>
-        <Adapter slot="31" enabled="false" MACAddress="080027BDAA04" cable="true" speed="0" type="Am79C973">
+        <Adapter slot="31" enabled="false" MACAddress="080027A78436" cable="true" speed="0" type="Am79C973">
           <DisabledModes>
             <NAT>
               <DNS pass-domain="true" use-proxy="false" use-host-resolver="false"/>
@@ -324,7 +324,7 @@
             </NAT>
           </DisabledModes>
         </Adapter>
-        <Adapter slot="32" enabled="false" MACAddress="0800276B417E" cable="true" speed="0" type="Am79C973">
+        <Adapter slot="32" enabled="false" MACAddress="080027D63056" cable="true" speed="0" type="Am79C973">
           <DisabledModes>
             <NAT>
               <DNS pass-domain="true" use-proxy="false" use-host-resolver="false"/>
@@ -332,7 +332,7 @@
             </NAT>
           </DisabledModes>
         </Adapter>
-        <Adapter slot="33" enabled="false" MACAddress="080027A849C6" cable="true" speed="0" type="Am79C973">
+        <Adapter slot="33" enabled="false" MACAddress="080027B28052" cable="true" speed="0" type="Am79C973">
           <DisabledModes>
             <NAT>
               <DNS pass-domain="true" use-proxy="false" use-host-resolver="false"/>
@@ -340,7 +340,7 @@
             </NAT>
           </DisabledModes>
         </Adapter>
-        <Adapter slot="34" enabled="false" MACAddress="080027904D4B" cable="true" speed="0" type="Am79C973">
+        <Adapter slot="34" enabled="false" MACAddress="080027D7C9B6" cable="true" speed="0" type="Am79C973">
           <DisabledModes>
             <NAT>
               <DNS pass-domain="true" use-proxy="false" use-host-resolver="false"/>
@@ -348,7 +348,7 @@
             </NAT>
           </DisabledModes>
         </Adapter>
-        <Adapter slot="35" enabled="false" MACAddress="0800272F555B" cable="true" speed="0" type="Am79C973">
+        <Adapter slot="35" enabled="false" MACAddress="08002779F11E" cable="true" speed="0" type="Am79C973">
           <DisabledModes>
             <NAT>
               <DNS pass-domain="true" use-proxy="false" use-host-resolver="false"/>
@@ -388,7 +388,7 @@
         <GuestProperty name="/VirtualBox/GuestInfo/OS/Product" value="Linux" timestamp="1451320894271508000" flags=""/>
         <GuestProperty name="/VirtualBox/GuestInfo/OS/Release" value="3.19.0-25-generic" timestamp="1451320894272115000" flags=""/>
         <GuestProperty name="/VirtualBox/GuestInfo/OS/Version" value="#26~14.04.1-Ubuntu SMP Fri Jul 24 21:16:20 UTC 2015" timestamp="1451320894272364000" flags=""/>
-        <GuestProperty name="/VirtualBox/HostInfo/GUI/LanguageID" value="en_US" timestamp="1451321426484453000" flags=""/>
+        <GuestProperty name="/VirtualBox/HostInfo/GUI/LanguageID" value="en_US" timestamp="1451848110887389000" flags=""/>
       </GuestProperties>
     </Hardware>
     <StorageControllers>
@@ -397,7 +397,7 @@
       </StorageController>
       <StorageController name="SATA" type="AHCI" PortCount="1" useHostIOCache="true" Bootable="true" IDE0MasterEmulationPort="0" IDE0SlaveEmulationPort="1" IDE1MasterEmulationPort="2" IDE1SlaveEmulationPort="3">
         <AttachedDevice type="HardDisk" hotpluggable="true" port="0" device="0">
-          <Image uuid="{ce569fce-d454-43ed-b477-27f69c1a9e5c}"/>
+          <Image uuid="{cb763fa7-8a16-426f-9e4f-c723a1fb5abb}"/>
         </AttachedDevice>
       </StorageController>
     </StorageControllers>

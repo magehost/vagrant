@@ -1,0 +1,20 @@
+commands:
+  N98\Magento\Command\Installer\InstallCommand:
+    installation:
+      defaults:
+        currency: EUR
+        locale: en_US
+        timezone: Europe/Amsterdam
+        use_secure: no  
+        use_rewrites: yes  
+        session_save: files  
+        admin_username: vagrant
+        admin_password: ___PWD___ 
+        admin_frontname: backend  
+        admin_firstname: Vagrant  
+        admin_lastname: Admin
+        admin_email: vagrant@magehost.pro
+detect:
+  subFolders:
+    - httpdocs
+    - magento

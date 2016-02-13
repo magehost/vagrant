@@ -6,6 +6,7 @@ git -C /data/repos/vagrant pull
 /root/bin/updatetools.sh
 apt-get update
 apt-get -y upgrade
+apt-get -y upgrade linux-generic linux-headers-generic linux-image-generic
 apt-get clean
 rm -f /data/mysql/ib_logfile* /data/mysql_log/*
 rm -rf /root/.history /data/vhosts/magehostdev.pro/.history

@@ -23,7 +23,7 @@ ssh -i vagrant-insecure.key vagrant@[IP]
 
 #### Package
 ```
-VERSION=15
+VERSION=16
 mv pub/*.box old/
 ####  Parallels
 prlctl unregister magehostdev.pro

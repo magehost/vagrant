@@ -6,6 +6,9 @@ rm -rf ~/.vagrant.d/boxes/magehost-VAGRANTSLASH-trusty-apache-php5 Vagrantfile c
 
 ### Install from local
 ```
+rm -rf tmp/testvb
+mkdir -p tmp/testvb
+cd tmp/testvb
 cp ../../pub/catalog.json catalog_local.json
 gsed -i 's/http:\/\/.*\/\(.*\)\.box/file:\/\/\/Users\/jeroen\/vagrant\/magehostdev\/\1.box/g' catalog_local.json
 cp ../../pub/Vagrantfile .

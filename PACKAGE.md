@@ -37,9 +37,7 @@ tar -cvzf pub/trusty-apache-php5_vmw_v${VERSION}.box -C virtualbox.vmwarevm mage
 ####  VirtualBox
 vagrant package --base magehostdev.pro --output pub/trusty-apache-php5_vb_v${VERSION}.box
 #### Increase version + set checksum
-md5 pub/trusty-apache-php5_prl_v${VERSION}.box
-md5 pub/trusty-apache-php5_vb_v${VERSION}.box
-md5 pub/trusty-apache-php5_vmw_v${VERSION}.box
+md5 pub/*_v${VERSION}.box
 # In catalog.json you need to create a new version block with 3x updated version number and 2x md5 sum.
 joe pub/catalog.json && vagrant push ftp
 ```

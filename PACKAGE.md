@@ -23,13 +23,17 @@ ssh -i vagrant-insecure.key vagrant@[IP]
 
 #### Package
 ```
-VERSION=16
+VERSION=17
 mv pub/*.box old/
 ####  Parallels
 prlctl unregister magehostdev.pro
 rm -rf parallels/box.pvm/*.{app,backup,log} parallels/box.pvm/*~ parallels/box.pvm/*.hdd/*.Backup
 prl_disk_tool compact --hdd parallels/box.pvm/*.hdd
 tar -cvzf pub/trusty-apache-php5_prl_v${VERSION}.box -C parallels box.pvm Vagrantfile metadata.json
+####  VMware
+virtualbox.vmwarevm/vmware-vdiskmanager -d *.vmdk
+virtualbox.vmwarevm/vmware-vdiskmanager -k *.vmdk
+tar -cvzf pub/trusty-apache-php5_vmw_v${VERSION}.box -C virtualbox.vmwarevm *.nvram *.vmdk *.vmsd *.vmx *.vmxf 
 ####  VirtualBox
 vagrant package --base magehostdev.pro --output pub/trusty-apache-php5_vb_v${VERSION}.box
 #### Increase version + set checksum

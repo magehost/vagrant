@@ -12,8 +12,12 @@
 /parallels/box.pvm/*.app
 /parallels/box.pvm/*.hdd
 /parallels/box.pvm/*.log
+/parallels/box.pvm/*.backup
 /tmp
 /vagrant-spec.config.rb
-/virtualbox/*-prev
-/virtualbox/*.vmdk
-/virtualbox/Logs
+/virtualbox.vmwarevm/*-prev
+/virtualbox.vmwarevm/*.vmdk
+/virtualbox.vmwarevm/Logs
+/virtualbox.vmwarevm/*.log
+/old/*
+!/old/.gitignore

@@ -3,6 +3,72 @@
   "description": "MagentoHosting.pro configured Ubuntu 14.04 LTS 64-bit with Apache 2.4 and PHP-FPM 5.5.",
   "versions": [
   {
+    "version": "17",
+    "providers": [{
+      "name": "parallels",
+      "url": "http://vagrant.magehost.pro/trusty-apache-php5_prl_v17.box",
+      "checksum_type": "md5",
+      "checksum": "8443ab0ae5423679eb21e42882cf5bd5"
+    },
+    {
+      "name": "virtualbox",
+      "url": "http://vagrant.magehost.pro/trusty-apache-php5_vb_v17.box",
+      "checksum_type": "md5",
+      "checksum": "2560ace5e3efa20ff0f78f2b2b542922"
+    },
+    {
+      "name": "vmware",
+      "url": "http://vagrant.magehost.pro/trusty-apache-php5_vmw_v17.box",
+      "checksum_type": "md5",
+      "checksum": "ff47d9da23303d07f0deb5f8b631226f"
+    }]
+  },
+  {
+    "version": "16",
+    "providers": [{
+      "name": "parallels",
+      "url": "http://vagrant.magehost.pro/trusty-apache-php5_prl_v16.box",
+      "checksum_type": "md5",
+      "checksum": "5394e68d2224ba789245c6737d5d67c6"
+    },
+    {
+      "name": "virtualbox",
+      "url": "http://vagrant.magehost.pro/trusty-apache-php5_vb_v16.box",
+      "checksum_type": "md5",
+      "checksum": "77edc99eb8bf7f58845693ce2198d151"
+    }]
+  },
+  {
+    "version": "15",
+    "providers": [{
+      "name": "parallels",
+      "url": "http://vagrant.magehost.pro/trusty-apache-php5_prl_v15.box",
+      "checksum_type": "md5",
+      "checksum": "131d38865bc37cb4d0a086ba487831ac"
+    },
+    {
+      "name": "virtualbox",
+      "url": "http://vagrant.magehost.pro/trusty-apache-php5_vb_v15.box",
+      "checksum_type": "md5",
+      "checksum": "fbda29750e791dc5cda9f545f5fc8299"
+    }]
+  },
+  {
+    "version": "14",
+    "providers": [{
+      "name": "parallels",
+      "url": "http://vagrant.magehost.pro/trusty-apache-php5_prl_v14.box",
+      "checksum_type": "md5",
+      "checksum": "3c2398780d2fc16c2d0b6e037d24b6cc"
+    },
+    {
+      "name": "virtualbox",
+      "url": "http://vagrant.magehost.pro/trusty-apache-php5_vb_v14.box",
+      "checksum_type": "md5",
+      "checksum": "4b5d1e0cd73d7cb577841efd0a4e7464"
+    }]
+  },
+  {
     "version": "13",
     "providers": [{
       "name": "parallels",

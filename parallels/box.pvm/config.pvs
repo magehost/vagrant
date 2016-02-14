@@ -13,9 +13,9 @@
       <ServerHost></ServerHost>
       <VmFilesLocation>1</VmFilesLocation>
       <VmCreationDate>2015-12-22 20:20:07</VmCreationDate>
-      <VmUptimeStartDateTime>2016-01-03 18:41:55</VmUptimeStartDateTime>
-      <VmUptimeInSeconds>1000</VmUptimeInSeconds>
-      <EnvId>2033079993</EnvId>
+      <VmUptimeStartDateTime>2016-02-13 21:36:46</VmUptimeStartDateTime>
+      <VmUptimeInSeconds>1206</VmUptimeInSeconds>
+      <EnvId>1439405655</EnvId>
    </Identification>
    <Security ParentalControlEnabled_patch="1" dyn_lists="">
       <AccessControlList dyn_lists="AccessControl"/>
@@ -34,7 +34,7 @@
          <IsTemplate>0</IsTemplate>
          <CustomProperty></CustomProperty>
          <SwapDir></SwapDir>
-         <VmColor>0</VmColor>
+         <VmColor>5940223</VmColor>
          <Profile Custom_patch="1" dyn_lists="">
             <Type>0</Type>
             <Custom>0</Custom>
@@ -51,36 +51,36 @@
          <WindowMode>5</WindowMode>
          <LockInFullScreenMode>0</LockInFullScreenMode>
          <StartInDetachedWindow>0</StartInDetachedWindow>
-         <BootingOrder dyn_lists="BootDevice 28">
-            <BootDevice id="23" dyn_lists="">
+         <BootingOrder dyn_lists="BootDevice 66">
+            <BootDevice id="61" dyn_lists="">
+               <Index>0</Index>
+               <Type>6</Type>
+               <BootingNumber>0</BootingNumber>
+               <InUse>1</InUse>
+            </BootDevice>
+            <BootDevice id="62" dyn_lists="">
                <Index>1</Index>
                <Type>8</Type>
                <BootingNumber>3</BootingNumber>
                <InUse>0</InUse>
             </BootDevice>
-            <BootDevice id="24" dyn_lists="">
+            <BootDevice id="63" dyn_lists="">
                <Index>0</Index>
                <Type>8</Type>
                <BootingNumber>2</BootingNumber>
                <InUse>0</InUse>
             </BootDevice>
-            <BootDevice id="25" dyn_lists="">
+            <BootDevice id="64" dyn_lists="">
                <Index>0</Index>
                <Type>15</Type>
                <BootingNumber>4</BootingNumber>
                <InUse>0</InUse>
             </BootDevice>
-            <BootDevice id="26" dyn_lists="">
+            <BootDevice id="65" dyn_lists="">
                <Index>0</Index>
                <Type>5</Type>
                <BootingNumber>1</BootingNumber>
                <InUse>0</InUse>
-            </BootDevice>
-            <BootDevice id="27" dyn_lists="">
-               <Index>0</Index>
-               <Type>6</Type>
-               <BootingNumber>0</BootingNumber>
-               <InUse>1</InUse>
             </BootDevice>
          </BootingOrder>
          <AllowSelectBootDevice>0</AllowSelectBootDevice>
@@ -416,7 +416,7 @@
          <SavedOptions dyn_lists="PauseIdleVM 0 AdaptiveHV 0 OptimizePower 0 AutoprotectOptions 0 NetAdapter 0"/>
       </TravelOptions>
    </Settings>
-   <Hardware dyn_lists="Fdd 0 CdRom 1 Hdd 2 Serial 0 Parallel 0 Printer 0 NetworkAdapter 2 Sound 1 USB 1 PciVideoAdapter 0 GenericDevice 0 GenericPciDevice 0 GenericScsiDevice 0">
+   <Hardware dyn_lists="Fdd 0 CdRom 1 Hdd 6 Serial 0 Parallel 0 Printer 0 NetworkAdapter 2 Sound 1 USB 1 PciVideoAdapter 0 GenericDevice 0 GenericPciDevice 0 GenericScsiDevice 0">
       <Cpu EnableVTxSupport_patch="1" dyn_lists="">
          <Number>2</Number>
          <Mode>0</Mode>
@@ -480,10 +480,10 @@
       <CdRom id="0" dyn_lists="">
          <Index>0</Index>
          <Enabled>1</Enabled>
-         <Connected>0</Connected>
+         <Connected>1</Connected>
          <EmulatedType>1</EmulatedType>
-         <SystemName></SystemName>
-         <UserFriendlyName></UserFriendlyName>
+         <SystemName>/Applications/Parallels Desktop.app/Contents/Resources/Tools/prl-tools-lin.iso</SystemName>
+         <UserFriendlyName>/Applications/Parallels Desktop.app/Contents/Resources/Tools/prl-tools-lin.iso</UserFriendlyName>
          <Remote>0</Remote>
          <InterfaceType>2</InterfaceType>
          <StackIndex>1</StackIndex>
@@ -491,25 +491,25 @@
          <SubType>0</SubType>
          <DeviceDescription></DeviceDescription>
       </CdRom>
-      <Hdd id="1" dyn_lists="Partition 0">
-         <Uuid>{627e5a70-6224-4422-943d-4c6ecad0b1ce}</Uuid>
+      <Hdd id="5" dyn_lists="Partition 0">
+         <Uuid>{c447c0b0-1c75-444d-8e51-c3451e57a180}</Uuid>
          <Index>0</Index>
          <Enabled>1</Enabled>
          <Connected>1</Connected>
          <EmulatedType>1</EmulatedType>
-         <SystemName>harddisk1.hdd</SystemName>
-         <UserFriendlyName>harddisk1.hdd</UserFriendlyName>
+         <SystemName>magehostdev.pro-0.hdd</SystemName>
+         <UserFriendlyName>magehostdev.pro-0.hdd</UserFriendlyName>
          <Remote>0</Remote>
          <InterfaceType>2</InterfaceType>
          <StackIndex>0</StackIndex>
          <DiskType>1</DiskType>
-         <Size>40960</Size>
-         <SizeOnDisk>6911</SizeOnDisk>
+         <Size>65536</Size>
+         <SizeOnDisk>0</SizeOnDisk>
          <Passthrough>0</Passthrough>
          <SubType>0</SubType>
          <Splitted>0</Splitted>
          <DiskVersion>2</DiskVersion>
-         <CompatLevel>level2</CompatLevel>
+         <CompatLevel></CompatLevel>
          <DeviceDescription></DeviceDescription>
          <AutoCompressEnabled>1</AutoCompressEnabled>
          <StorageURL></StorageURL>

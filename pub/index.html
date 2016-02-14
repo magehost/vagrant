@@ -23,7 +23,7 @@
           <ul>
             <li><a href="http://www.parallels.com/eu/products/desktop/" target="_blank">Parallels Desktop Pro Edition</a>
               <ul>
-                <li>Faster then VirtualBox</li>
+                <li>Faster then VirtualBox, especially the shared filesystem</li>
                 <li>About $100 per year</li>
                 <li>Only for Mac</li>
                 <li>Install Vagrant plugin: <br /><code>vagrant plugin install vagrant-parallels</code></li>
@@ -35,6 +35,30 @@
                 <li>For Mac, Linux, Windows</li>                
               </ul>
             </li>
+            <li><a href="http://www.vmware.com/products/fusion" target="_blank">VMware Fusion</a> [untested]
+              <ul>
+                <li>Commercial, $82 + $79 for the Vagrant plugin</li>
+                <li>For Mac</li>
+                <li>
+                  Install Vagrant plugin: <br />
+                  <code>vagrant plugin install vagrant-vmware-fusion</code><br/>
+                  Install Licence: <br />
+                  <code>vagrant plugin license vagrant-vmware-fusion path/to/license.lic</code>
+                </li>
+              </ul>
+            </li>
+            <li><a href="http://www.vmware.com/products/workstation" target="_blank">VMware Workstation Player</a> [untested]
+              <ul>
+                <li>Commercial, $135 + $79 for the Vagrant plugin</li>
+                <li>For Windows and Linux</li>
+                <li>
+                  Install Vagrant plugin: <br />
+                  <code>vagrant plugin install vagrant-vmware-workstation</code><br/>
+                  Install Licence: <br />
+                  <code>vagrant plugin license vagrant-vmware-workstation path/to/license.lic</code>
+                </li>
+              </ul>
+            </li>            
           </ul>
         </li>
         <li>Create a working directory and <code>cd</code> into it</li>

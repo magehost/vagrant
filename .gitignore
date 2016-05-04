@@ -19,5 +19,7 @@
 /virtualbox.vmwarevm/*.vmdk
 /virtualbox.vmwarevm/Logs
 /virtualbox.vmwarevm/*.log
+/virtualbox.vmwarevm/*.plist
+/virtualbox.vmwarevm/quicklook-cache.png
 /old/*
 !/old/.gitignore

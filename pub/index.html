@@ -1,17 +1,45 @@
 <html>
 <head>
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+  <style>
+    html {
+      position: relative;
+      min-height: 100%;
+    }
+    body {
+      /* Margin bottom by footer height */
+      margin-bottom: 60px;
+    }
+    .footer {
+      position: absolute;
+      bottom: 0;
+      width: 100%;
+      /* Set the fixed height of the footer here */
+      height: 60px;
+      background-color: #f5f5f5;
+    }
+    
+    body > .container {
+      padding: 30px 0px 30px 0px;
+    }
+    .container .text-muted {
+      margin: 20px 0;
+    }
+    .footer > .container {
+      padding-right: 15px;
+      padding-left: 15px;
+    }
+  </style>
 </head>
 <body>
 <nav class="navbar navbar-default">
-  <div class="container-fluid">
+  <div class="container">
     <div class="navbar-header">
-      <a class="navbar-brand" href="https://magentohosting.pro/" target="_blank">MagentoHosting.pro Development Vagrant Box</a>
+        <p><a class="navbar-brand" href="https://magentohosting.pro/" target="_blank">MagentoHosting.pro Development Vagrant Box</a></p>
     </div>
   </div>
 </nav>
 <div class="container">
-  <div>&nbsp;</div>
   <div class="panel panel-default">
     <div class="panel-heading">
       <h3 class="panel-title">Usage</h3>
@@ -79,6 +107,11 @@
     </ul>
   </div>
 </div>
+<footer class="footer">
+  <div class="container">
+    <p class="text-muted">The Vagrant box is an extra service from MagentoHosting.pro. No rights can be deserved.</p>
+  </div>
+</footer>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
 </body>
 </html>

@@ -21,5 +21,6 @@
 /virtualbox.vmwarevm/*.log
 /virtualbox.vmwarevm/*.plist
 /virtualbox.vmwarevm/quicklook-cache.png
+/virtualbox.vmwarevm/magehostdev.pro.vmx.lck
 /old/*
 !/old/.gitignore

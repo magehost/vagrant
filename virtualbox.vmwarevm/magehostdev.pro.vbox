@@ -6,23 +6,27 @@
 ** Use VBoxManage or the VirtualBox Manager GUI to make changes.
 -->
 <VirtualBox xmlns="http://www.innotek.de/VirtualBox-settings" version="1.15-macosx">
-  <Machine uuid="{2173b87a-c489-4dd9-8366-ce1cae73122c}" name="magehostdev.pro" OSType="Ubuntu_64" snapshotFolder="Snapshots" lastStateChange="2016-09-14T15:24:28Z">
+  <Machine uuid="{2173b87a-c489-4dd9-8366-ce1cae73122c}" name="magehostdev.pro" OSType="Ubuntu_64" snapshotFolder="Snapshots" lastStateChange="2016-09-14T17:08:40Z">
     <Description>MagentoHosting.pro development Vagrant box.</Description>
     <MediaRegistry>
       <HardDisks>
         <HardDisk uuid="{7168c25f-109c-4213-b3d8-cd2fd1ff8813}" location="magehostdev.pro.vmdk" format="VMDK" type="Normal"/>
       </HardDisks>
-      <DVDImages/>
+      <DVDImages>
+        <Image uuid="{25a2b0ff-91e1-41f4-9ad8-5e910b2bced8}" location="/Applications/VirtualBox.app/Contents/MacOS/VBoxGuestAdditions.iso"/>
+      </DVDImages>
       <FloppyImages/>
     </MediaRegistry>
     <ExtraData>
-      <ExtraDataItem name="GUI/LastNormalWindowPosition" value="56,99,800,621"/>
+      <ExtraDataItem name="GUI/LastCloseAction" value="PowerOff"/>
+      <ExtraDataItem name="GUI/LastNormalWindowPosition" value="56,99,720,421"/>
       <ExtraDataItem name="GUI/RestrictedRuntimeDevicesMenuActions" value="HardDrives"/>
       <ExtraDataItem name="GUI/RestrictedRuntimeMachineMenuActions" value="SaveState,PowerOff"/>
+      <ExtraDataItem name="GUI/ScaleFactor" value="1"/>
       <ExtraDataItem name="GUI/StatusBar/IndicatorOrder" value="HardDisks,OpticalDisks,FloppyDisks,Network,USB,SharedFolders,Display,VideoCapture,Features,Mouse,Keyboard"/>
     </ExtraData>
     <Hardware version="2">
-      <CPU count="2" hotplug="false">
+      <CPU count="4" hotplug="false">
         <HardwareVirtEx enabled="true"/>
         <HardwareVirtExNestedPaging enabled="true"/>
         <HardwareVirtExVPID enabled="true"/>
@@ -43,9 +47,13 @@
         <Order position="3" device="None"/>
         <Order position="4" device="None"/>
       </Boot>
-      <Display VRAMSize="12" monitorCount="1" accelerate3D="false" accelerate2DVideo="false"/>
+      <Display VRAMSize="16" monitorCount="1" accelerate3D="false" accelerate2DVideo="false"/>
       <VideoCapture enabled="false" screens="18446744073709551615" horzRes="1024" vertRes="768" rate="512" fps="25" maxTime="0" maxSize="0"/>
-      <RemoteDisplay enabled="false" authType="Null" authTimeout="5000"/>
+      <RemoteDisplay enabled="false" authType="Null" authTimeout="5000">
+        <VRDEProperties>
+          <Property name="TCP/Ports" value="3389"/>
+        </VRDEProperties>
+      </RemoteDisplay>
       <BIOS>
         <ACPI enabled="true"/>
         <IOAPIC enabled="true"/>
@@ -358,14 +366,8 @@
           </DisabledModes>
         </Adapter>
       </Network>
-      <UART>
-        <Port slot="0" enabled="false" IOBase="0x3f8" IRQ="4" hostMode="Disconnected"/>
-        <Port slot="1" enabled="false" IOBase="0x2f8" IRQ="3" hostMode="Disconnected"/>
-      </UART>
-      <LPT>
-        <Port slot="0" enabled="false" IOBase="0x378" IRQ="7"/>
-        <Port slot="1" enabled="false" IOBase="0x278" IRQ="5"/>
-      </LPT>
+      <UART/>
+      <LPT/>
       <AudioAdapter controller="AC97" codec="AD1980" driver="CoreAudio" enabled="false"/>
       <RTC localOrUTC="UTC"/>
       <SharedFolders/>
@@ -383,13 +385,26 @@
       </EmulatedUSB>
       <Guest memoryBalloonSize="0"/>
       <GuestProperties>
-        <GuestProperty name="/VirtualBox/GuestAdd/Revision" value="104815" timestamp="1452921827850703000" flags=""/>
-        <GuestProperty name="/VirtualBox/GuestAdd/Version" value="5.0.12" timestamp="1452921827850260000" flags=""/>
-        <GuestProperty name="/VirtualBox/GuestAdd/VersionExt" value="5.0.12" timestamp="1452921827850428000" flags=""/>
-        <GuestProperty name="/VirtualBox/GuestInfo/OS/Product" value="Linux" timestamp="1452921827848966000" flags=""/>
-        <GuestProperty name="/VirtualBox/GuestInfo/OS/Release" value="3.19.0-25-generic" timestamp="1452921827849806000" flags=""/>
-        <GuestProperty name="/VirtualBox/GuestInfo/OS/Version" value="#26~14.04.1-Ubuntu SMP Fri Jul 24 21:16:20 UTC 2015" timestamp="1452921827849901000" flags=""/>
-        <GuestProperty name="/VirtualBox/HostInfo/GUI/LanguageID" value="en_US" timestamp="1473866668350253000" flags=""/>
+        <GuestProperty name="/VirtualBox/GuestAdd/Revision" value="108355" timestamp="1473869426989881000" flags=""/>
+        <GuestProperty name="/VirtualBox/GuestAdd/Version" value="5.0.24" timestamp="1473869426989669000" flags=""/>
+        <GuestProperty name="/VirtualBox/GuestAdd/VersionExt" value="5.0.24_Ubuntu" timestamp="1473869426989715000" flags=""/>
+        <GuestProperty name="/VirtualBox/GuestInfo/Net/0/MAC" value="080027F9D4AC" timestamp="1473869426992864000" flags=""/>
+        <GuestProperty name="/VirtualBox/GuestInfo/Net/0/Name" value="eth0" timestamp="1473869426993156000" flags=""/>
+        <GuestProperty name="/VirtualBox/GuestInfo/Net/0/Status" value="Up" timestamp="1473869426993002000" flags=""/>
+        <GuestProperty name="/VirtualBox/GuestInfo/Net/0/V4/Broadcast" value="10.0.2.255" timestamp="1473869426992370000" flags=""/>
+        <GuestProperty name="/VirtualBox/GuestInfo/Net/0/V4/IP" value="10.0.2.15" timestamp="1473869426992195000" flags=""/>
+        <GuestProperty name="/VirtualBox/GuestInfo/Net/0/V4/Netmask" value="255.255.255.0" timestamp="1473869426992731000" flags=""/>
+        <GuestProperty name="/VirtualBox/GuestInfo/Net/1/MAC" value="080027C71297" timestamp="1473869426994159000" flags=""/>
+        <GuestProperty name="/VirtualBox/GuestInfo/Net/1/Name" value="eth1" timestamp="1473869426995895000" flags=""/>
+        <GuestProperty name="/VirtualBox/GuestInfo/Net/1/Status" value="Up" timestamp="1473869426994339000" flags=""/>
+        <GuestProperty name="/VirtualBox/GuestInfo/Net/1/V4/Broadcast" value="172.28.128.255" timestamp="1473869426993368000" flags=""/>
+        <GuestProperty name="/VirtualBox/GuestInfo/Net/1/V4/IP" value="172.28.128.6" timestamp="1473869426993283000" flags=""/>
+        <GuestProperty name="/VirtualBox/GuestInfo/Net/1/V4/Netmask" value="255.255.255.0" timestamp="1473869426993500000" flags=""/>
+        <GuestProperty name="/VirtualBox/GuestInfo/Net/Count" value="2" timestamp="1473870077158964000" flags=""/>
+        <GuestProperty name="/VirtualBox/GuestInfo/OS/Product" value="Linux" timestamp="1473869426989460000" flags=""/>
+        <GuestProperty name="/VirtualBox/GuestInfo/OS/Release" value="4.4.0-36-generic" timestamp="1473869426989509000" flags=""/>
+        <GuestProperty name="/VirtualBox/GuestInfo/OS/Version" value="#55-Ubuntu SMP Thu Aug 11 18:01:55 UTC 2016" timestamp="1473869426989556000" flags=""/>
+        <GuestProperty name="/VirtualBox/HostInfo/GUI/LanguageID" value="en_US" timestamp="1473874901503488000" flags=""/>
       </GuestProperties>
     </Hardware>
     <StorageControllers>

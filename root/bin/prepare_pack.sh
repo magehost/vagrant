@@ -1,8 +1,6 @@
 #!/bin/bash
-service apache2 stop
-service php5-fpm stop
-service mysql stop
 /usr/bin/mysqladmin -f drop vagrant > /dev/null
+systemctl stop apache2 php7.0-fpm mysql
 git -C /data/repos/vagrant pull
 git -C /data/repos/vagrant fetch --depth=1
 git -C /data/repos/vagrant reflog expire --expire-unreachable=now --all

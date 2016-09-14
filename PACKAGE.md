@@ -1,9 +1,10 @@
 ### PACKAGE
 
-#### Test insecure SSH
+#### Test insecure SSH, must not ask password
 ```
 open box.pvm
 ssh -i vagrant-insecure.key vagrant@[IP]
+sudo su -
 ```
 
 #### Package

@@ -1,21 +1,3 @@
-### Destruct previous test
-```
-vagrant destroy -f
-rm -rf ~/.vagrant.d/boxes/magehost-VAGRANTSLASH-xenial-apache-php7 Vagrantfile catalog_local.json httpdocs .bundle .vagrant
-```
-
-### Install from local
-```
-rm -rf tmp/testvb
-mkdir -p tmp/testvb
-cd tmp/testvb
-cp ../../pub/catalog.json catalog_local.json
-gsed -i 's/http:\/\/.*\/\(.*\)\.box/file:\/\/\/Users\/jeroen\/vagrant\/magehostdev\/\1.box/g' catalog_local.json
-cp ../../pub/Vagrantfile .
-gsed -i 's/http:\/\/.*\/catalog\.json/file:\/\/catalog_local.json/g' Vagrantfile
-vagrant up --provider virtualbox
-```
-
 ### PACKAGE
 
 #### Test insecure SSH
@@ -48,4 +30,22 @@ joe pub/catalog.json && vagrant push ftp
 #### Prepare Mac
 ```
 brew install coreutils gnu-sed mysql
+```
+
+### Destruct previous test
+```
+vagrant destroy -f
+rm -rf ~/.vagrant.d/boxes/magehost-VAGRANTSLASH-xenial-apache-php7 Vagrantfile catalog_local.json httpdocs .bundle .vagrant
+```
+
+### Install from local
+```
+rm -rf tmp/testvb
+mkdir -p tmp/testvb
+cd tmp/testvb
+cp ../../pub/catalog.json catalog_local.json
+gsed -i 's/http:\/\/.*\/\(.*\)\.box/file:\/\/\/Users\/jeroen\/code\/vagrant\/pub\/\1.box/g' catalog_local.json
+cp ../../pub/Vagrantfile .
+gsed -i 's/http:\/\/.*\/catalog\.json/file:\/\/catalog_local.json/g' Vagrantfile
+vagrant up --provider virtualbox
 ```

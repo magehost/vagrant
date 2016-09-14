@@ -10,7 +10,7 @@ sort_buffer_size                = 128M
 write_buffer_size               = 2M
 
 [mysqld_safe]
-log-error                       = /data/mysql_log/error.log
+log-error                       = /var/log/mysql/error.log
 nice                            = 0
 socket                          = /var/run/mysqld/mysqld.sock
 
@@ -28,7 +28,7 @@ bind-address                    = 0.0.0.0
 character-set-server            = utf8
 collation-server                = utf8_unicode_ci
 connect_timeout                 = 120
-datadir                         = /data/mysql
+datadir                         = /var/lib/mysql
 expire_logs_days                = 1
 explicit_defaults_for_timestamp = ON
 ft_min_word_len                 = 2
@@ -46,7 +46,7 @@ interactive_timeout             = 150
 join_buffer_size                = 32M
 key_buffer_size                 = 100M
 lc-messages-dir                 = /usr/share/mysql
-log_error                       = /data/mysql_log/error.log
+log_error                       = /var/log/mysql/error.log
 long_query_time                 = 3
 max_allowed_packet              = 1024M
 max_connect_errors              = 999999999

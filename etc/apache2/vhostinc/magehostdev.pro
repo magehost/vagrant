@@ -16,6 +16,7 @@ CustomLog          /data/vhosts/magehostdev.pro/logs/access.log combined
 # Include  includes/force_https.conf
 
 Header  set  X-Robots-Tag  "none"
+Alias   /mh_phpmyadmin  /usr/share/phpmyadmin
 
 # SetEnv   MAGE_RUN_TYPE  "store"
 # SetEnvIf  Host  (^|\.)domain1.ext$             MAGE_RUN_CODE=code1

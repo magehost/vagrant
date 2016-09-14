@@ -100,8 +100,14 @@
         <ul>
           <li>On the end of the install you will get some information like the password.</li>
           <li>If you want to connect to the box via SSH: <br /><code>vagrant ssh</code></li>
-          <li>To Windows users we recommend to <a href="https://git-scm.com/download/win" target="_blank">download Git</a> and use the 'Git Bash Here' feature. There you can use Vagrant and Git commands.</li>
-          <li>We experienced download errors while testing Vagrant version 1.8.x on Windows. On Mac and Linux it works fine.</li>
+          <li>Running Vagrant on Windows:
+            <ul>
+              <li>We recommend to <a href="https://git-scm.com/download/win" target="_blank">download Git</a> and use the 'Git Bash Here' feature. There you can use <code>vagrant</code> and <code>git</code> commands.</li>
+              <li>We experienced download errors while testing Vagrant version 1.8.x on Windows. On Mac and Linux this version works fine.</li>
+              <li>On Windows we recommend <a href="https://releases.hashicorp.com/vagrant/1.7.4/vagrant_1.7.4.msi">Vagrant 1.7.x.</a> with <a href="http://download.virtualbox.org/virtualbox/5.0.26/VirtualBox-5.0.26-108824-Win.exe">VirtualBox 5.0.26</a>.</li>
+              <li>Execute before "vagrant up": <code>vagrant plugin install vagrant-winnfsd</code></li>
+            </ul>
+          </li>
         </ul>
       </li>
     </ul>

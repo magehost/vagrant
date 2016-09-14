@@ -1,2 +1,2 @@
-<h1><?= 'It works.'; ?></h1>
-<p><?php echo date('r'); ?></p>
+<h1>Error: <code>httpdocs</code> is not mounted</h1>
+<?php echo date('r'); ?>

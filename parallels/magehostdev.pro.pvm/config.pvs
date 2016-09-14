@@ -8,14 +8,14 @@
       <LinkedVmUuid></LinkedVmUuid>
       <LinkedSnapshotUuid></LinkedSnapshotUuid>
       <VmName>magehostdev.pro</VmName>
-      <ServerUuid>{ade1ddae-1c19-440f-a9b0-e1796e998f8d}</ServerUuid>
+      <ServerUuid></ServerUuid>
       <ServerUuidAs></ServerUuidAs>
       <LastServerUuid></LastServerUuid>
       <ServerHost></ServerHost>
       <VmFilesLocation>1</VmFilesLocation>
       <VmCreationDate>2016-09-14 18:47:41</VmCreationDate>
-      <VmUptimeStartDateTime>2016-09-14 18:58:12</VmUptimeStartDateTime>
-      <VmUptimeInSeconds>160</VmUptimeInSeconds>
+      <VmUptimeStartDateTime>2016-09-14 19:44:34</VmUptimeStartDateTime>
+      <VmUptimeInSeconds>1272</VmUptimeInSeconds>
       <EnvId>1224406637</EnvId>
    </Identification>
    <Security ParentalControlEnabled_patch="1" dyn_lists="">
@@ -53,17 +53,29 @@
          <WindowMode>0</WindowMode>
          <LockInFullScreenMode>0</LockInFullScreenMode>
          <StartInDetachedWindow>0</StartInDetachedWindow>
-         <BootingOrder dyn_lists="BootDevice 7">
-            <BootDevice id="5" dyn_lists="">
+         <BootingOrder dyn_lists="BootDevice 11">
+            <BootDevice id="7" dyn_lists="">
+               <Index>0</Index>
+               <Type>5</Type>
+               <BootingNumber>3</BootingNumber>
+               <InUse>1</InUse>
+            </BootDevice>
+            <BootDevice id="8" dyn_lists="">
+               <Index>1</Index>
+               <Type>8</Type>
+               <BootingNumber>2</BootingNumber>
+               <InUse>1</InUse>
+            </BootDevice>
+            <BootDevice id="9" dyn_lists="">
+               <Index>0</Index>
+               <Type>8</Type>
+               <BootingNumber>1</BootingNumber>
+               <InUse>1</InUse>
+            </BootDevice>
+            <BootDevice id="10" dyn_lists="">
                <Index>0</Index>
                <Type>6</Type>
                <BootingNumber>0</BootingNumber>
-               <InUse>1</InUse>
-            </BootDevice>
-            <BootDevice id="6" dyn_lists="">
-               <Index>0</Index>
-               <Type>5</Type>
-               <BootingNumber>1</BootingNumber>
                <InUse>1</InUse>
             </BootDevice>
          </BootingOrder>
@@ -411,7 +423,7 @@
          <Enabled>0</Enabled>
       </ArchivingOptions>
    </Settings>
-   <Hardware dyn_lists="Fdd 0 CdRom 0 Hdd 1 Serial 0 Parallel 0 Printer 1 NetworkAdapter 2 Sound 0 USB 0 PciVideoAdapter 0 GenericDevice 0 GenericPciDevice 0 GenericScsiDevice 0">
+   <Hardware dyn_lists="Fdd 0 CdRom 1 Hdd 1 Serial 0 Parallel 0 Printer 1 NetworkAdapter 2 Sound 0 USB 0 PciVideoAdapter 0 GenericDevice 0 GenericPciDevice 0 GenericScsiDevice 0">
       <Cpu EnableVTxSupport_patch="1" dyn_lists="">
          <Number>4</Number>
          <Mode>0</Mode>
@@ -474,6 +486,20 @@
             <CpuFeaturesMaskValid>1</CpuFeaturesMaskValid>
          </CpuFeatures>
       </HibernateState>
+      <CdRom id="0" dyn_lists="">
+         <Index>0</Index>
+         <Enabled>1</Enabled>
+         <Connected>0</Connected>
+         <EmulatedType>1</EmulatedType>
+         <SystemName></SystemName>
+         <UserFriendlyName></UserFriendlyName>
+         <Remote>0</Remote>
+         <InterfaceType>2</InterfaceType>
+         <StackIndex>1</StackIndex>
+         <Passthrough>1</Passthrough>
+         <SubType>0</SubType>
+         <DeviceDescription></DeviceDescription>
+      </CdRom>
       <Hdd id="0" dyn_lists="Partition 0">
          <Uuid>{47205d9c-95d8-43f0-8b83-25ce8f2f0c57}</Uuid>
          <Index>0</Index>
@@ -487,7 +513,7 @@
          <StackIndex>0</StackIndex>
          <DiskType>1</DiskType>
          <Size>40960</Size>
-         <SizeOnDisk>3563</SizeOnDisk>
+         <SizeOnDisk>3568</SizeOnDisk>
          <Passthrough>0</Passthrough>
          <SubType>0</SubType>
          <Splitted>0</Splitted>

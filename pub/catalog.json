@@ -6,16 +6,22 @@
       "version": "1",
       "providers": [
         {
+          "name": "parallels",
+          "url": "http://vagrant.magehost.pro/xenial-apache-php7_prl_v1.box",
+          "checksum_type": "md5",
+          "checksum": "ee58038d2b69338443ae31d63c94f61f"
+        },
+        {
           "name": "virtualbox",
           "url": "http://vagrant.magehost.pro/xenial-apache-php7_vb_v1.box",
           "checksum_type": "md5",
-          "checksum": "b1a88d5261e48bd9c07ce4d6be537ce4"
+          "checksum": "cf29dd221a3ddeaaa1ae766bb6d514fa"
         },
         {
           "name": "vmware",
           "url": "http://vagrant.magehost.pro/xenial-apache-php7_vmw_v1.box",
           "checksum_type": "md5",
-          "checksum": "43321765b1cfd9dfed2aced574a35cb6"
+          "checksum": "443e37ff8fc2bdb8a3834ef82614567b"
         }
       ]
     }

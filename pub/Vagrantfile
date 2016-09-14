@@ -1,8 +1,14 @@
+
+if !Vagrant.has_plugin?("vagrant-hostmanager")
+  system("vagrant plugin install vagrant-hostmanager")
+  abort "Installed the vagrant-hostmanager plugin.\nPlease run the \"vagrant up\" command again."
+end
+
 Vagrant.configure(2) do |config|
     config.ssh.forward_agent             = true
     config.vm.box                        = "magehost/xenial-apache-php7"
     config.vm.box_url                    = "http://vagrant.magehost.pro/catalog.json"
-    config.vm.synced_folder              "httpdocs", "/data/vhosts/magehostdev.pro/httpdocs", create: true
+    config.vm.synced_folder              "httpdocs", "/data/vhosts/magehostdev.pro/httpdocs", create: true, type: "nfs"
     config.vm.provision                  "shell", inline: "/bin/bash /root/bin/provision.sh"
     config.vm.hostname                   = "magehostdev.pro"
     config.vm.network                    "private_network", type: "dhcp"

@@ -5,11 +5,13 @@ user="vagrant"
 ip=$( /usr/local/bin/get_local_ip.sh eth1 )
 home="/data/vhosts/magehostdev.pro"
 
+# workaround to make sure we have both numbers and letters
+apppass="$( /usr/bin/makepasswd --minchars=2 --maxchars=9 )A1$( /usr/bin/makepasswd --minchars=2 --maxchars=9 )"
+
 if [ -f $home/.my.cnf ]; then
     pass=$( cat $home/.my.cnf | grep '^password=' | cut -d'=' -f2 )
 else
-    # workaround to make sure we have both numbers and letters
-    pass="$( /usr/bin/makepasswd --minchars=2 --maxchars=9 )A1$( /usr/bin/makepasswd --minchars=2 --maxchars=9 )"
+    pass="vagrant"   
     touch $home/.my.cnf
     chmod 600 $home/.my.cnf
     chown $user: $home/.my.cnf
@@ -43,7 +45,7 @@ sed -i "s/___PWD___/$pass/g" $home/.n98-magerun.yaml
 
 cat <<EOF
 SSH + MySQL User:       $user
-SSH + MySQL Password:   $pass    <== Save in a secure place.
+SSH + MySQL Password:   $pass
       MySQL Database:   $user
 
 SSH Server:       $ip  port  22
@@ -55,5 +57,6 @@ The 'httpdocs' dir on your workstation is mounted as webroot inside the Vagrant 
 
 Example Magento install, execute on your local workstation:
   vagrant ssh -c  "n98-magerun.phar install --installationFolder=./httpdocs --dbHost=$ip --dbUser=vagrant --dbPass=$pass --dbName=vagrant --baseUrl=http://$ip/ --useDefaultConfigParams=yes"
-After executing this you will be able to log in on  http://$ip/backend/  with the user "vagrant", password "$pass"
+  vagrant ssh -c  "cd httpdocs ;  test -d .modman || modman init ;  modman clone --copy --force https://github.com/Inchoo/Inchoo_PHP7.git ;  n98-magerun.phar cache:clean config"
+After executing this you will be able to log in on  http://$ip/backend/  with the user "vagrant", password "$apppass"
 EOF

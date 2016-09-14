@@ -14,6 +14,7 @@ rm -f   /data/mysql/ib_logfile* /data/mysql_log/*
 rm -rf  /root/.history /data/vhosts/magehostdev.pro/.history
 rm -rf  /data/vhosts/magehostdev.pro/httpdocs/*  /data/vhosts/magehostdev.pro/httpdocs/.my.cnf
 cp -avf /data/repos/vagrant/data/vhosts/magehostdev.pro/*  /data/vhosts/magehostdev.pro/
+chown -R vagrant: /data/vhosts/magehostdev.pro
 rm -rf  /tmp/*
 rm -rf  /data/vhosts/magehostdev.pro/tmp/*
 rm -rf  /data/vhosts/magehostdev.pro/php-session/sess_*

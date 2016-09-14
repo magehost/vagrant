@@ -1,132 +1,23 @@
 {
-  "name": "magehost/trusty-apache-php5",
-  "description": "MagentoHosting.pro configured Ubuntu 14.04 LTS 64-bit with Apache 2.4 and PHP-FPM 5.5.",
+  "name": "magehost/xenial-apache-php7",
+  "description": "MagentoHosting.pro configured Ubuntu 16.04 LTS 64-bit with Apache 2.4 and PHP-FPM 7.0.",
   "versions": [
-  {
-    "version": "17",
-    "providers": [{
-      "name": "parallels",
-      "url": "http://vagrant.magehost.pro/trusty-apache-php5_prl_v17.box",
-      "checksum_type": "md5",
-      "checksum": "8443ab0ae5423679eb21e42882cf5bd5"
-    },
     {
-      "name": "virtualbox",
-      "url": "http://vagrant.magehost.pro/trusty-apache-php5_vb_v17.box",
-      "checksum_type": "md5",
-      "checksum": "2560ace5e3efa20ff0f78f2b2b542922"
-    },
-    {
-      "name": "vmware",
-      "url": "http://vagrant.magehost.pro/trusty-apache-php5_vmw_v17.box",
-      "checksum_type": "md5",
-      "checksum": "ff47d9da23303d07f0deb5f8b631226f"
-    }]
-  },
-  {
-    "version": "16",
-    "providers": [{
-      "name": "parallels",
-      "url": "http://vagrant.magehost.pro/trusty-apache-php5_prl_v16.box",
-      "checksum_type": "md5",
-      "checksum": "5394e68d2224ba789245c6737d5d67c6"
-    },
-    {
-      "name": "virtualbox",
-      "url": "http://vagrant.magehost.pro/trusty-apache-php5_vb_v16.box",
-      "checksum_type": "md5",
-      "checksum": "77edc99eb8bf7f58845693ce2198d151"
-    }]
-  },
-  {
-    "version": "15",
-    "providers": [{
-      "name": "parallels",
-      "url": "http://vagrant.magehost.pro/trusty-apache-php5_prl_v15.box",
-      "checksum_type": "md5",
-      "checksum": "131d38865bc37cb4d0a086ba487831ac"
-    },
-    {
-      "name": "virtualbox",
-      "url": "http://vagrant.magehost.pro/trusty-apache-php5_vb_v15.box",
-      "checksum_type": "md5",
-      "checksum": "fbda29750e791dc5cda9f545f5fc8299"
-    }]
-  },
-  {
-    "version": "14",
-    "providers": [{
-      "name": "parallels",
-      "url": "http://vagrant.magehost.pro/trusty-apache-php5_prl_v14.box",
-      "checksum_type": "md5",
-      "checksum": "3c2398780d2fc16c2d0b6e037d24b6cc"
-    },
-    {
-      "name": "virtualbox",
-      "url": "http://vagrant.magehost.pro/trusty-apache-php5_vb_v14.box",
-      "checksum_type": "md5",
-      "checksum": "4b5d1e0cd73d7cb577841efd0a4e7464"
-    }]
-  },
-  {
-    "version": "13",
-    "providers": [{
-      "name": "parallels",
-      "url": "http://vagrant.magehost.pro/trusty-apache-php5_prl_v13.box",
-      "checksum_type": "md5",
-      "checksum": "64074eb8ab5496b86976e8d9c0a6a047"
-    },
-    {
-      "name": "virtualbox",
-      "url": "http://vagrant.magehost.pro/trusty-apache-php5_vb_v13.box",
-      "checksum_type": "md5",
-      "checksum": "ad96e801927c6eaedbdb51a79d14c703"
-    }]
-  },
-  {
-    "version": "12",
-    "providers": [{
-      "name": "parallels",
-      "url": "http://vagrant.magehost.pro/trusty-apache-php5_prl_v12.box",
-      "checksum_type": "md5",
-      "checksum": "55decd7799f029765dd4f81ee0f6d274"
-    },
-    {
-      "name": "virtualbox",
-      "url": "http://vagrant.magehost.pro/trusty-apache-php5_vb_v12.box",
-      "checksum_type": "md5",
-      "checksum": "635af617326cca223c5c3db51d21406d"
-    }]
-  },
-  {
-    "version": "11",
-    "providers": [{
-      "name": "parallels",
-      "url": "http://vagrant.magehost.pro/trusty-apache-php5_prl_v11.box",
-      "checksum_type": "md5",
-      "checksum": "31ccee707848b7988516ac506f4692ac"
-    },
-    {
-      "name": "virtualbox",
-      "url": "http://vagrant.magehost.pro/trusty-apache-php5_vb_v11.box",
-      "checksum_type": "md5",
-      "checksum": "d69e67b9d8180f770846b26120e7a868"
-    }]
-  },
-  {
-    "version": "10",
-    "providers": [{
-      "name": "parallels",
-      "url": "http://vagrant.magehost.pro/trusty-apache-php5_prl_v10.box",
-      "checksum_type": "md5",
-      "checksum": "270bbc499dc0731179b21353ce13bb2b"
-    },
-    {
-      "name": "virtualbox",
-      "url": "http://vagrant.magehost.pro/trusty-apache-php5_vb_v10.box",
-      "checksum_type": "md5",
-      "checksum": "d234646c50fa72f98e9049b844e37f39"
-    }]
-  }
+      "version": "1",
+      "providers": [
+        {
+          "name": "virtualbox",
+          "url": "http://vagrant.magehost.pro/xenial-apache-php7_vb_v1.box",
+          "checksum_type": "md5",
+          "checksum": "3106c525f584b136f070abd65a779176"
+        },
+        {
+          "name": "vmware",
+          "url": "http://vagrant.magehost.pro/xenial-apache-php7_vmw_v1.box",
+          "checksum_type": "md5",
+          "checksum": "ff47d9da23303d07f0deb5f8b631226f"
+        }
+      ]
+    }
   ]
 }

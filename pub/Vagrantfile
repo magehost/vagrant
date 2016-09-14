@@ -1,6 +1,6 @@
 Vagrant.configure(2) do |config|
     config.ssh.forward_agent             = true
-    config.vm.box                        = "magehost/trusty-apache-php5"
+    config.vm.box                        = "magehost/xenial-apache-php7"
     config.vm.box_url                    = "http://vagrant.magehost.pro/catalog.json"
     config.vm.synced_folder              "httpdocs", "/data/vhosts/magehostdev.pro/httpdocs", create: true
     config.vm.provision                  "shell", inline: "/bin/bash /root/bin/provision.sh"

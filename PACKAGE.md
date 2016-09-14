@@ -2,7 +2,7 @@
 
 #### Test insecure SSH, must not ask password
 ```
-open box.pvm
+# start the VM
 ssh -i vagrant-insecure.key vagrant@[IP]
 sudo su -
 ```

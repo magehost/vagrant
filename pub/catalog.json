@@ -9,13 +9,13 @@
           "name": "virtualbox",
           "url": "http://vagrant.magehost.pro/xenial-apache-php7_vb_v1.box",
           "checksum_type": "md5",
-          "checksum": "3106c525f584b136f070abd65a779176"
+          "checksum": "b1a88d5261e48bd9c07ce4d6be537ce4"
         },
         {
           "name": "vmware",
           "url": "http://vagrant.magehost.pro/xenial-apache-php7_vmw_v1.box",
           "checksum_type": "md5",
-          "checksum": "ff47d9da23303d07f0deb5f8b631226f"
+          "checksum": "43321765b1cfd9dfed2aced574a35cb6"
         }
       ]
     }

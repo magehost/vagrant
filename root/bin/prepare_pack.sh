@@ -9,6 +9,7 @@ git -C /data/repos/vagrant gc --aggressive --prune=all
 apt-get update
 apt-get -y upgrade
 apt-get -y upgrade linux-generic linux-headers-generic linux-image-generic
+apt-get -y autoremove
 apt-get clean
 rm -f   /data/mysql/ib_logfile* /data/mysql_log/*
 rm -rf  /root/.history /data/vhosts/magehostdev.pro/.history

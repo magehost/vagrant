@@ -4,6 +4,9 @@ service php5-fpm stop
 service mysql stop
 /usr/bin/mysqladmin -f drop vagrant > /dev/null
 git -C /data/repos/vagrant pull
+git -C /data/repos/vagrant fetch --depth=1
+git -C /data/repos/vagrant reflog expire --expire-unreachable=now --all
+git -C /data/repos/vagrant gc --aggressive --prune=all
 /root/bin/updatetools.sh
 apt-get update
 apt-get -y upgrade

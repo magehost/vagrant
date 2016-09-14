@@ -34,10 +34,10 @@ brew install coreutils gnu-sed mysql
 
 ### Install from local
 ```
-rm -rf tmp/testvb
+rm -rf ~/Code/vagrant/tmp/testvb
 rm -rf ~/.vagrant.d/boxes/magehost-VAGRANTSLASH-xenial-apache-php7
-mkdir -p tmp/testvb
-cd tmp/testvb
+mkdir -p ~/Code/vagrant/tmp/testvb
+cd ~/Code/vagrant/tmp/testvb
 cp ../../pub/catalog.json catalog_local.json
 gsed -i 's/http:\/\/.*\/\(.*\)\.box/file:\/\/\/Users\/jeroen\/code\/vagrant\/pub\/\1.box/g' catalog_local.json
 cp ../../pub/Vagrantfile .

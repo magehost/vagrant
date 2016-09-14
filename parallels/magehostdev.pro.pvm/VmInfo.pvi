@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<VmInfo schemaVersion="1.0" dyn_lists="">
+   <GuestOsInformation dyn_lists="GuestToolsList 1">
+      <Started>0</Started>
+      <ConfOsType></ConfOsType>
+      <ConfOsVersion></ConfOsVersion>
+      <RealOsType>unknown</RealOsType>
+      <RealOsVersion>unknown</RealOsVersion>
+      <RealOsDetails></RealOsDetails>
+      <RealOsTypeId>255</RealOsTypeId>
+      <GuestToolsList id="0" dyn_lists="GuestToolInfo 1">
+         <GuestToolInfo id="0" dyn_lists="">
+            <ToolId>parallels.TIS.host.cross</ToolId>
+            <ToolName>Tools Information Service host side</ToolName>
+            <ToolVersion>12.0.1-41296</ToolVersion>
+            <ToolInternalVersion>1.3</ToolInternalVersion>
+            <ToolDate>2016-09-14T18:59:20Z</ToolDate>
+            <ToolState>1</ToolState>
+            <ToolData></ToolData>
+            <ToolStringData>dummy</ToolStringData>
+            <ToolUpdateStatus>N/A</ToolUpdateStatus>
+         </GuestToolInfo>
+      </GuestToolsList>
+   </GuestOsInformation>
+   <AdvancedEngineInfo dyn_lists="">
+      <EngineTypeStr>KernelContext</EngineTypeStr>
+      <EngineTypeNum>2</EngineTypeNum>
+   </AdvancedEngineInfo>
+</VmInfo>

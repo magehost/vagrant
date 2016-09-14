@@ -1,9 +1,10 @@
 ### PACKAGE
 
-#### Test insecure SSH
+#### Test insecure SSH, must not ask password
 ```
 open box.pvm
 ssh -i vagrant-insecure.key vagrant@[IP]
+sudo su -
 ```
 
 #### Package
@@ -32,20 +33,22 @@ joe pub/catalog.json && vagrant push ftp
 brew install coreutils gnu-sed mysql
 ```
 
-### Destruct previous test
-```
-vagrant destroy -f
-rm -rf ~/.vagrant.d/boxes/magehost-VAGRANTSLASH-xenial-apache-php7 Vagrantfile catalog_local.json httpdocs .bundle .vagrant
-```
-
 ### Install from local
 ```
+cd ~/Code/vagrant
 rm -rf tmp/testvb
-mkdir -p tmp/testvb
+rm -rf ~/.vagrant.d/boxes/magehost-VAGRANTSLASH-xenial-apache-php7
+mkdir -p ~/Code/vagrant/tmp/testvb
 cd tmp/testvb
 cp ../../pub/catalog.json catalog_local.json
 gsed -i 's/http:\/\/.*\/\(.*\)\.box/file:\/\/\/Users\/jeroen\/code\/vagrant\/pub\/\1.box/g' catalog_local.json
 cp ../../pub/Vagrantfile .
 gsed -i 's/http:\/\/.*\/catalog\.json/file:\/\/catalog_local.json/g' Vagrantfile
 vagrant up --provider virtualbox
+```
+
+### Destruct previous test
+```
+vagrant destroy -f
+rm -rf ~/.vagrant.d/boxes/magehost-VAGRANTSLASH-xenial-apache-php7 Vagrantfile catalog_local.json httpdocs .bundle .vagrant
 ```

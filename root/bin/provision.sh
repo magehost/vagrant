@@ -41,7 +41,7 @@ fi
 cp /etc/n98-magerun.yaml $home/.n98-magerun.yaml
 chmod 600 $home/.n98-magerun.yaml
 chown vagrant: $home/.n98-magerun.yaml
-sed -i "s/___PWD___/$pass/g" $home/.n98-magerun.yaml
+sed -i "s/___PWD___/$apppass/g" $home/.n98-magerun.yaml
 
 cat <<EOF
 SSH + MySQL User:       $user

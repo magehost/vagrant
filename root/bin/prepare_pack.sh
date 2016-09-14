@@ -22,7 +22,7 @@ rm -rf  /data/vhosts/magehostdev.pro/php-session/sess_*
 rm -f   /data/mysql/*.err
 umount  /var/lib/lxcfs
 find  / -name '*~' -delete
-find  / -name '.cache' -delete
+find  / -depth -name '.cache' -exec rm -rf {} \;
 find  /var/log -type f -name '*.gz' -delete
 find  /var/log -type f -exec truncate -s 0 {} \;
 find  /data/vhosts/magehostdev.pro/logs -type f -exec truncate -s 0 {} \;

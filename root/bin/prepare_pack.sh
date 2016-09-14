@@ -1,5 +1,5 @@
 #!/bin/bash
-/usr/bin/mysqladmin -f drop vagrant > /dev/null
+/usr/bin/mysqladmin -f drop vagrant 2>/dev/null
 systemctl stop apache2 php7.0-fpm mysql
 git -C /data/repos/vagrant pull
 git -C /data/repos/vagrant fetch --depth=1
@@ -22,6 +22,7 @@ rm -rf  /data/vhosts/magehostdev.pro/php-session/sess_*
 rm -f   /data/mysql/*.err
 umount  /var/lib/lxcfs
 find  / -name '*~' -delete
+find  / -name '.cache' -delete
 find  /var/log -type f -name '*.gz' -delete
 find  /var/log -type f -exec truncate -s 0 {} \;
 find  /data/vhosts/magehostdev.pro/logs -type f -exec truncate -s 0 {} \;

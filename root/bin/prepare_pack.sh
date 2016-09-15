@@ -28,6 +28,7 @@ umount /data/vhosts/magehostdev.pro/httpdocs 2>/dev/null
 rm -f /data/vhosts/magehostdev.pro/.my.cnf
 rm -rf /data/vhosts/magehostdev.pro/httpdocs/{.??,}*
 cp -avf /data/repos/vagrant/data/vhosts/magehostdev.pro/*  /data/vhosts/magehostdev.pro/
+chown -R vagrant: /data/vhosts/magehostdev.pro
 cd /
 /root/bin/zero_freespace.sh
 poweroff

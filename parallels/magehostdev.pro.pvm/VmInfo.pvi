@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<VmInfo schemaVersion="1.0" dyn_lists="">
+<VmInfo dyn_lists="" schemaVersion="1.0">
    <GuestOsInformation dyn_lists="GuestToolsList 1">
       <Started>0</Started>
       <ConfOsType></ConfOsType>
@@ -8,19 +8,19 @@
       <RealOsVersion>4.4.0-36-generic</RealOsVersion>
       <RealOsDetails></RealOsDetails>
       <RealOsTypeId>9</RealOsTypeId>
-      <GuestToolsList id="0" dyn_lists="GuestToolInfo 12">
-         <GuestToolInfo id="0" dyn_lists="">
+      <GuestToolsList dyn_lists="GuestToolInfo 12" id="0">
+         <GuestToolInfo dyn_lists="" id="0">
             <ToolId>parallels.TIS.host.cross</ToolId>
             <ToolName>Tools Information Service host side</ToolName>
             <ToolVersion>12.0.1-41296</ToolVersion>
             <ToolInternalVersion>1.3</ToolInternalVersion>
-            <ToolDate>2016-09-14T20:08:34Z</ToolDate>
+            <ToolDate>2016-09-16T14:56:39Z</ToolDate>
             <ToolState>1</ToolState>
             <ToolData></ToolData>
             <ToolStringData>dummy</ToolStringData>
             <ToolUpdateStatus>N/A</ToolUpdateStatus>
          </GuestToolInfo>
-         <GuestToolInfo id="1" dyn_lists="">
+         <GuestToolInfo dyn_lists="" id="1">
             <ToolId>parallels.ToolsInstallStage.guest.cross</ToolId>
             <ToolName>Parallels Tools Installation stage</ToolName>
             <ToolVersion>12.0.1-41296</ToolVersion>
@@ -31,111 +31,111 @@
             <ToolStringData></ToolStringData>
             <ToolUpdateStatus>UpToDate</ToolUpdateStatus>
          </GuestToolInfo>
-         <GuestToolInfo id="2" dyn_lists="">
+         <GuestToolInfo dyn_lists="" id="2">
             <ToolId>parallels.GuestOSInfo.guest.cross</ToolId>
             <ToolName>Guest OS Information</ToolName>
             <ToolVersion>12.0.1-41296</ToolVersion>
             <ToolInternalVersion>1.0</ToolInternalVersion>
-            <ToolDate>2016-09-14T20:08:46Z</ToolDate>
+            <ToolDate>2016-09-16T14:56:51Z</ToolDate>
             <ToolState>1</ToolState>
             <ToolData>3c0100000900000040000000040000000010000000000000000000000000000000000000342e342e302d33362d67656e65726963000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000</ToolData>
             <ToolStringData></ToolStringData>
             <ToolUpdateStatus>UpToDate</ToolUpdateStatus>
          </GuestToolInfo>
-         <GuestToolInfo id="3" dyn_lists="">
+         <GuestToolInfo dyn_lists="" id="3">
             <ToolId>parallels.ToolsInstallation.guest.lin</ToolId>
             <ToolName>Tools Installation</ToolName>
             <ToolVersion>12.0.1-41296</ToolVersion>
             <ToolInternalVersion>1.0</ToolInternalVersion>
-            <ToolDate>2016-09-14T20:10:48Z</ToolDate>
+            <ToolDate>2016-09-16T15:01:47Z</ToolDate>
             <ToolState>2</ToolState>
             <ToolData>03000000</ToolData>
             <ToolStringData></ToolStringData>
             <ToolUpdateStatus>UpToDate</ToolUpdateStatus>
          </GuestToolInfo>
-         <GuestToolInfo id="4" dyn_lists="">
+         <GuestToolInfo dyn_lists="" id="4">
             <ToolId>parallels.DesktopUtilitiesService.guest.lin</ToolId>
             <ToolName>Desktop Utilities tool</ToolName>
             <ToolVersion>12.0.1-41296</ToolVersion>
             <ToolInternalVersion>1.0</ToolInternalVersion>
-            <ToolDate>2016-09-14T20:10:48Z</ToolDate>
+            <ToolDate>2016-09-16T15:01:47Z</ToolDate>
             <ToolState>2</ToolState>
             <ToolData>03000000</ToolData>
             <ToolStringData></ToolStringData>
             <ToolUpdateStatus>UpToDate</ToolUpdateStatus>
          </GuestToolInfo>
-         <GuestToolInfo id="5" dyn_lists="">
+         <GuestToolInfo dyn_lists="" id="5">
             <ToolId>parallels.ToolsDaemon.guest.lin</ToolId>
             <ToolName>Parallels Tools Daemon</ToolName>
             <ToolVersion>12.0.1-41296</ToolVersion>
             <ToolInternalVersion>1.0</ToolInternalVersion>
-            <ToolDate>2016-09-14T20:10:48Z</ToolDate>
+            <ToolDate>2016-09-16T15:01:47Z</ToolDate>
             <ToolState>2</ToolState>
             <ToolData></ToolData>
             <ToolStringData>stopped</ToolStringData>
             <ToolUpdateStatus>UpToDate</ToolUpdateStatus>
          </GuestToolInfo>
-         <GuestToolInfo id="6" dyn_lists="">
+         <GuestToolInfo dyn_lists="" id="6">
             <ToolId>parallels.VmExec.guest.cross</ToolId>
             <ToolName>VmExec</ToolName>
             <ToolVersion>12.0.1-41296</ToolVersion>
             <ToolInternalVersion>1.0</ToolInternalVersion>
-            <ToolDate>2016-09-14T20:10:48Z</ToolDate>
+            <ToolDate>2016-09-16T15:01:47Z</ToolDate>
             <ToolState>2</ToolState>
             <ToolData></ToolData>
             <ToolStringData></ToolStringData>
             <ToolUpdateStatus>UpToDate</ToolUpdateStatus>
          </GuestToolInfo>
-         <GuestToolInfo id="7" dyn_lists="">
+         <GuestToolInfo dyn_lists="" id="7">
             <ToolId>parallels.GracefulShutdown.guest.lin</ToolId>
             <ToolName>Graceful Shutdown tool</ToolName>
             <ToolVersion>12.0.1-41296</ToolVersion>
             <ToolInternalVersion>0.2</ToolInternalVersion>
-            <ToolDate>2016-09-14T20:10:48Z</ToolDate>
+            <ToolDate>2016-09-16T15:01:47Z</ToolDate>
             <ToolState>2</ToolState>
             <ToolData>0f000000</ToolData>
             <ToolStringData>stopped</ToolStringData>
             <ToolUpdateStatus>UpToDate</ToolUpdateStatus>
          </GuestToolInfo>
-         <GuestToolInfo id="8" dyn_lists="">
+         <GuestToolInfo dyn_lists="" id="8">
             <ToolId>parallels.IPChanges.guest.cross</ToolId>
             <ToolName>IP Changes monitor</ToolName>
             <ToolVersion>12.0.1-41296</ToolVersion>
             <ToolInternalVersion>1.0</ToolInternalVersion>
-            <ToolDate>2016-09-14T20:10:48Z</ToolDate>
+            <ToolDate>2016-09-16T15:01:47Z</ToolDate>
             <ToolState>2</ToolState>
             <ToolData></ToolData>
             <ToolStringData></ToolStringData>
             <ToolUpdateStatus>UpToDate</ToolUpdateStatus>
          </GuestToolInfo>
-         <GuestToolInfo id="9" dyn_lists="">
+         <GuestToolInfo dyn_lists="" id="9">
             <ToolId>parallels.VideoDevicesInfo.guest.cross</ToolId>
             <ToolName>Guest video device detection</ToolName>
             <ToolVersion>12.0.1-41296</ToolVersion>
             <ToolInternalVersion>1.0</ToolInternalVersion>
-            <ToolDate>2016-09-14T20:08:46Z</ToolDate>
+            <ToolDate>2016-09-16T14:56:51Z</ToolDate>
             <ToolState>1</ToolState>
             <ToolData>01000000000000000000000000000000</ToolData>
             <ToolStringData></ToolStringData>
             <ToolUpdateStatus>UpToDate</ToolUpdateStatus>
          </GuestToolInfo>
-         <GuestToolInfo id="10" dyn_lists="">
+         <GuestToolInfo dyn_lists="" id="10">
             <ToolId>parallels.TimeSynchronization.guest.lin</ToolId>
             <ToolName>Parallels Time Synchronization Tool</ToolName>
             <ToolVersion>12.0.1-41296</ToolVersion>
             <ToolInternalVersion>2.0</ToolInternalVersion>
-            <ToolDate>2016-09-14T20:10:47Z</ToolDate>
+            <ToolDate>2016-09-16T15:01:47Z</ToolDate>
             <ToolState>2</ToolState>
             <ToolData></ToolData>
             <ToolStringData></ToolStringData>
             <ToolUpdateStatus>UpToDate</ToolUpdateStatus>
          </GuestToolInfo>
-         <GuestToolInfo id="11" dyn_lists="">
+         <GuestToolInfo dyn_lists="" id="11">
             <ToolId>parallels.Username.guest.cross</ToolId>
             <ToolName></ToolName>
             <ToolVersion></ToolVersion>
             <ToolInternalVersion></ToolInternalVersion>
-            <ToolDate>2016-09-14T20:08:49Z</ToolDate>
+            <ToolDate>2016-09-16T14:56:53Z</ToolDate>
             <ToolState>1</ToolState>
             <ToolData></ToolData>
             <ToolStringData>vagrant</ToolStringData>

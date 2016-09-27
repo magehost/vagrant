@@ -26,12 +26,11 @@ fi
 
 webroot="$home/httpdocs"
 if [ ! -f "$webroot/index.php" ]; then
+    # chown is not possible because of NFS
     sudo -u vagrant cat <<EOF > $webroot/index.php
 <h1><?= 'It works.'; ?></h1>
 <p><?php echo date('r'); ?></p>
 EOF
-    # chown $user: $webroot/index.php
-    # chmod 644 $webroot/index.php
 fi
 
 /bin/echo "vagrant:$pass" | /usr/sbin/chpasswd

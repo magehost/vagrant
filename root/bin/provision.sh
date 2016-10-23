@@ -19,8 +19,8 @@ else
 [client]
 user=$user
 password=$pass
-database=$user
-# PhpMyAdmin: http://$ip/mh_phpmyadmin/
+# Database name: $user
+# PhpMyAdmin:    http://$ip/mh_phpmyadmin/
 EOF
 fi
 

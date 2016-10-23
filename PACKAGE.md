@@ -9,7 +9,8 @@ sudo su -
 
 #### Package
 ```
-VERSION=1
+VERSION=2
+{
 mv pub/*.box old/
 ####  VMware
 virtualbox.vmwarevm/vmware-vdiskmanager -d virtualbox.vmwarevm/*.vmdk
@@ -26,6 +27,7 @@ tar -cvzf pub/xenial-apache-php7_prl_v${VERSION}.box -C parallels magehostdev.pr
 md5 pub/*_v${VERSION}.box
 # In catalog.json you need to create a new version block with 3x updated version number and 2x md5 sum.
 joe pub/catalog.json && vagrant push ftp
+}
 ```
 
 #### Prepare Mac

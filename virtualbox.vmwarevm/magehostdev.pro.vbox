@@ -6,7 +6,7 @@
 ** Use VBoxManage or the VirtualBox Manager GUI to make changes.
 -->
 <VirtualBox xmlns="http://www.innotek.de/VirtualBox-settings" version="1.15-macosx">
-  <Machine uuid="{2173b87a-c489-4dd9-8366-ce1cae73122c}" name="magehostdev.pro" OSType="Ubuntu_64" snapshotFolder="Snapshots" lastStateChange="2016-09-15T00:02:02Z">
+  <Machine uuid="{2173b87a-c489-4dd9-8366-ce1cae73122c}" name="magehostdev.pro" OSType="Ubuntu_64" snapshotFolder="Snapshots" lastStateChange="2016-10-11T14:31:28Z">
     <Description>MagentoHosting.pro development Vagrant box.</Description>
     <MediaRegistry>
       <HardDisks>
@@ -19,7 +19,7 @@
     </MediaRegistry>
     <ExtraData>
       <ExtraDataItem name="GUI/LastCloseAction" value="PowerOff"/>
-      <ExtraDataItem name="GUI/LastNormalWindowPosition" value="597,45,800,621"/>
+      <ExtraDataItem name="GUI/LastNormalWindowPosition" value="337,154,800,621"/>
       <ExtraDataItem name="GUI/RestrictedRuntimeDevicesMenuActions" value="HardDrives"/>
       <ExtraDataItem name="GUI/RestrictedRuntimeMachineMenuActions" value="SaveState,PowerOff"/>
       <ExtraDataItem name="GUI/ScaleFactor" value="1"/>
@@ -387,13 +387,13 @@
       </EmulatedUSB>
       <Guest memoryBalloonSize="0"/>
       <GuestProperties>
-        <GuestProperty name="/VirtualBox/GuestAdd/Revision" value="108824" timestamp="1473896786104122000" flags=""/>
-        <GuestProperty name="/VirtualBox/GuestAdd/Version" value="5.0.26" timestamp="1473896786103934000" flags=""/>
-        <GuestProperty name="/VirtualBox/GuestAdd/VersionExt" value="5.0.26" timestamp="1473896786104046000" flags=""/>
-        <GuestProperty name="/VirtualBox/GuestInfo/OS/Product" value="Linux" timestamp="1473896786103576000" flags=""/>
-        <GuestProperty name="/VirtualBox/GuestInfo/OS/Release" value="4.4.0-36-generic" timestamp="1473896786103657000" flags=""/>
-        <GuestProperty name="/VirtualBox/GuestInfo/OS/Version" value="#55-Ubuntu SMP Thu Aug 11 18:01:55 UTC 2016" timestamp="1473896786103736000" flags=""/>
-        <GuestProperty name="/VirtualBox/HostInfo/GUI/LanguageID" value="en_US" timestamp="1473896908442016000" flags=""/>
+        <GuestProperty name="/VirtualBox/GuestAdd/Revision" value="108824" timestamp="1476196141184476000" flags=""/>
+        <GuestProperty name="/VirtualBox/GuestAdd/Version" value="5.0.26" timestamp="1476196141184076000" flags=""/>
+        <GuestProperty name="/VirtualBox/GuestAdd/VersionExt" value="5.0.26" timestamp="1476196141184365000" flags=""/>
+        <GuestProperty name="/VirtualBox/GuestInfo/OS/Product" value="Linux" timestamp="1476196141183378000" flags=""/>
+        <GuestProperty name="/VirtualBox/GuestInfo/OS/Release" value="4.4.0-42-generic" timestamp="1476196141183540000" flags=""/>
+        <GuestProperty name="/VirtualBox/GuestInfo/OS/Version" value="#62-Ubuntu SMP Fri Oct 7 23:11:45 UTC 2016" timestamp="1476196141183790000" flags=""/>
+        <GuestProperty name="/VirtualBox/HostInfo/GUI/LanguageID" value="en_US" timestamp="1476196288513018000" flags=""/>
       </GuestProperties>
     </Hardware>
     <StorageControllers>

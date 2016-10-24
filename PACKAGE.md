@@ -35,24 +35,3 @@ joe pub/catalog.json && vagrant push ftp
 brew install coreutils gnu-sed mysql
 sudo gem install highline
 ```
-
-### Install from local
-```
-cd ~/Code/vagrant
-rm -rf tmp/testvb
-rm -rf ~/.vagrant.d/boxes/magehost-*
-mkdir -p ~/Code/vagrant/tmp/testvb
-cd tmp/testvb
-cp ../../pub/catalog.json catalog_local.json
-gsed -i 's/http:\/\/.*\/\(.*\)\.box/file:\/\/\/Users\/jeroen\/code\/vagrant\/pub\/\1.box/g' catalog_local.json
-cp ../../pub/Vagrantfile .
-gsed -i 's/http:\/\/.*\/catalog\.json/file:\/\/catalog_local.json/g' Vagrantfile
-vagrant up --provider virtualbox
-# vagrant up --provider parallels
-```
-
-### Destruct previous test
-```
-vagrant destroy -f
-rm -rf ~/.vagrant.d/boxes/magehost-VAGRANTSLASH-xenial-apache-php7 Vagrantfile catalog_local.json httpdocs .bundle .vagrant
-```

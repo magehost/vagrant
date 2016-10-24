@@ -9,13 +9,13 @@ sudo su -
 
 #### Package
 ```
-VERSION=2
+VERSION=3
 {
 mv pub/*.box old/
 ####  VMware
 virtualbox.vmwarevm/vmware-vdiskmanager -d virtualbox.vmwarevm/*.vmdk
 virtualbox.vmwarevm/vmware-vdiskmanager -k virtualbox.vmwarevm/*.vmdk
-tar -cvzf pub/xenial-apache-php7_vmw_v${VERSION}.box -C virtualbox.vmwarevm magehostdev.pro.{nvram,vmdk,vmsd,vmx,vmxf} 
+tar -cvzf pub/xenial-apache-php7_vmw_v${VERSION}.box -C virtualbox.vmwarevm magehostdev.pro.{nvram,vmdk,vmsd,vmx,vmxf} metadata.json
 ####  VirtualBox
 vagrant package --base magehostdev.pro --output pub/xenial-apache-php7_vb_v${VERSION}.box
 ####  Parallels

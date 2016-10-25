@@ -30,12 +30,6 @@ joe pub/catalog.json && vagrant push ftp
 }
 ```
 
-#### Prepare Mac
-```
-brew install coreutils gnu-sed mysql
-sudo gem install highline
-```
-
 ### Install from local
 ```
 cd ~/Code/vagrant

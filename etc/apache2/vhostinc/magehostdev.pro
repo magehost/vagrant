@@ -9,7 +9,7 @@ CustomLog          /data/vhosts/magehostdev.pro/logs/access.log combined
 <Directory /data/vhosts/magehostdev.pro/httpdocs/>
     Require        all granted
     AllowOverride  All
-    Options        +SymLinksIfOwnerMatch
+    Options        +FollowSymLinks
 </Directory>
 
 # Include  includes/force_www.conf

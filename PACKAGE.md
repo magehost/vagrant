@@ -26,7 +26,7 @@ prl_disk_tool compact --hdd parallels/magehostdev.pro.pvm/*.hdd
 tar -cvzf pub/xenial-apache-php7_prl_v${VERSION}.box -C parallels magehostdev.pro.pvm Vagrantfile metadata.json
 #### Increase version + set checksum
 md5 pub/*_v${VERSION}.box
-# In catalog.json you need to create a new version block with 3x updated version number and 2x md5 sum.
+# In catalog.json you need to create a new version block with 4x updated version number and 3x md5 sum.
 joe pub/catalog.json && vagrant push ftp
 }
 ```

@@ -1,3 +1,9 @@
+#### Prepare Mac
+```
+brew install coreutils gnu-sed mysql
+sudo gem install highline
+```
+
 ### Open Parallels master image
 
     cd ~/Code/vagrant

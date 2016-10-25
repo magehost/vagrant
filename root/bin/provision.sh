@@ -6,7 +6,7 @@ ip=$( /usr/local/bin/get_local_ip.sh eth1 )
 home="/data/vhosts/magehostdev.pro"
 
 # workaround to make sure we have both numbers and letters
-apppass="$( /usr/bin/makepasswd --minchars=2 --maxchars=9 )A1$( /usr/bin/makepasswd --minchars=2 --maxchars=9 )"
+apppass="$( /usr/bin/makepasswd --minchars=3 --maxchars=9 )A1$( /usr/bin/makepasswd --minchars=3 --maxchars=9 )"
 
 if [ -f $home/.my.cnf ]; then
     pass=$( cat $home/.my.cnf | grep '^password=' | cut -d'=' -f2 )

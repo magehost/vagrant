@@ -39,16 +39,17 @@ sudo gem install highline
 ### Install from local
 ```
 cd ~/Code/vagrant
-rm -rf tmp/testvb
+rm -rf tmp/test
 rm -rf ~/.vagrant.d/boxes/magehost-*
-mkdir -p ~/Code/vagrant/tmp/testvb
-cd tmp/testvb
+mkdir -p ~/Code/vagrant/tmp/test
+cd tmp/test
 cp ../../pub/catalog.json catalog_local.json
 gsed -i 's/http:\/\/.*\/\(.*\)\.box/file:\/\/\/Users\/jeroen\/code\/vagrant\/pub\/\1.box/g' catalog_local.json
 cp ../../pub/Vagrantfile .
 gsed -i 's/http:\/\/.*\/catalog\.json/file:\/\/catalog_local.json/g' Vagrantfile
 vagrant up --provider virtualbox
 # vagrant up --provider parallels
+# vagrant up --provider vmware_fusion
 ```
 
 ### Destruct previous test

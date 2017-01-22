@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ParallelsVirtualMachine schemaVersion="1.0" dyn_lists="VirtualAppliance 0">
-   <AppVersion>12.0.1-41296</AppVersion>
+   <AppVersion>12.1.1-41491</AppVersion>
    <ValidRc>0</ValidRc>
    <Identification dyn_lists="">
       <VmUuid>{6df6fa88-4555-4a3e-bcd6-4e10df9a0cba}</VmUuid>
@@ -8,19 +8,20 @@
       <LinkedVmUuid></LinkedVmUuid>
       <LinkedSnapshotUuid></LinkedSnapshotUuid>
       <VmName>magehostdev.pro</VmName>
-      <ServerUuid></ServerUuid>
+      <ServerUuid>{4ab6b9ca-bc93-4eab-a93a-0b1c2a2473eb}</ServerUuid>
       <ServerUuidAs></ServerUuidAs>
       <LastServerUuid></LastServerUuid>
       <ServerHost></ServerHost>
       <VmFilesLocation>1</VmFilesLocation>
       <VmCreationDate>2016-09-14 18:47:41</VmCreationDate>
-      <VmUptimeStartDateTime>2016-10-11 14:22:56</VmUptimeStartDateTime>
-      <VmUptimeInSeconds>249</VmUptimeInSeconds>
+      <VmUptimeStartDateTime>2016-12-10 11:38:52</VmUptimeStartDateTime>
+      <VmUptimeInSeconds>1421</VmUptimeInSeconds>
       <EnvId>1224406637</EnvId>
    </Identification>
    <Security ParentalControlEnabled_patch="1" dyn_lists="">
       <AccessControlList dyn_lists="AccessControl"/>
       <LockedOperationsList dyn_lists="LockedOperation"/>
+      <PasswordProtectedOperations dyn_lists="LockedOperation"/>
       <Owner></Owner>
       <IsOwner>0</IsOwner>
       <AccessForOthers>0</AccessForOthers>
@@ -31,7 +32,7 @@
       <General dyn_lists="PrevOsNumber">
          <OsType>9</OsType>
          <OsNumber>2314</OsNumber>
-         <VmDescription></VmDescription>
+         <VmDescription>MagentoHosting.pro development Vagrant box</VmDescription>
          <IsTemplate>0</IsTemplate>
          <CustomProperty></CustomProperty>
          <SwapDir></SwapDir>
@@ -99,7 +100,7 @@
          <Running>0</Running>
          <ServiceName></ServiceName>
       </ClusterOptions>
-      <Runtime UndoDisks_patch="1" CompactMode_patch="1" StickyMouse_patch="2" OptimizePowerConsumptionMode_patch="1" dyn_lists="IoLimit 0">
+      <Runtime UndoDisks_patch="1" OptimizePowerConsumptionMode_patch="1" CompactMode_patch="1" dyn_lists="IoLimit 0" StickyMouse_patch="2">
          <ForegroundPriority>1</ForegroundPriority>
          <BackgroundPriority>1</BackgroundPriority>
          <IoPriority>4</IoPriority>
@@ -109,7 +110,7 @@
          <ActionOnStop>1</ActionOnStop>
          <DockIcon>0</DockIcon>
          <OsResolutionInFullScreen>0</OsResolutionInFullScreen>
-         <FullScreen CornerAction_patch="2" dyn_lists="CornerAction">
+         <FullScreen dyn_lists="CornerAction" CornerAction_patch="2">
             <UseAllDisplays>0</UseAllDisplays>
             <UseActiveCorners>0</UseActiveCorners>
             <UseNativeFullScreen>1</UseNativeFullScreen>
@@ -185,7 +186,7 @@
          <LockGuestOnSuspend>0</LockGuestOnSuspend>
          <SyncVmHostname>0</SyncVmHostname>
          <SyncSshIds>0</SyncSshIds>
-         <Coherence MultiDisplay_patch="1" RelocateTaskBar_patch="1" ExcludeDock_patch="1" AlwaysOnTop_patch="1" GroupAllWindows_patch="1" DoNotMinimizeToDock_patch="1" dyn_lists="" ShowTaskBar_patch="1" BringToFront_patch="1">
+         <Coherence BringToFront_patch="1" MultiDisplay_patch="1" ShowTaskBar_patch="1" RelocateTaskBar_patch="1" DoNotMinimizeToDock_patch="1" ExcludeDock_patch="1" AlwaysOnTop_patch="1" dyn_lists="" GroupAllWindows_patch="1">
             <ShowTaskBar>1</ShowTaskBar>
             <ShowTaskBarInCoherence>0</ShowTaskBarInCoherence>
             <RelocateTaskBar>0</RelocateTaskBar>
@@ -207,7 +208,7 @@
             <WindowAnimation>1</WindowAnimation>
          </Coherence>
          <SharedFolders dyn_lists="">
-            <HostSharing MapSharedFoldersOnLetters_patch="1" dyn_lists="SharedFolder 0">
+            <HostSharing dyn_lists="SharedFolder 0" MapSharedFoldersOnLetters_patch="1">
                <Enabled>0</Enabled>
                <ShareAllMacDisks>0</ShareAllMacDisks>
                <ShareUserHomeDir>1</ShareUserHomeDir>
@@ -293,7 +294,7 @@
          <TisDatabase dyn_lists="">
             <Data></Data>
          </TisDatabase>
-         <Modality Opacity_patch="1" dyn_lists="" StayOnTop_patch="1">
+         <Modality Opacity_patch="1" StayOnTop_patch="1" dyn_lists="">
             <Opacity>1</Opacity>
             <StayOnTop>0</StayOnTop>
             <CaptureMouseClicks>1</CaptureMouseClicks>
@@ -376,7 +377,7 @@
       <SharedCamera Enabled_patch="1" dyn_lists="">
          <Enabled>1</Enabled>
       </SharedCamera>
-      <VirtualPrintersInfo UseHostPrinters_patch="1" dyn_lists="">
+      <VirtualPrintersInfo dyn_lists="" UseHostPrinters_patch="1">
          <UseHostPrinters>0</UseHostPrinters>
          <SyncDefaultPrinter>0</SyncDefaultPrinter>
          <ShowHostPrinterUI>1</ShowHostPrinterUI>
@@ -438,7 +439,7 @@
          <VirtualizedHV>0</VirtualizedHV>
          <VirtualizePMU>0</VirtualizePMU>
       </Cpu>
-      <Chipset Version_patch="1" dyn_lists="">
+      <Chipset dyn_lists="" Version_patch="1">
          <Type>1</Type>
          <Version>0</Version>
       </Chipset>
@@ -454,7 +455,7 @@
          <AutoQuota>1</AutoQuota>
          <MaxBalloonSize>70</MaxBalloonSize>
       </Memory>
-      <Video VideoMemorySize_patch="1" dyn_lists="">
+      <Video dyn_lists="" VideoMemorySize_patch="1">
          <Enabled>1</Enabled>
          <VideoMemorySize>32</VideoMemorySize>
          <EnableDirectXShaders>1</EnableDirectXShaders>
@@ -475,12 +476,12 @@
          <ShutdownReason>0</ShutdownReason>
          <CpuFeatures dyn_lists="">
             <FEATURES_MASK>260832255</FEATURES_MASK>
-            <EXT_FEATURES_MASK>4156170755</EXT_FEATURES_MASK>
-            <EXT_80000001_ECX_MASK>1</EXT_80000001_ECX_MASK>
+            <EXT_FEATURES_MASK>4160369155</EXT_FEATURES_MASK>
+            <EXT_80000001_ECX_MASK>33</EXT_80000001_ECX_MASK>
             <EXT_80000001_EDX_MASK>672139264</EXT_80000001_EDX_MASK>
             <EXT_80000007_EDX_MASK>256</EXT_80000007_EDX_MASK>
             <EXT_80000008_EAX>12324</EXT_80000008_EAX>
-            <EXT_00000007_EBX_MASK>641</EXT_00000007_EBX_MASK>
+            <EXT_00000007_EBX_MASK>526267</EXT_00000007_EBX_MASK>
             <EXT_0000000D_EAX_MASK>1</EXT_0000000D_EAX_MASK>
             <EXT_00000006_EAX_MASK>85</EXT_00000006_EAX_MASK>
             <CpuFeaturesMaskValid>1</CpuFeaturesMaskValid>
@@ -513,7 +514,7 @@
          <StackIndex>0</StackIndex>
          <DiskType>1</DiskType>
          <Size>40960</Size>
-         <SizeOnDisk>3799</SizeOnDisk>
+         <SizeOnDisk>5365</SizeOnDisk>
          <Passthrough>0</Passthrough>
          <SubType>0</SubType>
          <Splitted>0</Splitted>

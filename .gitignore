@@ -18,6 +18,8 @@
 /parallels/magehostdev.pro.pvm/*.mem.sh
 /parallels/magehostdev.pro.pvm/vm.lock
 /parallels/magehostdev.pro.pvm/parallel.txt
+/parallels/magehostdev.pro.pvm/Snapshots.xml
+/parallels/magehostdev.pro.pvm/Snapshots
 /tmp/
 /vagrant-spec.config.rb
 /virtualbox.vmwarevm/*-prev

@@ -18,19 +18,19 @@ apt-get -y autoremove
 apt-get clean
 update-grub
 echo "==== Cleaning logs..."
-rm -f   /data/mysql/ib_logfile* /data/mysql_log/*
-rm -rf  /root/.history /data/vhosts/magehostdev.pro/.history
+rm -f   /data/mysql/ib_logfile*  /data/mysql_log/*
+rm -rf  /root/.history  /home/*/.history  /data/vhosts/*/.history
 echo "==== Cleaning temp files, caches and logs..."
 umount  /var/lib/lxcfs
 rm -rf  /tmp/*
-rm -rf  /data/vhosts/magehostdev.pro/tmp/*
-rm -rf  /data/vhosts/magehostdev.pro/php-session/sess_*
+rm -rf  /data/vhosts/*/tmp/*
+rm -rf  /data/vhosts/*/php-session/sess_*
 rm -f   /data/mysql/*.err
 find  / -name '*~' -delete
 find  / -depth -name '.cache' -exec rm -rf {} \;
 find  /var/log -type f -name '*.gz' -delete
 find  /var/log -type f -exec truncate -s 0 {} \;
-find  /data/vhosts/magehostdev.pro/logs -type f -exec truncate -s 0 {} \;
+find  /data/vhosts/*/logs -type f -exec truncate -s 0 {} \;
 echo "==== Restoring empty vhost..."
 umount /data/vhosts/magehostdev.pro/httpdocs 2>/dev/null
 rm -f /data/vhosts/magehostdev.pro/.my.cnf

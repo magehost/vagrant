@@ -32,9 +32,11 @@ find  /var/log -type f -name '*.gz' -delete
 find  /var/log -type f -exec truncate -s 0 {} \;
 find  /data/vhosts/*/logs -type f -exec truncate -s 0 {} \;
 echo "==== Restoring empty vhost..."
-umount /data/vhosts/magehostdev.pro/httpdocs 2>/dev/null
+umount /data/vhosts/magehostdev.pro/magento1 2>/dev/null
+umount /data/vhosts/magehostdev.pro/magento2 2>/dev/null
 rm -f /data/vhosts/magehostdev.pro/.my.cnf
-rm -rf /data/vhosts/magehostdev.pro/httpdocs/{.??,}*
+rm -rf /data/vhosts/magehostdev.pro/magento1/{.??,}* 2>/dev/null
+rm -rf /data/vhosts/magehostdev.pro/magento2/{.??,}* 2>/dev/null
 cp -avf /data/repos/vagrant/data/vhosts/magehostdev.pro/*  /data/vhosts/magehostdev.pro/
 chown -R vagrant: /data/vhosts/magehostdev.pro
 cd /

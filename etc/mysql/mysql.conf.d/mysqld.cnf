@@ -77,7 +77,6 @@ tmp_table_size                  = 1G
 tmpdir                          = /tmp
 transaction-isolation           = READ-COMMITTED
 user                            = mysql
-userstat                        = ON
 wait_timeout                    = 28800
 
 !includedir /etc/mysql/conf.d/

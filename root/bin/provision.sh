@@ -4,9 +4,7 @@ echo ""
 user="vagrant"
 ip=$( /usr/local/bin/get_local_ip.sh eth1 )
 home="/data/vhosts/magehostdev.pro"
-
-# workaround to make sure we have both numbers and letters
-apppass="$( /usr/bin/makepasswd --minchars=3 --maxchars=9 )A1$( /usr/bin/makepasswd --minchars=3 --maxchars=9 )"
+apppass="vagrant123"
 
 if [ -f $home/.my.cnf ]; then
     pass=$( cat $home/.my.cnf | grep '^password=' | cut -d'=' -f2 )
@@ -24,10 +22,10 @@ password=$pass
 EOF
 fi
 
-webroot="$home/httpdocs"
-if [ ! -f "$webroot/index.php" ]; then
+ln -sfn "$home/magento1" "$home/httpdocs"
+if [ ! -f "$home/magento1/index.php" ]; then
     # chown is not possible because of NFS
-    sudo -u vagrant cat <<EOF > $webroot/index.php
+    sudo -u vagrant cat <<EOF > $home/magento1/index.php
 <h1><?= 'It works.'; ?></h1>
 <p><?php echo date('r'); ?></p>
 EOF

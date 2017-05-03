@@ -53,7 +53,8 @@ Tools installed:  git subversion n98-magerun modman vim joe nano dos2unix
 The 'httpdocs' dir on your workstation is mounted as webroot inside the Vagrant box.
 
 Example Magento install, execute on your local workstation:
-  vagrant ssh -c  "n98-magerun.phar install --installationFolder=./httpdocs --dbHost=$ip --dbUser=vagrant --dbPass=$pass --dbName=vagrant --baseUrl=http://$ip/ --useDefaultConfigParams=yes"
-  vagrant ssh -c  "cd httpdocs ;  test -d .modman || modman init ;  modman clone --copy --force https://github.com/Inchoo/Inchoo_PHP7.git ;  n98-magerun.phar cache:clean config"
+  vagrant ssh -c  "n98-magerun.phar install --installationFolder=./magento1 --dbHost=$ip --dbUser=vagrant --dbPass=$pass --dbName=vagrant --baseUrl=http://$ip/ --useDefaultConfigParams=yes"
+  vagrant ssh -c  "cd ~/magento1 ;  test -d .modman || modman init ;  modman clone --copy --force https://github.com/Inchoo/Inchoo_PHP7.git ;  n98-magerun.phar cache:clean config"
+  vagrant ssh -c  "ln -sfn magento1 ~/httpdocs"
 After executing this you will be able to log in on  http://$ip/backend/  with the user "vagrant", password "$apppass"
 EOF

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ParallelsVirtualMachine schemaVersion="1.0" dyn_lists="VirtualAppliance 0">
-   <AppVersion>12.1.1-41491</AppVersion>
+   <AppVersion>12.2.0-41591</AppVersion>
    <ValidRc>0</ValidRc>
    <Identification dyn_lists="">
       <VmUuid>{6df6fa88-4555-4a3e-bcd6-4e10df9a0cba}</VmUuid>
@@ -8,17 +8,17 @@
       <LinkedVmUuid></LinkedVmUuid>
       <LinkedSnapshotUuid></LinkedSnapshotUuid>
       <VmName>magehostdev.pro</VmName>
-      <ServerUuid>{4ab6b9ca-bc93-4eab-a93a-0b1c2a2473eb}</ServerUuid>
+      <ServerUuid></ServerUuid>
       <ServerUuidAs></ServerUuidAs>
       <LastServerUuid></LastServerUuid>
       <ServerHost></ServerHost>
       <VmFilesLocation>1</VmFilesLocation>
       <VmCreationDate>2016-09-14 18:47:41</VmCreationDate>
-      <VmUptimeStartDateTime>2016-12-10 11:38:52</VmUptimeStartDateTime>
-      <VmUptimeInSeconds>1421</VmUptimeInSeconds>
+      <VmUptimeStartDateTime>2017-04-17 20:37:06</VmUptimeStartDateTime>
+      <VmUptimeInSeconds>749</VmUptimeInSeconds>
       <EnvId>1224406637</EnvId>
    </Identification>
-   <Security ParentalControlEnabled_patch="1" dyn_lists="">
+   <Security dyn_lists="" ParentalControlEnabled_patch="1">
       <AccessControlList dyn_lists="AccessControl"/>
       <LockedOperationsList dyn_lists="LockedOperation"/>
       <PasswordProtectedOperations dyn_lists="LockedOperation"/>
@@ -44,7 +44,7 @@
          <AssetId></AssetId>
          <SerialNumber></SerialNumber>
       </General>
-      <Startup AutoStart_patch="2" dyn_lists="">
+      <Startup dyn_lists="" AutoStart_patch="2">
          <AutoStart>0</AutoStart>
          <AutoStartDelay>0</AutoStartDelay>
          <VmStartLoginMode>0</VmStartLoginMode>
@@ -55,25 +55,25 @@
          <LockInFullScreenMode>0</LockInFullScreenMode>
          <StartInDetachedWindow>0</StartInDetachedWindow>
          <BootingOrder dyn_lists="BootDevice 23">
-            <BootDevice dyn_lists="" id="19">
+            <BootDevice id="19" dyn_lists="">
                <Index>0</Index>
                <Type>5</Type>
                <BootingNumber>3</BootingNumber>
                <InUse>0</InUse>
             </BootDevice>
-            <BootDevice dyn_lists="" id="20">
+            <BootDevice id="20" dyn_lists="">
                <Index>1</Index>
                <Type>8</Type>
                <BootingNumber>2</BootingNumber>
                <InUse>0</InUse>
             </BootDevice>
-            <BootDevice dyn_lists="" id="21">
+            <BootDevice id="21" dyn_lists="">
                <Index>0</Index>
                <Type>8</Type>
                <BootingNumber>1</BootingNumber>
                <InUse>0</InUse>
             </BootDevice>
-            <BootDevice dyn_lists="" id="22">
+            <BootDevice id="22" dyn_lists="">
                <Index>0</Index>
                <Type>6</Type>
                <BootingNumber>0</BootingNumber>
@@ -100,7 +100,7 @@
          <Running>0</Running>
          <ServiceName></ServiceName>
       </ClusterOptions>
-      <Runtime UndoDisks_patch="1" OptimizePowerConsumptionMode_patch="1" CompactMode_patch="1" dyn_lists="IoLimit 0" StickyMouse_patch="2">
+      <Runtime StickyMouse_patch="2" UndoDisks_patch="1" dyn_lists="IoLimit 0" OptimizePowerConsumptionMode_patch="1" CompactMode_patch="1">
          <ForegroundPriority>1</ForegroundPriority>
          <BackgroundPriority>1</BackgroundPriority>
          <IoPriority>4</IoPriority>
@@ -110,7 +110,7 @@
          <ActionOnStop>1</ActionOnStop>
          <DockIcon>0</DockIcon>
          <OsResolutionInFullScreen>0</OsResolutionInFullScreen>
-         <FullScreen dyn_lists="CornerAction" CornerAction_patch="2">
+         <FullScreen CornerAction_patch="2" dyn_lists="CornerAction">
             <UseAllDisplays>0</UseAllDisplays>
             <UseActiveCorners>0</UseActiveCorners>
             <UseNativeFullScreen>1</UseNativeFullScreen>
@@ -121,6 +121,7 @@
             <ScaleViewMode>1</ScaleViewMode>
             <EnableGammaControl>1</EnableGammaControl>
             <OptimiseForGames>0</OptimiseForGames>
+            <ActivateSpacesOnClick>0</ActivateSpacesOnClick>
          </FullScreen>
          <UndoDisks>0</UndoDisks>
          <SafeMode>0</SafeMode>
@@ -186,7 +187,7 @@
          <LockGuestOnSuspend>0</LockGuestOnSuspend>
          <SyncVmHostname>0</SyncVmHostname>
          <SyncSshIds>0</SyncSshIds>
-         <Coherence BringToFront_patch="1" MultiDisplay_patch="1" ShowTaskBar_patch="1" RelocateTaskBar_patch="1" DoNotMinimizeToDock_patch="1" ExcludeDock_patch="1" AlwaysOnTop_patch="1" dyn_lists="" GroupAllWindows_patch="1">
+         <Coherence MultiDisplay_patch="1" GroupAllWindows_patch="1" ShowTaskBar_patch="1" DoNotMinimizeToDock_patch="1" dyn_lists="" RelocateTaskBar_patch="1" ExcludeDock_patch="1" BringToFront_patch="1" AlwaysOnTop_patch="1">
             <ShowTaskBar>1</ShowTaskBar>
             <ShowTaskBarInCoherence>0</ShowTaskBarInCoherence>
             <RelocateTaskBar>0</RelocateTaskBar>
@@ -208,7 +209,7 @@
             <WindowAnimation>1</WindowAnimation>
          </Coherence>
          <SharedFolders dyn_lists="">
-            <HostSharing dyn_lists="SharedFolder 0" MapSharedFoldersOnLetters_patch="1">
+            <HostSharing MapSharedFoldersOnLetters_patch="1" dyn_lists="SharedFolder 0">
                <Enabled>0</Enabled>
                <ShareAllMacDisks>0</ShareAllMacDisks>
                <ShareUserHomeDir>1</ShareUserHomeDir>
@@ -262,11 +263,11 @@
          <AutoUpdate dyn_lists="">
             <Enabled>1</Enabled>
          </AutoUpdate>
-         <ClipboardSync Enabled_patch="1" dyn_lists="">
+         <ClipboardSync dyn_lists="" Enabled_patch="1">
             <Enabled>1</Enabled>
             <PreserveTextFormatting>1</PreserveTextFormatting>
          </ClipboardSync>
-         <DragAndDrop Enabled_patch="1" dyn_lists="">
+         <DragAndDrop dyn_lists="" Enabled_patch="1">
             <Enabled>1</Enabled>
          </DragAndDrop>
          <KeyboardLayoutSync dyn_lists="">
@@ -307,7 +308,7 @@
             <UseConnectedServers>1</UseConnectedServers>
             <UseInversedDisks>0</UseInversedDisks>
          </SharedVolumes>
-         <Gestures Enabled_patch="1" dyn_lists="">
+         <Gestures dyn_lists="" Enabled_patch="1">
             <Enabled>1</Enabled>
             <OneFingerSwipe>1</OneFingerSwipe>
          </Gestures>
@@ -339,7 +340,7 @@
          <Schema>2</Schema>
          <NotifyBeforeCreation>1</NotifyBeforeCreation>
       </Autoprotect>
-      <AutoCompress Enabled_patch="1" dyn_lists="">
+      <AutoCompress dyn_lists="" Enabled_patch="1">
          <Enabled>0</Enabled>
          <Period>86400</Period>
          <FreeDiskSpaceRatio>50</FreeDiskSpaceRatio>
@@ -374,15 +375,15 @@
             <OfflineTimeToLiveSeconds>864000</OfflineTimeToLiveSeconds>
          </ExpirationInfo>
       </VmProtectionInfo>
-      <SharedCamera Enabled_patch="1" dyn_lists="">
+      <SharedCamera dyn_lists="" Enabled_patch="1">
          <Enabled>1</Enabled>
       </SharedCamera>
-      <VirtualPrintersInfo dyn_lists="" UseHostPrinters_patch="1">
+      <VirtualPrintersInfo UseHostPrinters_patch="1" dyn_lists="">
          <UseHostPrinters>0</UseHostPrinters>
          <SyncDefaultPrinter>0</SyncDefaultPrinter>
          <ShowHostPrinterUI>1</ShowHostPrinterUI>
       </VirtualPrintersInfo>
-      <SharedBluetooth Enabled_patch="" dyn_lists="">
+      <SharedBluetooth dyn_lists="" Enabled_patch="">
          <Enabled>0</Enabled>
       </SharedBluetooth>
       <LockDown dyn_lists="">
@@ -425,7 +426,7 @@
       </ArchivingOptions>
    </Settings>
    <Hardware dyn_lists="Fdd 0 CdRom 1 Hdd 1 Serial 0 Parallel 0 Printer 1 NetworkAdapter 2 Sound 0 USB 0 PciVideoAdapter 0 GenericDevice 0 GenericPciDevice 0 GenericScsiDevice 0">
-      <Cpu EnableVTxSupport_patch="1" dyn_lists="">
+      <Cpu dyn_lists="" EnableVTxSupport_patch="1">
          <Number>4</Number>
          <Mode>0</Mode>
          <AccelerationLevel>2</AccelerationLevel>
@@ -439,7 +440,7 @@
          <VirtualizedHV>0</VirtualizedHV>
          <VirtualizePMU>0</VirtualizePMU>
       </Cpu>
-      <Chipset dyn_lists="" Version_patch="1">
+      <Chipset Version_patch="1" dyn_lists="">
          <Type>1</Type>
          <Version>0</Version>
       </Chipset>
@@ -455,7 +456,7 @@
          <AutoQuota>1</AutoQuota>
          <MaxBalloonSize>70</MaxBalloonSize>
       </Memory>
-      <Video dyn_lists="" VideoMemorySize_patch="1">
+      <Video VideoMemorySize_patch="1" dyn_lists="">
          <Enabled>1</Enabled>
          <VideoMemorySize>32</VideoMemorySize>
          <EnableDirectXShaders>1</EnableDirectXShaders>
@@ -487,13 +488,13 @@
             <CpuFeaturesMaskValid>1</CpuFeaturesMaskValid>
          </CpuFeatures>
       </HibernateState>
-      <CdRom dyn_lists="" id="0">
+      <CdRom id="0" dyn_lists="">
          <Index>0</Index>
          <Enabled>1</Enabled>
-         <Connected>0</Connected>
+         <Connected>1</Connected>
          <EmulatedType>1</EmulatedType>
-         <SystemName></SystemName>
-         <UserFriendlyName></UserFriendlyName>
+         <SystemName>/Applications/Parallels Desktop.app//Contents/Resources/Tools/prl-tools-lin.iso</SystemName>
+         <UserFriendlyName>/Applications/Parallels Desktop.app//Contents/Resources/Tools/prl-tools-lin.iso</UserFriendlyName>
          <Remote>0</Remote>
          <InterfaceType>2</InterfaceType>
          <StackIndex>1</StackIndex>
@@ -501,7 +502,7 @@
          <SubType>0</SubType>
          <DeviceDescription></DeviceDescription>
       </CdRom>
-      <Hdd dyn_lists="Partition 0" id="0">
+      <Hdd id="0" dyn_lists="Partition 0">
          <Uuid>{47205d9c-95d8-43f0-8b83-25ce8f2f0c57}</Uuid>
          <Index>0</Index>
          <Enabled>1</Enabled>
@@ -514,7 +515,7 @@
          <StackIndex>0</StackIndex>
          <DiskType>1</DiskType>
          <Size>40960</Size>
-         <SizeOnDisk>5365</SizeOnDisk>
+         <SizeOnDisk>11708</SizeOnDisk>
          <Passthrough>0</Passthrough>
          <SubType>0</SubType>
          <Splitted>0</Splitted>
@@ -525,16 +526,16 @@
          <StorageURL></StorageURL>
          <OnlineCompactMode>1</OnlineCompactMode>
       </Hdd>
-      <NetworkAdapter AdapterType_patch="1" dyn_lists="NetAddress DnsIPAddress SearchDomain" id="0">
+      <NetworkAdapter id="0" dyn_lists="NetAddress DnsIPAddress SearchDomain" AdapterType_patch="1">
          <Index>0</Index>
          <Enabled>1</Enabled>
          <Connected>1</Connected>
          <EmulatedType>1</EmulatedType>
          <SystemName></SystemName>
-         <UserFriendlyName></UserFriendlyName>
+         <UserFriendlyName>Shared Network</UserFriendlyName>
          <Remote>0</Remote>
          <AdapterNumber>-1</AdapterNumber>
-         <AdapterName></AdapterName>
+         <AdapterName>Shared Network</AdapterName>
          <MAC>001C420ED7BE</MAC>
          <VMNetUuid></VMNetUuid>
          <HostMAC>001C42C5EB34</HostMAC>
@@ -587,7 +588,7 @@
          </NetProfile>
          <DeviceDescription></DeviceDescription>
       </NetworkAdapter>
-      <NetworkAdapter AdapterType_patch="1" dyn_lists="NetAddress DnsIPAddress SearchDomain" id="1">
+      <NetworkAdapter id="1" dyn_lists="NetAddress DnsIPAddress SearchDomain" AdapterType_patch="1">
          <Index>1</Index>
          <Enabled>1</Enabled>
          <Connected>1</Connected>

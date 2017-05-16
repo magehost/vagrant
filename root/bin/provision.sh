@@ -22,10 +22,10 @@ password=$pass
 EOF
 fi
 
-webroot="$home/magento1"
-if [ ! -f "$webroot/index.php" ]; then
+ln -sfn "$home/magento1" "$home/httpdocs"
+if [ ! -f "$home/magento1/index.php" ]; then
     # chown is not possible because of NFS
-    sudo -u vagrant cat <<EOF > $webroot/index.php
+    sudo -u vagrant cat <<EOF > $home/magento1/index.php
 <h1><?= 'It works.'; ?></h1>
 <p><?php echo date('r'); ?></p>
 EOF

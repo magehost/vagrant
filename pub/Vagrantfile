@@ -9,17 +9,20 @@ Vagrant.configure(2) do |config|
     config.vm.box                        = "magehost/xenial-apache-php7"
     config.vm.box_url                    = "http://vagrant.magehost.pro/catalog.json"
     config.vm.provider "parallels" do |prl,override|
-        override.vm.synced_folder            "httpdocs", "/data/vhosts/magehostdev.pro/httpdocs", create: true
+        override.vm.synced_folder            "magento1", "/data/vhosts/magehostdev.pro/magento1", create: true
+        override.vm.synced_folder            "magento2", "/data/vhosts/magehostdev.pro/magento2", create: true
         override.vm.synced_folder            "backup",   "/data/vhosts/magehostdev.pro/backup",   create: true
         prl.update_guest_tools          = true
         prl.linked_clone                = true
     end
     config.vm.provider "virtualbox" do |vb,override|
-        override.vm.synced_folder            "httpdocs", "/data/vhosts/magehostdev.pro/httpdocs", create: true, type: "nfs"
+        override.vm.synced_folder            "magento1", "/data/vhosts/magehostdev.pro/magento1", create: true, type: "nfs"
+        override.vm.synced_folder            "magento2", "/data/vhosts/magehostdev.pro/magento2", create: true, type: "nfs"
         override.vm.synced_folder            "backup",   "/data/vhosts/magehostdev.pro/backup",   create: true, type: "nfs"
     end
     config.vm.provider "vmware" do |vmware,override|
-        override.vm.synced_folder            "httpdocs", "/data/vhosts/magehostdev.pro/httpdocs", create: true, type: "nfs"
+        override.vm.synced_folder            "magento1", "/data/vhosts/magehostdev.pro/magento1", create: true, type: "nfs"
+        override.vm.synced_folder            "magento2", "/data/vhosts/magehostdev.pro/magento2", create: true, type: "nfs"
         override.vm.synced_folder            "backup",   "/data/vhosts/magehostdev.pro/backup",   create: true, type: "nfs"
     end
     config.vm.provision                  "shell", inline: "/bin/bash /root/bin/provision.sh"

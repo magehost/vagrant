@@ -10,7 +10,7 @@ sudo su -
 #### Package
 Make sure the "magehostdev.pro" master box is registered in VirtualBox, otherwise export will fail.
 ```
-VERSION=4
+VERSION=5
 {
 mv pub/*.box old/
 ####  VMware

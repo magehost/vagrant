@@ -9,6 +9,7 @@ sudo su -
 
 #### Package
 Make sure the "magehostdev.pro" master box is registered in VirtualBox, otherwise export will fail.
+Add 1 to the latest version from [catalog.json](http://vagrant.magehost.pro/catalog.json)
 ```
 VERSION=5
 {

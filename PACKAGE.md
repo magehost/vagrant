@@ -13,6 +13,7 @@ Add 1 to the latest version from [catalog.json](http://vagrant.magehost.pro/cata
 ```
 VERSION=6
 {
+set -e -x -u
 mv pub/*.box old/
 ####  Parallels
 prlctl unregister magehostdev.pro

@@ -28,7 +28,7 @@ The Parallels disk needs to be one .hds file, not multiple. If you have multiple
     cd ~/Code/vagrant
     rm -i virtualbox.vmwarevm/magehostdev.pro.vmdk
     # You may need to Release & Remove the old disk inside VirtualBox: File > Virtual Media Manager
-    VBoxManage clonehd parallels/magehostdev.pro.pvm/magehostdev.pro.hdd/*.hds virtualbox.vmwarevm/magehostdev.pro.vmdk  --format VMDK
+    find parallels/magehostdev.pro.pvm/magehostdev.pro.hdd/ -name '*.hds' -exec VBoxManage clonehd {} virtualbox.vmwarevm/magehostdev.pro.vmdk  --format VMDK \; -quit
 
 ### When ready
 

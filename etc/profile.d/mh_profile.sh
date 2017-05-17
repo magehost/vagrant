@@ -9,7 +9,7 @@ alias errlog='/usr/bin/tail -n0 -f \
  /var/log/mysql/error.log \
  /data/vhosts/*/logs/*error.log \
  /data/vhosts/*/httpdocs/var/log/*.log \
- /var/log/php7.0-fpm.log \
+ /var/log/php*-fpm.log \
 '
 
 # Temp dir

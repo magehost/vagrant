@@ -3,7 +3,7 @@ ErrorLog           /data/vhosts/magehostdev.pro/logs/error.log
 CustomLog          /data/vhosts/magehostdev.pro/logs/access.log combined
 
 <FilesMatch "\.php$">
-    SetHandler "proxy:fcgi://127.0.0.1:9101"
+    SetHandler "proxy:fcgi://127.0.0.1:9201"
 </FilesMatch>
 
 <Directory /data/vhosts/magehostdev.pro/httpdocs/>

@@ -14,17 +14,17 @@ Add 1 to the latest version from [catalog.json](http://vagrant.magehost.pro/cata
 VERSION=6
 {
 mv pub/*.box old/
-####  VMware
-virtualbox.vmwarevm/vmware-vdiskmanager -d virtualbox.vmwarevm/*.vmdk
-virtualbox.vmwarevm/vmware-vdiskmanager -k virtualbox.vmwarevm/*.vmdk
-tar -cvzf pub/xenial-apache-php7_vmw_v${VERSION}.box -C virtualbox.vmwarevm magehostdev.pro.{nvram,vmdk,vmsd,vmx,vmxf} metadata.json
-####  VirtualBox
-vagrant package --base magehostdev.pro --output pub/xenial-apache-php7_vb_v${VERSION}.box
 ####  Parallels
 prlctl unregister magehostdev.pro
 rm -rf parallels/magehostdev.pro.pvm/*.{app,backup,log} parallels/magehostdev.pro.pvm/*~ parallels/magehostdev.pro.pvm/*.hdd/*.Backup
 prl_disk_tool compact --hdd parallels/magehostdev.pro.pvm/*.hdd
 tar -cvzf pub/xenial-apache-php7_prl_v${VERSION}.box -C parallels magehostdev.pro.pvm Vagrantfile metadata.json
+####  VirtualBox
+vagrant package --base magehostdev.pro --output pub/xenial-apache-php7_vb_v${VERSION}.box
+####  VMware
+virtualbox.vmwarevm/vmware-vdiskmanager -d virtualbox.vmwarevm/*.vmdk
+virtualbox.vmwarevm/vmware-vdiskmanager -k virtualbox.vmwarevm/*.vmdk
+tar -cvzf pub/xenial-apache-php7_vmw_v${VERSION}.box -C virtualbox.vmwarevm magehostdev.pro.{nvram,vmdk,vmsd,vmx,vmxf} metadata.json
 #### Increase version + set checksum
 md5 pub/*_v${VERSION}.box
 # In catalog.json you need to create a new version block with 4x updated version number and 3x md5 sum.

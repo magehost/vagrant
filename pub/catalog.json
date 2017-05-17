@@ -3,6 +3,40 @@
   "description": "MagentoHosting.pro configured Ubuntu 16.04 LTS 64-bit with Apache 2.4 and PHP-FPM 7.0.",
   "versions": [
     {
+      "version": "6",
+      "providers": [
+        {
+          "name": "parallels",
+          "url": "http://vagrant.magehost.pro/xenial-apache-php7_prl_v6.box",
+          "checksum_type": "md5",
+          "checksum": "517e5f0b1fbaee903b9b398f5eb4a3bd"
+        },
+        {
+          "name": "virtualbox",
+          "url": "http://vagrant.magehost.pro/xenial-apache-php7_vb_v6.box",
+          "checksum_type": "md5",
+          "checksum": "b3b5797be7dbb75afa62f54b64bf246c"
+        },
+        {
+          "name": "vmware_fusion",
+          "url": "http://vagrant.magehost.pro/xenial-apache-php7_vmw_v6.box",
+          "checksum_type": "md5",
+          "checksum": "0b3ffcae4902375ebe2e0fb5e3c18611"
+        }
+      ]
+    },
+    {
+      "version": "5",
+      "providers": [
+        {
+          "name": "parallels",
+          "url": "http://vagrant.magehost.pro/xenial-apache-php7_prl_v5.box",
+          "checksum_type": "md5",
+          "checksum": "981ffeb9257acef091e7db31f06d5741"
+        }
+      ]
+    },        
+    {
       "version": "4",
       "providers": [
         {

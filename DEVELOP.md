@@ -21,8 +21,9 @@ sudo gem install highline
 
 ### Parallels to VirtualBox/VMware image
 
-The Parallels disk needs to be one .hds file, not multiple.
 **WORK IN PROGRESS**
+
+The Parallels disk needs to be one .hds file, not multiple. If you have multiple you can mount the current disk and a new disk in another VM and use `dd` to clone there.
 
     cd ~/Code/vagrant
     VBoxManage clonehd parallels/magehostdev.pro.pvm/magehostdev.pro.hdd/magehostdev.pro.hds virtualbox.vmwarevm/magehostdev.pro.vmdk  --format VMDK

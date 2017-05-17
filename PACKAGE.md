@@ -28,6 +28,7 @@ virtualbox.vmwarevm/vmware-vdiskmanager -d virtualbox.vmwarevm/*.vmdk
 virtualbox.vmwarevm/vmware-vdiskmanager -k virtualbox.vmwarevm/*.vmdk
 tar -cvzf pub/xenial-apache-php7_vmw_v${VERSION}.box -C virtualbox.vmwarevm magehostdev.pro.{nvram,vmdk,vmsd,vmx,vmxf} metadata.json
 #### Increase version + set checksum
+ls -lah pub/*_v${VERSION}.box
 md5 pub/*_v${VERSION}.box
 # In catalog.json you need to create a new version block with 4x updated version number and 3x md5 sum.
 joe pub/catalog.json && scp -P2222 pub/* vagrant@vagrant.magehost.pro:httpdocs/

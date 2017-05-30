@@ -1,0 +1,27 @@
+[Unit]
+Description=Varnish HTTP accelerator
+Documentation=https://www.varnish-cache.org/docs/4.1/ man:varnishd
+
+[Service]
+Type=simple
+LimitNOFILE=131072
+LimitMEMLOCK=82000
+ExecStart=/usr/sbin/varnishd -j unix,user=vcache -F -a :80 \
+             -T :6082 \
+             -f /etc/varnish/default.vcl \
+             -S /etc/varnish/secret \
+             -s malloc,1G \
+             -p cli_buffer=32768 \
+             -p feature=+esi_ignore_other_elements \
+             -p vcc_allow_inline_c=on \
+             -p shm_reclen=4084 \
+             -p pipe_timeout=21600 \
+             -p ban_lurker_sleep=0.1
+ExecReload=/usr/share/varnish/reload-vcl
+ProtectSystem=full
+ProtectHome=true
+PrivateTmp=true
+PrivateDevices=true
+
+[Install]
+WantedBy=multi-user.target

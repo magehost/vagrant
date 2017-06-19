@@ -43,8 +43,8 @@ cd ~/Code/vagrant/tmp/test
 #
 cp ~/Code/vagrant/pub/catalog.json ./catalog_local.json
 gsed -i 's/http:\/\/.*\/\(.*\)\.box/file:\/\/\/Users\/jeroen\/code\/vagrant\/pub\/\1.box/g' ./catalog_local.json
-cp ../../pub/Vagrantfile .
-gsed -i 's/http:\/\/.*\/catalog\.json/file:\/\/catalog_local.json/g' Vagrantfile
+cp ~/Code/vagrant/pub/Vagrantfile .
+gsed -i 's/http:\/\/.*\/catalog\.json/file:\/\/catalog_local.json/g' ./Vagrantfile
 rm -rf ~/.vagrant.d/boxes/magehost-*
 # vagrant up --provider virtualbox
 # vagrant up --provider parallels

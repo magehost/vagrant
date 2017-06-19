@@ -13,7 +13,7 @@ echo "==== Updating Tools..."
 echo "==== Updating OS..."
 apt-get update
 apt-get -y upgrade
-apt-get -y upgrade linux-generic linux-headers-generic linux-image-generic
+apt-get -y upgrade linux-generic linux-headers-generic linux-image-generic linux-tools-virtual
 apt-get -y autoremove
 apt-get clean
 update-grub

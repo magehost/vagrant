@@ -37,15 +37,15 @@ joe pub/catalog.json && scp -P2222 pub/* vagrant@vagrant.magehost.pro:httpdocs/
 
 ### Install from local
 ```
-cd ~/Code/vagrant
-rm -rf tmp/test
-rm -rf ~/.vagrant.d/boxes/magehost-*
-mkdir -p ~/Code/vagrant/tmp/test
-cd tmp/test
-cp ../../pub/catalog.json catalog_local.json
-gsed -i 's/http:\/\/.*\/\(.*\)\.box/file:\/\/\/Users\/jeroen\/code\/vagrant\/pub\/\1.box/g' catalog_local.json
+rm -rf ~/Code/vagrant/tmp/test; 
+mkdir -p ~/Code/vagrant/tmp/test; 
+cd ~/Code/vagrant/tmp/test
+#
+cp ~/Code/vagrant/pub/catalog.json ./catalog_local.json
+gsed -i 's/http:\/\/.*\/\(.*\)\.box/file:\/\/\/Users\/jeroen\/code\/vagrant\/pub\/\1.box/g' ./catalog_local.json
 cp ../../pub/Vagrantfile .
 gsed -i 's/http:\/\/.*\/catalog\.json/file:\/\/catalog_local.json/g' Vagrantfile
+rm -rf ~/.vagrant.d/boxes/magehost-*
 # vagrant up --provider virtualbox
 # vagrant up --provider parallels
 # vagrant up --provider vmware_fusion

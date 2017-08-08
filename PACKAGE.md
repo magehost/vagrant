@@ -45,7 +45,8 @@ cp ~/Code/vagrant/pub/catalog.json ./catalog_local.json
 gsed -i 's/http:\/\/.*\/\(.*\)\.box/file:\/\/\/Users\/jeroen\/code\/vagrant\/pub\/\1.box/g' ./catalog_local.json
 cp ~/Code/vagrant/pub/Vagrantfile .
 gsed -i 's/http:\/\/.*\/catalog\.json/file:\/\/catalog_local.json/g' ./Vagrantfile
-rm -rf ~/.vagrant.d/boxes/magehost-*
+rm -rf ~/.vagrant.d/boxes/magehost-VAGRANTSLASH-xenial-apache-php7/$VERSION/*
+rm -f ~/.vagrant.d/boxes/magehost-VAGRANTSLASH-xenial-apache-php7/metadata_url
 # vagrant up --provider virtualbox
 # vagrant up --provider parallels
 # vagrant up --provider vmware_fusion

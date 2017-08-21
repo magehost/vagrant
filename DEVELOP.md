@@ -11,7 +11,7 @@ sudo gem install highline
     
 ### When ready
 
-Execute via SSH in Parallels + VirtualBox master
+Execute via SSH in Parallels master
 
     ~/bin/prepare_pack.sh
 

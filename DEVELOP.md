@@ -9,6 +9,12 @@ sudo gem install highline
     cd /data/repos/vagrant
     open parallels/magehostdev.pro.pvm
     
+### When ready
+
+Execute via SSH in Parallels + VirtualBox master
+
+    ~/bin/prepare_pack.sh
+
 ### Parallels to VirtualBox/VMware image
 
 The Parallels disk needs to be one .hds file, not multiple. If you have multiple you need to remove snapshots.
@@ -37,11 +43,5 @@ If you then still have multiple you can mount the current disk and a new disk in
 
     cd /data/repos/vagrant
     open virtualbox.vmwarevm/magehostdev.pro.vmx
-
-### When ready
-
-Execute via SSH in Parallels + VirtualBox master
-
-    ~/bin/prepare_pack.sh
     
 Now you can [package](https://github.com/magehost/vagrant/blob/xenial/PACKAGE.md).

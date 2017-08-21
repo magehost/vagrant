@@ -22,6 +22,7 @@ If you then still have multiple you can mount the current disk and a new disk in
         FILES=$( find parallels/magehostdev.pro.pvm/magehostdev.pro.hdd -name '*.hds' )
         if [ 1 == $(echo -e "${FILES}" | wc -l) ]; then
             VBoxManage clonehd "${FILES}" virtualbox.vmwarevm/magehostdev.pro.vmdk  --format VMDK
+            VBoxManage storageattach magehostdev.pro --storagectl SATA --port 0 --type hdd --medium /data/repos/vagrant/virtualbox.vmwarevm/magehostdev.pro.vmdk
         else
             echo -e "Multiple HDS files found, remove snapshots first:\n${FILES}"
         fi

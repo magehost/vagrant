@@ -15,7 +15,7 @@ The Parallels disk needs to be one .hds file, not multiple. If you have multiple
 If you then still have multiple you can mount the current disk and a new disk in another VM and use `dd` to clone there.
 
     {
-        cd ~/Code/vagrant
+        cd /data/repos/vagrant
         rm -i virtualbox.vmwarevm/magehostdev.pro.vmdk
         VBoxManage list hdds | grep "virtualbox.vmwarevm/magehostdev.pro.vmdk" && echo -e "Use 'File > Virtual Media Manager' to Release & Remove disk from Virtualbox.\n" && virtualbox 
         # You may need to Release & Remove the old disk inside VirtualBox: File > Virtual Media Manager
@@ -29,17 +29,17 @@ If you then still have multiple you can mount the current disk and a new disk in
 
 ### Open VirtualBox/VMware master image in VirtualBox
 
-    cd ~/Code/vagrant
+    cd /data/repos/vagrant
     open virtualbox.vmwarevm/magehostdev.pro.vbox
 
 ### Open VirtualBox/VMware master image in VMware Fusion
 
-    cd ~/Code/vagrant
+    cd /data/repos/vagrant
     open virtualbox.vmwarevm/magehostdev.pro.vmx
 
 ### When ready
 
-Execute via SSH in Parallels + VirtualBox mater
+Execute via SSH in Parallels + VirtualBox master
 
     ~/bin/prepare_pack.sh
     

@@ -32,7 +32,7 @@ The Parallels disk needs to be one .hds file, not multiple. If you have multiple
     if [ 1 == $(echo -e "${FILES}" | wc -l) ]; then
         VBoxManage clonehd "${FILES}" virtualbox.vmwarevm/magehostdev.pro.vmdk  --format VMDK
     else
-       echo -e "Multiple HDS files found, remove snapshots first:\n${FILES}"
+        echo -e "Multiple HDS files found, remove snapshots first:\n${FILES}"
     fi
 
 ### When ready

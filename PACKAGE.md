@@ -14,7 +14,7 @@ Add 1 to the latest version from [catalog.json](http://vagrant.magehost.pro/cata
 VERSION=8
 {
 set -e -x -u
-cd ~/Code/vagrant
+cd /data/repos/vagrant
 mv -f pub/*.box old/ || true
 ####  Parallels
 prlctl unregister magehostdev.pro || true
@@ -38,13 +38,13 @@ joe pub/catalog.json && scp -P2222 pub/* vagrant@vagrant.magehost.pro:httpdocs/
 ### Install from local
 Warning: creates linked clone. Please remove a.s.a.p. to prevent problems with further development of the master VM.
 ```
-rm -rf ~/Code/vagrant/tmp/test; 
-mkdir -p ~/Code/vagrant/tmp/test; 
-cd ~/Code/vagrant/tmp/test
+rm -rf /data/repos/vagrant/tmp/test; 
+mkdir -p /data/repos/vagrant/tmp/test; 
+cd /data/repos/vagrant/tmp/test
 #
-cp ~/Code/vagrant/pub/catalog.json ./catalog_local.json
+cp /data/repos/vagrant/pub/catalog.json ./catalog_local.json
 gsed -i 's/http:\/\/.*\/\(.*\)\.box/file:\/\/\/Users\/jeroen\/code\/vagrant\/pub\/\1.box/g' ./catalog_local.json
-cp ~/Code/vagrant/pub/Vagrantfile .
+cp /data/repos/vagrant/pub/Vagrantfile .
 gsed -i 's/http:\/\/.*\/catalog\.json/file:\/\/catalog_local.json/g' ./Vagrantfile
 rm -rf ~/.vagrant.d/boxes/magehost-VAGRANTSLASH-xenial-apache-php7/$VERSION/*
 rm -f ~/.vagrant.d/boxes/magehost-VAGRANTSLASH-xenial-apache-php7/metadata_url

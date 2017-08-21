@@ -6,7 +6,7 @@ sudo gem install highline
 
 ### Open Parallels master image
 
-    cd ~/Code/vagrant
+    cd /data/repos/vagrant
     open parallels/magehostdev.pro.pvm
     
 ### Parallels to VirtualBox/VMware image

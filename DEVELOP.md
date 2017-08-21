@@ -9,21 +9,10 @@ sudo gem install highline
     cd ~/Code/vagrant
     open parallels/magehostdev.pro.pvm
     
-### Open VirtualBox/VMware master image in VirtualBox
-
-    cd ~/Code/vagrant
-    open virtualbox.vmwarevm/magehostdev.pro.vbox
-
-### Open VirtualBox/VMware master image in VMware Fusion
-
-    cd ~/Code/vagrant
-    open virtualbox.vmwarevm/magehostdev.pro.vmx
-
 ### Parallels to VirtualBox/VMware image
 
-**WORK IN PROGRESS**
-
-The Parallels disk needs to be one .hds file, not multiple. If you have multiple you can mount the current disk and a new disk in another VM and use `dd` to clone there.
+The Parallels disk needs to be one .hds file, not multiple. If you have multiple you need to remove snapshots.
+If you then still have multiple you can mount the current disk and a new disk in another VM and use `dd` to clone there.
 
     {
         cd ~/Code/vagrant
@@ -37,6 +26,16 @@ The Parallels disk needs to be one .hds file, not multiple. If you have multiple
             echo -e "Multiple HDS files found, remove snapshots first:\n${FILES}"
         fi
     }
+
+### Open VirtualBox/VMware master image in VirtualBox
+
+    cd ~/Code/vagrant
+    open virtualbox.vmwarevm/magehostdev.pro.vbox
+
+### Open VirtualBox/VMware master image in VMware Fusion
+
+    cd ~/Code/vagrant
+    open virtualbox.vmwarevm/magehostdev.pro.vmx
 
 ### When ready
 

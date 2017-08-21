@@ -36,6 +36,7 @@ joe pub/catalog.json && scp -P2222 pub/* vagrant@vagrant.magehost.pro:httpdocs/
 ```
 
 ### Install from local
+Warning: creates linked clone. Please remove a.s.a.p. to prevent problems with further development of the master VM.
 ```
 rm -rf ~/Code/vagrant/tmp/test; 
 mkdir -p ~/Code/vagrant/tmp/test; 

@@ -45,14 +45,15 @@ cd /data/repos/vagrant/tmp/test
 cp /data/repos/vagrant/pub/catalog.json ./catalog_local.json
 gsed -i 's/http:\/\/.*\/\(.*\)\.box/file:\/\/\/Users\/jeroen\/code\/vagrant\/pub\/\1.box/g' ./catalog_local.json
 cp /data/repos/vagrant/pub/Vagrantfile .
-gsed -i 's/http:\/\/.*\/catalog\.json/file:\/\/catalog_local.json/g' ./Vagrantfile
+# gsed -i 's/http:\/\/.*\/catalog\.json/file:\/\/catalog_local.json/g' ./Vagrantfile
+export VAGRANT_SERVER_URL="file://catalog_local.json"  # to be tested 
 rm -rf ~/.vagrant.d/boxes/magehost-VAGRANTSLASH-xenial-apache-php7/$VERSION/*
 rm -f ~/.vagrant.d/boxes/magehost-VAGRANTSLASH-xenial-apache-php7/metadata_url
 # vagrant up --provider virtualbox
 # vagrant up --provider parallels
 # vagrant up --provider vmware_fusion
 #### after vagrant up:
-echo "http://vagrant.magehost.pro/catalog.json" > ~/.vagrant.d/boxes/magehost-VAGRANTSLASH-xenial-apache-php7/metadata_url
+echo -n "http://vagrant.magehost.pro/catalog.json" > ~/.vagrant.d/boxes/magehost-VAGRANTSLASH-xenial-apache-php7/metadata_url
 ```
 
 ### Destruct previous test

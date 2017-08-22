@@ -52,7 +52,7 @@ rm -f ~/.vagrant.d/boxes/magehost-VAGRANTSLASH-xenial-apache-php7/metadata_url
 # vagrant up --provider parallels
 # vagrant up --provider vmware_fusion
 #### after vagrant up:
-echo "http://vagrant.magehost.pro/catalog.json" > ~/.vagrant.d/boxes/magehost-VAGRANTSLASH-xenial-apache-php7
+echo "http://vagrant.magehost.pro/catalog.json" > ~/.vagrant.d/boxes/magehost-VAGRANTSLASH-xenial-apache-php7/metadata_url
 ```
 
 ### Destruct previous test
